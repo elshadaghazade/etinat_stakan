@@ -65,17 +65,6 @@
 </section>
 <section id="products">
 
-    <div class="row ms-0 me-0 mb-4">
-
-        <h1 class="text-center search mb-4">{% trans "Поиск"%} <i class="fas fa-search"></i></h1>
-        <div class="search-input d-flex justify-content-center mb-3">
-            <input type="search" class="products-search-inp">
-        </div>
-
-        <div class="search-button d-flex justify-content-center">
-            <button class="btn-search">{% trans "Поиск"%}!</button>
-        </div>
-    </div>
     <div class="products-div row products-width mx-auto">
     {% for product in products %}
         <div class="col-10 col-lg-4 col-sm-6 mx-auto my-3">
@@ -126,5 +115,5 @@
 {% block js_addition %}
 {% comment %} <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-app.js"></script>
 <script src="https://www.gstatic.com/firebasejs/8.6.1/firebase-database.js"></script>
-<script src="{% static 'js/frback.js' %}"></script> {% endcomment %}
+<script src="{% static 'js/product.js' %}"></script> {% endcomment %}
 {% endblock js_addition %}
