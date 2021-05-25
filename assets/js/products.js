@@ -7,6 +7,8 @@ if(choosed_products == null){
 
 // Minicarta əlavə olunma
 $('.buy').on('click',function(){
+    var count = 0;
+    count++;
     // Dizayn
     $('.bottom').removeClass('clicked');
     $(this).parents('.bottom').addClass('clicked');
@@ -21,7 +23,6 @@ $('.buy').on('click',function(){
     choosed_products.push(product);
     window.localStorage.setItem('choosed_products',JSON.stringify(choosed_products));
     $('.minicart--ul').html('');
-    choosed_products = JSON.parse(window.localStorage.getItem('choosed_products'));
     fill_minicart();
 })
 
@@ -31,8 +32,13 @@ $('.remove').on('click', function() {
 
 // Mini cartın LocalStorage'dən gələn data ilə doldurulması
 function fill_minicart(){
+    choosed_products = JSON.parse(window.localStorage.getItem('choosed_products'));
+    if(choosed_products == null){
+        choosed_products = [];
+    }
     var total_count = 0;
     var total_price = 0;
+    $('.minicart--ul').html('');
     for(let i of choosed_products){
         add_to_cart(i.name,i.count,i.price,i.image);
         total_count += parseFloat(i.count);
@@ -64,9 +70,22 @@ function add_to_cart(name,count,price,image){
 `)
 }
 
+// Səhifə açılanda mini səbəti Local Storage'dən gələn data ilə doldurur
 fill_minicart();
 
-// 
+// Minicartdan məhsulun silinməsi
 $('.remove-from-minicart').on('click',function(){
-    $(this).parents('.minicart--item').remove();
+    // Storage
+    choosed_products = JSON.parse(window.localStorage.getItem('choosed_products'));
+    if(choosed_products == null){
+        choosed_products = [];
+    }
+    var name = $(this).parents('.minicart--item').children('.img-and-name').children('.title').html();
+    for(let i in choosed_products){
+        if (choosed_products[i].name === name){
+            choosed_products.splice(i,1);
+        }
+    }
+    window.localStorage.setItem('choosed_products',JSON.stringify(choosed_products));
+    fill_minicart();
 })
