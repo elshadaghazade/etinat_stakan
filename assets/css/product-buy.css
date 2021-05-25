@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap');
+.product-buy-main {
+    height: 72vh;
+}
+
+.container-product-buy {
+    background-color: rgb(115, 171, 132);
+    position: relative;
+}
+
+.product-buy-page-1 {
+    padding-top: 4rem;
+    color: white;
+    margin-bottom: 1.5rem;
+}
+
+.product-buy-page {
+    padding-top: 8rem;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+}
+
+.product-buy-page-1 h1 {
+    font-family: "Roboto";
+    display: inline;
+    font-weight: 500;
+    font-size: 50px;
+    text-transform: capitalize;
+    white-space: pre-wrap;
+    line-height: 72px;
+    margin-bottom: 2.5rem;
+    border-bottom: 3px solid#306d34;
+}
+
+.product-buy-page-1>h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 20px;
+    font-size: 17px;
+    color: white;
+}
+
+.product-buy-page-1 a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.product-buy-page-1 a:hover {
+    text-decoration: none;
+    color: rgba(155, 229, 178, 0.918);
+}
+
+.section-title-buy {
+    font-size: 2.5rem;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 500;
+    color: rgb(45, 119, 129);
+}
+
+.section-title-buy span {
+    font-family: 'Rubik', sans-serif;
+    padding-bottom: 5px;
+    border-bottom: 3px solid rgb(45, 119, 129);
+}
+
+.section-title-buy::first-letter {
+    text-transform: capitalize;
+}
+
+.wave-opacity-2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.wave-opacity-2 svg {
+    position: relative;
+    display: block;
+    width: calc(109% + 1.3px);
+    height: 152px;
+}
+
+.wave-opacity-2 .shape-fill {
+    fill: #ffffff;
+}
+
+.product-buy-page-2 {
+    background: linear-gradient(rgb(255, 255, 255));
+}
+
+.product-buy-page-2 .section-title {
+    font-family: "Rubik", sans-serif;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300,400,500);
+.shopping-cart {
+    width: 100%;
+    height: auto;
+    margin: 30px auto;
+    border: 2px solid rgba(45, 119, 129, 0.644);
+    background: #FFFFFF;
+    box-shadow: 1px 2px 3px 0px rgba(0, 0, 0, 0.10);
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    /* overflow-y: scroll; */
+}
+
+.main-title {
+    height: 60px;
+    border-bottom: 1px solid #E1E8EE;
+    padding: 20px 30px;
+    color: #5E6977;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.item {
+    padding: 20px 30px;
+    height: 120px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.item-total {
+    font-size: 26px;
+    color: rgb(45, 119, 129);
+    display: flex;
+    justify-content: space-between;
+}
+
+.item:nth-child(2) {
+    border-top: 1px solid rgba(45, 119, 129, 0.24);
+    border-bottom: 1px solid rgba(45, 119, 129, 0.24);
+}
+
+.item:nth-child(3) {
+    border-top: 1px solid rgba(45, 119, 129, 0.24);
+    border-bottom: 1px solid rgba(45, 119, 129, 0.24);
+}
+
+
+/* Buttons -  Delete and Like */
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-right: 20px;
+}
+
+
+/* .delete-btn {
+    display: inline-block;
+    cursor: pointer;
+    width: 18px;
+    height: 17px;
+    background: url("../images/product-buy/delete-icn.svg") no-repeat center;
+    margin-right: 20px;
+} */
+
+.delete-btn i {
+    border-radius: 4px;
+    border: 1px solid rgba(160, 0, 0, 0.637);
+    background: transparent;
+    padding: 2px 4px;
+    cursor: pointer;
+    font-size: 22px;
+    color: rgba(160, 0, 0, 0.637);
+    transition: 0.3s;
+}
+
+.delete-btn i:hover {
+    color: rgb(255, 255, 255);
+    background: rgba(160, 0, 0, 0.637);
+    /* color: rgba(255, 0, 0, 0.637); */
+}
+
+@keyframes animate {
+    0% {
+        background-position: left;
+    }
+    50% {
+        background-position: right;
+    }
+    100% {
+        background-position: right;
+    }
+}
+
+
+/* Product Image */
+
+.image {
+    margin-right: 50px;
+    width: 110px;
+    height: 110px;
+}
+
+.image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+
+/* Product Description */
+
+.description {
+    padding-top: 10px;
+    margin-right: 60px;
+    width: 115px;
+}
+
+.description span {
+    display: block;
+    font-size: 20px;
+    color: #43484D;
+    font-weight: 400;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.description span:first-child {
+    margin-bottom: 5px;
+}
+
+
+/* Product Quantity */
+
+.quantity {
+    margin-right: 60px;
+}
+
+.quantity input {
+    -webkit-appearance: none;
+    border: none;
+    text-align: center;
+    width: 40px;
+    font-size: 16px;
+    color: #43484D;
+    font-weight: 300;
+}
+
+.plus-btn,
+.minus-btn {
+    width: 30px;
+    height: 30px;
+    background-color: #E1E8EE;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+}
+
+.minus-btn img {
+    margin-bottom: 3px;
+}
+
+.plus-btn img {
+    margin-top: 2px;
+}
+
+button:focus,
+input:focus {
+    outline: 0;
+}
+
+
+/* PopUp */
+
+#payment-popup {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 200;
+}
+
+.payment-popup-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    margin-top: 50px;
+    padding: 20px;
+    border: 5px solid rgb(115, 171, 132);
+    border-radius: 24px;
+    width: 50%;
+}
+
+.payment-popup-input-div {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto 16px auto;
+}
+
+.payment-popup-input-div>input,
+.payment-popup-input-div>textarea,
+.payment-popup-input-div>select {
+    border: 2px solid rgb(115, 171, 132);
+    border-radius: 12px;
+    padding: 10px;
+    outline: 0;
+}
+
+#confirm-button {
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 12px;
+    transition: 0.3s;
+    padding: 10px;
+    border: 2px solid rgb(115, 171, 132);
+    background: rgb(115, 171, 132);
+    color: #fff;
+}
+
+#confirm-button:hover {
+    background: #fff;
+    color: rgb(115, 171, 132);
+}
+
+
+/* Total Price */
+
+.total-price {
+    width: 83px;
+    text-align: center;
+    font-size: 19px;
+    color: #43484D;
+    font-weight: 500;
+}
+
+.main-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.btn-back,
+.btn-payment {
+    font-size: 17px;
+    outline: none;
+    box-shadow: none;
+    font-family: 'Rubik', sans-serif;
+    border-radius: 8px;
+    color: #FFF;
+    transition: 0.3s;
+}
+
+.btn-back {
+    padding: 10px 20px;
+    background-color: rgba(255, 0, 0, 0.637);
+    border: 1px solid rgba(255, 0, 0, 0.637);
+}
+
+.btn-back:hover {
+    background-color: transparent;
+    color: rgba(255, 0, 0, 0.637);
+}
+
+.btn-payment {
+    padding: 10px 10px;
+    background-color: rgb(45, 119, 129);
+    border: 1px solid rgb(45, 119, 129);
+}
+
+.btn-payment:hover {
+    background-color: transparent;
+    color: rgb(45, 119, 129);
+}
+
+
+/* Responsive */
+
+@media (max-width: 1000px) {
+    .payment-popup-content {
+        width: 90%;
+    }
+}
+
+@media (max-width: 800px) {
+    .shopping-cart {
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+    }
+    .item {
+        height: auto;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .image {
+        height: 170px;
+    }
+    .image img {
+        width: 50%;
+    }
+    .image,
+    .quantity,
+    .description {
+        width: 100%;
+        text-align: center;
+        margin: 6px 0;
+    }
+    .description span {
+        font-size: 25px;
+    }
+    .buttons {
+        margin-right: 0px;
+        padding-top: 20px;
+    }
+    .buttons i {
+        font-size: 35px;
+    }
+    .item {
+        padding: 0;
+        padding-bottom: 5px;
+    }
+    .quantity,
+    .total-price {
+        padding-top: 10px;
+    }
+    .delete-btn i {
+        border-radius: 4px;
+        padding: 2px 4px;
+        font-size: 20px;
+    }
+}

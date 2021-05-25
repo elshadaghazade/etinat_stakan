@@ -1,0 +1,139 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block page_title %}Оптовикам{% endblock page_title %}
+
+{% block content %}
+<main class="container container-business">
+    <div class="business row">
+        <div id="offer" class="business-content col-lg-5 col-sm-12">
+            <h1>Преимущества ETINAT-стаканчик для предпринимателей</h1>
+            <ul>
+                <li>
+                    <i class="fas fa-ruble-sign"></i>
+                    <p>
+                        Купленный товар стоимостью <strong>10 рублей</strong> можете продать <strong>15 раз (150 рублей)</strong> дороже себестоимости!
+                    </p>
+                </li>
+                <li>
+                    <i class="fas fa-users"></i>
+                    <p>
+                        Вам нет нужды контролировать процесс закупки, доставку, подачу. Расскажите нам о своей задаче и мы подскажем наилучшее решение с участием нашего ETINAT-стаканчика.
+                    </p>
+                </li>
+                <li>
+                    <i class="fas fa-user-shield"></i>
+                    <p>
+                        В отличии от кофе-машин — не ломается, не обязывает Вас к постоянному техническому обслуживанию и покупке ингредиентов в одном месте.
+                    </p>
+                </li>
+                <li>
+                    <i class="fas fa-bezier-curve"></i>
+                    <p>
+                        Сфера применения настолько обширна, что не уместится в этом блоке.
+                    </p>
+                </li>
+                <li>
+                    <i class="fas fa-check-double"></i>
+                    <p>
+                        Наполнитель (напиток), сахар, ложка - все в одном стаканчике! Нет нужды покупать что-либо отдельно!
+                    </p>
+                </li>
+                <li>
+                    <i class="fas fa-chart-line"></i>
+                    <p>
+                        Вы всегда контролируете свою прибыль и эффективность в направлении горячих напитков!
+                    </p>
+                </li>
+                <li>
+                    <i class="far fa-handshake"></i>
+                    <p>
+                        Ваши клиенты отметят отличный вкус, удобство и заботу с которой вы к ним относитесь!
+                    </p>
+                </li>
+                <li>
+                    <i class="fas fa-truck"></i>
+                    <p>
+                        По Москве и М.О доставка на следующий день! В некоторых случаях возможна доставка в день заказа!
+                    </p>
+                </li>
+            </ul>
+        </div>
+        <div class="business-img col-lg-7 col-sm-12">
+            <img src="{% static 'images/business1.jpg' %}" alt="" />
+        </div>
+        <button class="btn my-2" onclick="window.location.href='{% url 'products' %}">Заказать</button>
+    </div>
+    <div class="business-carousel-section row">
+        <div class="section-title" style="color: #366837">Наши награды</div>
+        <div class="col-lg-5 business-certificate-content mb-4">
+            <p>
+                Мы всегда проявляем активность на выставках и форумах касающихся питания. За 7 лет нашей работы, мы можем похвастаться наградами с многих тематических выставок и форумов, что характеризует наш продукт признанным сообществом быстрого питания. Посмотреть
+                все наши заслуги вы можете по кнопке ниже.
+            </p>
+            <button class="btn my-2" onclick="window.location.href='{% url 'about' %}#rewards'">Награды</button>
+        </div>
+        <div id="carouselExampleFade" class="carousel slide business-carousel carousel-dark col-lg-7" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{% static 'images/certificates/5stblock.jpg' %}" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'images/certificates/5stblock2.jpg' %}" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item">
+                    <img src="{% static 'images/certificates/5stblock5.jpg' %}" class="d-block w-100" alt="..." />
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+        </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+        </button>
+        </div>
+    </div>
+    <div class="business-carousel-section row">
+        <div class="section-title" style="color: #366837">
+            Наше производство
+        </div>
+
+        <div id="carouselExampleFade2" class="carousel slide business-carousel carousel-dark col-lg-7" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="{% static 'images/production1.jpg' %}" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="{% static 'images/production2.jpg' %}" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="{% static 'images/production3.jpg' %}" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="{% static 'images/production4.jpg' %}" class="d-block w-100" alt="..." />
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="{% static 'images/production5.jpg' %}" class="d-block w-100" alt="..." />
+                </div>
+            </div>
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+                </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+                </button> -->
+        </div>
+        <div class="col-lg-5 business-certificate-content">
+            <p>
+                Мы являемся производителем и создателем ETINAT-стаканчика, оборудование было разработано исключительно по нашим чертежам и схемам. Более подробно по кнопке ниже.
+            </p>
+            <button class="btn my-2" onclick="window.location.href='{% url 'about' %}">Производство</button>
+        </div>
+    </div>
+</main>
+{% endblock content %}

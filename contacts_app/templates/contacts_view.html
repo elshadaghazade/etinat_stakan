@@ -1,0 +1,158 @@
+{% extends 'base.html' %}
+
+{% load static %}
+
+{% block page_title %}Контакты{% endblock page_title %}
+
+{% block content %}
+<div class="container-fluid container-contact">
+    <div class="bg-img">
+        <main class="contact-main mb-1">
+            <div class="row contact row ms-0 me-0 px-5">
+                <div class="contact-1">
+                    <h1 class="text-center">Контакты</h1>
+                    <h3 class="text-center">
+                        <a href="./index.html">Главная</a> / Контакты
+                    </h3>
+                </div>
+            </div>
+            <div class="shape-divider">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M892.25 114.72L0 0 0 120 1200 120 1200 0 892.25 114.72z" class="shape-fill"></path>
+        </svg>
+            </div>
+        </main>
+    </div>
+</div>
+<div id="question" class="contact-3">
+    <div class="form row row ms-0 me-0">
+        <img class="col-lg-6 col-sm-12 mx-auto" src="{% static 'images/svg/call.svg' %}" alt="" />
+        <form class="col-lg-6 col-sm-12 mx-auto form-inner my-5">
+            <p class="text-center">
+                По интересующим вопросам логистики, участия в выставках, предложениях о сотрудничестве Вы можете связаться напрямую через форму ниже. Ответ поступит в течении 10-15 минут.
+            </p>
+            <!-- Form Name Input -->
+            <div class="form-div">
+                <div class="form-name-div form-element name-form">
+                    <div class="img-div">
+                        <i class="fas fa-user"></i>
+                    </div>
+                    <div class="input-div">
+                        <input id="name-input" class="border-0 common-input" type="text" placeholder="Ваше имя" />
+                    </div>
+                </div>
+                <!-- Form Number Input -->
+                <div class="form-number-div form-element number-form">
+                    <div class="img-div ms-1">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <div class="input-div">
+                        <input id="number-input" class="border-0 common-input" type="number" placeholder="Введите номер телефона" />
+                    </div>
+                </div>
+                <!-- Form Email Input -->
+                <div class="form-email-div form-element email-form">
+                    <div class="img-div">
+                        <i class="far fa-envelope"></i>
+                    </div>
+                    <div class="input-div">
+                        <input id="email-input" class="border-0 common-input" type="email" placeholder="Введите ваш email" />
+                    </div>
+                </div>
+                <!-- Form Message TextArea -->
+                <div class="form-message-div form-element message-form">
+                    <div class="textarea-img img-div">
+                        <i class="far fa-list-alt"></i>
+                    </div>
+                    <div class="message-textarea-div">
+                        <textarea id="message-textarea" class="mt-2 ms-1 common-input" placeholder="Ваш запрос или предложение"></textarea>
+                    </div>
+                </div>
+                <button id="send-button" type="button" class="btn-form">
+            Отправить
+        </button>
+            </div>
+        </form>
+    </div>
+</div>
+
+<div id="adres" class="contact-4 mb-5">
+    <div class="row contact-map row ms-0 me-0 px-5">
+        <div class="col-lg-12 col-sm-12 mx-auto">
+            <h1 class="text-center">Схема проезда</h1>
+            <p class="text-center my-3">
+                Предварительно позвоните по телефону указанному в шапке сайта!
+            </p>
+            <p class="text-center my-3">
+                <strong>Часы работы:</strong> 09:00 до 18:00. Суб.- Вск. - выходной
+            </p>
+            <div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/213/moscow/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Москва</a><a href="https://yandex.ru/maps/213/moscow/house/bolshaya_dorogomilovskaya_ulitsa_1/Z04YcwFjS0YEQFtvfXt1dHlnbQ==/?l=trf%2Ctrfe&ll=37.564094%2C55.745492&utm_medium=mapframe&utm_source=maps&z=17.23"
+                    style="color:#eee;font-size:12px;position:absolute;top:14px;">Большая Дорогомиловская улица, 1 — Яндекс.Карты</a><iframe src="https://yandex.ru/map-widget/v1/-/CCU4vPQBHC" width="1000" height="600" frameborder="1" allowfullscreen="true"
+                    style="position:relative;"></iframe></div>
+        </div>
+    </div>
+</div>
+<div id="rekvizit" class="contact-2 mb-5 contact-rekvizit text-center">
+    <h1 class="text-center">Наши реквизиты</h1>
+    <div class="contact-boxes row my-4">
+        <div class="card card-body card-box col-md-3 col-sm-12 mt-3 mb-2">
+            <div class="icon">
+                <span><i class="fas fa-phone"></i></span>
+            </div>
+            <h4>Телефон</h4>
+            <p>
+                <a class="phone" href="tel:84992499000">8 (499) 249-90-00</a><br />
+                <a class="phone" href="tel:89299009009">8 (929) 900-90-09</a>
+            </p>
+        </div>
+        <div class="card card-body card-box col-md-3 col-sm-12 mt-3 mb-2">
+            <div class="icon">
+                <span><i class="far fa-envelope"></i></span>
+            </div>
+            <h4>Электронная почта</h4>
+            <p>
+                <a class="mail" href="mailto:natte@gmail.com">NATTE@gmail.com</a><br />
+                <a class="mail" href="mailto:natte@gmail.com">NATTE@gmail.com</a>
+            </p>
+        </div>
+        <div class="card card-body card-box col-md-3 col-sm-12 mt-3 mb-2">
+            <div class="icon">
+                <span><i class="fas fa-location-arrow"></i></span>
+            </div>
+            <h4>АДРЕС</h4>
+            <p>
+                Россия, 125299, г.Москва<br/>ул.Большая Дорогомиловская, дом 1
+            </p>
+        </div>
+    </div>
+    <div class="contact-boxes row gx-4">
+        <div class="card card-body card-box col-md-3 col-sm-12 my-3">
+            <div class="icon">
+                <span><i class="far fa-building"></i></span>
+            </div>
+            <h4>Наименование организации</h4>
+            <p>Общество с ограниченной,<br />ответственностью «Русский стакан»</p>
+        </div>
+        <div class="card card-body card-box col-md-3 col-sm-12 my-3">
+            <div class="icon">
+                <span><i class="fas fa-money-check-alt"></i></span>
+            </div>
+            <h4>Банковские реквизиты</h4>
+            <p>
+                ФИЛИАЛ ЦЕНТРАЛЬНЫЙ ПАО БАНКА "ФК ОТКРЫТИЕ",<br /><strong>
+            р/с 40702810104080000166</strong
+        >
+        </p>
+    </div>
+    <div class="card card-body card-box col-md-3 col-sm-12 my-3">
+        <div class="icon">
+        <span><i class="far fa-id-card"></i></span>
+        </div>
+        <h4>ИНН / КПП</h4>
+        <p>
+        <strong> 7713472961,<br />771301001</strong>
+            </p>
+        </div>
+    </div>
+</div>
+{% endblock content %}

@@ -1,0 +1,243 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>{% block page_title %}{% endblock %}</title>
+    <link rel="icon" href="{% static 'images/logo.png' %}" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Rubik:wght@500&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600&family=Playfair+Display:wght@400;500&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet" />
+    <!-- Bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous" />
+    <!-- Meterial Font -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="{% static 'css/popup.css' %}" />
+    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <!-- Font Awsome -->
+    <script src="https://kit.fontawesome.com/5484ef70c0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container-fluid p-0 position-fixed container-nav" style="z-index: 100;">
+            <div class="row">
+                <div class="col-lg-2 nav-sect-1">
+                    <div class="logo-div">
+                        <a href="{% url 'homepage' %}"><img src="{% static 'images/logo.png' %}" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-10 nav-sect-2">
+                    <nav class="navbar navbar-light navbar-expand-lg">
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                        <div class="collapse navbar-collapse" id="navbarNav">
+                            <ul class="navbar-nav nav-sect-3">
+                                <li class="nav-item">
+                                    <a href="{% url 'homepage' %}" class="position-relative menu-nav">Главная</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{% url 'products' %}" class="position-relative menu-nav">Продукция</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{% url 'wholesalers' %}" class="position-relative menu-nav">Оптовикам</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{% url 'about' %}" class="position-relative menu-nav">О компании</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="{% url 'contacts' %}" class="position-relative menu-nav">Контакты</a>
+                                </li>
+                                <li class="nav-item-call">
+                                    <button href="#" class="position-relative menu-nav call-back-link">Обратный звонок <i class="fas fa-phone"></i></button>
+                                </li>
+                                <li class="nav-item-basket">
+                                    <button id="cart-button" class="position-relative menu-nav basket-link"><i class="fas fa-shopping-cart"></i> <span>0 шт</span> <span>0.0₽</span></button>
+                                    <button id="cart-button-phone" class="position-relative menu-nav basket-link" onclick="window.location.href='./product-buy.html'"><i class="fas fa-shopping-cart"></i> <span>0 шт</span> <span>0.0₽</span></button>
+                                    <div class="cart-items">
+                                        <div class="minicart">
+                                            <div class="minicart--item-container">
+                                                У вас
+                                                <span class="minicart--item-count" id="cart-items-all-count">2</span> товара в корзине</div>
+                                            <hr>
+                                            <ul class="minicart--ul">
+                                                <li class="minicart--item">
+                                                    <div class="img-and-name">
+                                                        <img src="{% static 'images/cups/cup4.png' %}" class="choosed--item-image">
+                                                        <h1 class="title">Sah Tea Cup</h1>
+                                                    </div>
+                                                    <p class="choosed--items-count">
+                                                        <span style="font-weight: 600;">Число:<br></span><span id="cart-item-count">2</span></p>
+                                                    <p class="choosed--items-price">
+                                                        <span style="font-weight: 600;">Цена товара:<br></span><span id="cart-item-price">10</span> ₽</p>
+                                                    <p class="minicart--item-price">
+                                                        <span style="font-weight: 600;">Общее:<br></span><span id="cart-item-total-price">20</span>₽ (<span id="cart-item-count">2</span>x)</p>
+                                                    <p class="minicart--item-remove">
+                                                        <a href="#"><i class="fa fa-trash-o"></i></a>
+                                                    </p>
+                                                </li>
+                                                <hr>
+                                                <li class="minicart--item">
+                                                    <div class="img-and-name">
+                                                        <img src="{% static 'images/cups/cup3.png' %}" class="choosed--item-image">
+                                                        <h1 class="title">Saffron Tea Cup</h1>
+                                                    </div>
+                                                    <p class="choosed--items-count">
+                                                        <span style="font-weight: 600;">Число:<br></span><span id="cart-item-count">1</span></p>
+                                                    <p class="choosed--items-price">
+                                                        <span style="font-weight: 600;">Цена товара:<br></span><span id="cart-item-price">10</span> ₽</p>
+                                                    <p class="minicart--item-price">
+                                                        <span style="font-weight: 600;">Общее:<br></span><span id="cart-item-total-price">10</span>₽ (<span id="cart-item-count">1</span>x)</p>
+                                                    <p class="minicart--item-remove">
+                                                        <a href="#"><i class="fa fa-trash-o"></i></a>
+                                                    </p>
+                                                </li>
+                                                <hr>
+                                                <li class="minicart--item">
+                                                    <div class="img-and-name">
+                                                        <img src="{% static 'images/cups/cup6.png' %}" class="choosed--item-image">
+                                                        <h1 class="title">Quince Tea Cup</h1>
+                                                    </div>
+                                                    <p class="choosed--items-count">
+                                                        <span style="font-weight: 600;">Число:<br></span><span id="cart-item-count">3</span></p>
+                                                    <p class="choosed--items-price">
+                                                        <span style="font-weight: 600;">Цена товара:<br></span><span id="cart-item-price">10</span> ₽</p>
+                                                    <p class="minicart--item-price">
+                                                        <span style="font-weight: 600;">Общее:<br></span><span id="cart-item-total-price">30</span>₽ (<span id="cart-item-count">3</span>x)</p>
+                                                    <p class="minicart--item-remove">
+                                                        <a href="#"><i class="fa fa-trash-o"></i></a>
+                                                    </p>
+                                                </li>
+                                                <hr>
+                                                <li class="minicart--item">
+                                                    <div class="img-and-name">
+                                                        <img src="{% static 'images/cups/cup6.png' %}" class="choosed--item-image">
+                                                        <h1 class="title">Quince Tea Cup</h1>
+                                                    </div>
+                                                    <p class="choosed--items-count">
+                                                        <span style="font-weight: 600;">Число:<br></span><span id="cart-item-count">3</span></p>
+                                                    <p class="choosed--items-price">
+                                                        <span style="font-weight: 600;">Цена товара:<br></span><span id="cart-item-price">10</span> ₽</p>
+                                                    <p class="minicart--item-price">
+                                                        <span style="font-weight: 600;">Общее:<br></span><span id="cart-item-total-price">30</span>₽ (<span id="cart-item-count">3</span>x)</p>
+                                                    <p class="minicart--item-remove">
+                                                        <a href="#"><i class="fa fa-trash-o"></i></a>
+                                                    </p>
+                                                </li>
+                                                <hr>
+                                            </ul>
+                                            <div class="minicart--subtotal">
+                                                <p class="minicart--subtotal-title">Всего товаров:</p>
+                                                <p class="minicart--subtotal-amount"><span id="cart-items-all-prices">60</span> ₽</p>
+                                            </div>
+                                            <input id="minicart--input" onclick="window.location.href='./product-buy.html'" type="button" value="Просмотр сведений о корзине">
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div id="callback-popup" class="popup">
+            <div class="callback-popup-content">
+                <span class="close"><i class="fas fa-times"></i></span>
+                <label for="callback-name-input"><img src="{% static 'images/svg/user.svg' %}" alt="" style="height: 25px;width: 35px;">Имя</label>
+                <input id="callback-name-input" class="callback-input" type="text" />
+                <label for="callback-number-input"><img src="{% static 'images/svg/phone-call.svg' %}" alt="" style="height: 25px;width: 40px;"> Телефонный номер</label>
+                <input id="callback-number-input" class="callback-input" type="number" />
+                <button id="callback-send-button">Отправить</button>
+            </div>
+        </div>
+    </header>
+
+
+    {% block content %}{% endblock content %}
+    
+    <!-- Scroll Button -->
+    <button id="scrolltoTop"><i class="fas fa-arrow-up"></i></button>
+    <!-- Footer begins -->
+    <footer class="row ">
+        <!-- <section class="container-fluid "> -->
+        <div class="col-md-3 ">
+            <img src="{% static 'images/logo.png' %}" style="width: 100% " alt=" " />
+            <h3>Подпишитесь на нашу рассылку и получите скидка 30%</h3>
+            <i class="fab fa-instagram "></i>
+            <i class="fab fa-facebook "></i>
+            <i class="fab fa-twitter "></i>
+            <i class="fab fa-linkedin-in "></i>
+        </div>
+        <div class="col-md-3 ">
+            <h2>ПРОДУКЦИЯ</h2>
+            <div class="underline "></div>
+            <ul>
+                <li><a href="{% url 'products' %}#products ">Чай в стаканчике </a></li>
+                <li><a href="{% url 'products' %}#products ">Кофе в стаканчике </a></li>
+                <li><a href="{% url 'products' %}#products ">Капучино в стаканчике </a></li>
+                <li><a href="{% url 'products' %}#products ">Горячий шоколад в стаканчике </a></li>
+                <li><a href="{% url 'products' %}#products ">Крем-супы в стаканчике </a></li>
+                <li><a href="{% url 'products' %}#products ">Молочные коктейли в стаканчике</a></li>
+                <li><a href="{% url 'products' %}#products ">Шиповник в стаканчике</a></li>
+                <li><a href="{% url 'products' %}#products ">Глинтвейн в стаканчике </a></li>
+            </ul>
+        </div>
+        <div class="col-md-3 ">
+            <h2>ИНФОРМАЦИЯ</h2>
+            <div class="underline "></div>
+            <ul>
+                <li><a href="{% url 'contacts' %}#question ">Помощь в выборе продукции </a></li>
+                <li><a href="{% url 'products' %}#dostavka ">Доставка </a></li>
+                <li><a href="{% url 'products' %}#dostavka ">Оплата</a></li>
+                <li><a href="{% url 'homepage' %}#question-main ">Задать вопрос </a></li>
+                <li><a href="{% url 'wholesalers' %}#offer ">Предложение оптовикам</a></li>
+                <li><a href="{% url 'contacts' %}#question ">Получить оптовый прайс </a></li>
+                <li><a href="{% url 'about' %}#about ">О компании </a></li>
+            </ul>
+        </div>
+        <div class="col-md-3 ">
+            <h2>КОНТАКТЫ</h2>
+            <div class="underline "></div>
+            <ul>
+                <li>
+                    <a href="{% url 'contacts' %}#adres ">Наш адрес г.Москва
+                        ул.Большая Дорогомиловская, дом 1
+              </a>
+                </li>
+                <li><a href="{% url 'contacts' %}#adres ">Схема проезда </a></li>
+                <li><a href="{% url 'contacts' %}#question ">Задать вопрос </a></li>
+                <li><a href="{% url 'contacts' %}#question "> Сотрудничество </a></li>
+                <li><a href="{% url 'contacts' %}#rekvizit ">Реквизиты </a></li>
+                <li><a href="{% url 'contacts' %}#adres ">Часы работы </a></li>
+                <li><a href="{% url 'contacts' %}#rekvizit ">Торговая марка</a></li>
+            </ul>
+        </div>
+        <!-- Copyright -->
+        <div class="text-center copyright ">
+            <a class="text-dark " href="{% url 'homepage' %}#etinat-stakan ">© ETINAT-стакан Россия, 2021</a>
+        </div>
+    </footer>
+
+    <div class="loader-wrapper ">
+        <span class="loader "><img src="{% static 'images/logo.png' %}" alt=" " /></span>
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js " integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf " crossorigin="anonymous "></script>
+    <!-- Script App -->
+    <script src="{% static 'js/preloader.js' %}"></script>
+    <script src="{% static 'js/app.js' %}"></script>
+    <script src="{% static 'js/validations.js' %}"></script>
+    <script src="{% static 'js/scroll.js' %}"></script>
+    {% block js_addition %}{% endblock js_addition %}
+</body>
+
+</html>
