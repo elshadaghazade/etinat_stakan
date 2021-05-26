@@ -32,7 +32,6 @@ $('.buy').on('click', function() {
     window.localStorage.setItem('choosed_products', JSON.stringify(choosed_products));
     $('.minicart--ul').html('');
     fill_minicart();
-    updateTotalCartInfos();
 })
 
 $('.remove').on('click', function() {
@@ -58,7 +57,8 @@ function fill_minicart() {
         total_price += parseFloat(i.price) * parseInt(i.count);
     }
     $('#cart-items-all-prices').html(`${total_price.toFixed(2)}`);
-    $('#cart-items-all-count').html(`${total_count}`)
+    $('#cart-items-all-count').html(`${total_count}`);
+    updateTotalCartInfos();
 }
 
 function updateTotalCartInfos() {
@@ -133,7 +133,98 @@ $(document).on('click', '.remove-from-minicart', function() {
     }
     window.localStorage.setItem('choosed_products', JSON.stringify(choosed_products));
     fill_minicart();
-    updateTotalCartInfos();
-})
+});
 
-updateTotalCartInfos();
+
+/* ------------------ checkout page codes ---------------------- */
+
+$(document).on('click', '.minus-btn', function(e){
+    var id = $(this).data('id');
+    decreaseProductQty(id, 1);
+    fill_minicart();
+    fill_shopping_cart();
+});
+
+$(document).on('click', '.plus-btn', function(e){
+    var id = $(this).data('id');
+    increaseProductQty(id, 1);
+    fill_minicart();
+    fill_shopping_cart();
+});
+
+var timeout1 = -1;
+$(document).on('input', '.checkout-product-qty', function(e){
+
+    clearTimeout(timeout1);
+    setTimeout(() => {
+        var id = $(this).data('id');
+        var qty = parseInt($(this).val());
+
+        if (isNaN(qty)) {
+            $(this).val(1);
+            return;
+        }
+
+        setProductQty(id, qty);
+        fill_minicart();
+        fill_shopping_cart();
+    }, 1000);
+});
+
+$(document).on('click', '.delete-btn', function(){
+    var id = $(this).data('id');
+    removeProduct(id);
+    fill_minicart();
+    fill_shopping_cart();
+});
+
+function fill_shopping_cart () {
+    var choosed_products = JSON.parse(window.localStorage.getItem('choosed_products'));
+    if (choosed_products == null) {
+        choosed_products = {};
+    }
+
+    $('.shopping-cart #checkout-items').empty();
+    var totalPrice = 0;
+    for(let product of Object.values(choosed_products)) {
+        appendNewItem(product);
+        totalPrice += parseFloat(product.price) * product.count;
+    }
+
+    $('#checkout-total-price').html(totalPrice.toFixed(2));
+}
+
+function appendNewItem (product) {
+    var content = `
+    <div class="item">
+        <div class="buttons">
+            <div class="delete-btn" data-id="${product.id}"><i class="fas fa-times"></i></div>
+        </div>
+
+        <div class="image">
+            <img src="${product.image}" alt="" />
+        </div>
+
+        <div class="description">
+            <span>${product.name}</span>
+        </div>
+
+        <div class="quantity">
+            <button class="minus-btn" type="button" name="button" data-id="${product.id}">
+        <img src="${minusSVG}" alt="" />
+        </button>
+            <input class="checkout-product-qty" data-id="${product.id}" type="text" name="name" value="${product.count}">
+            <button class="plus-btn" type="button" name="button" data-id="${product.id}">
+        <img class="m-0" src="${plusSVG}" alt="" />
+        </button>
+        </div>
+
+        <div class="total-price"><span class="price-decimal">${(product.count * parseFloat(product.price)).toFixed(2)}</span>₽</div>
+    </div>`;
+
+    $('.shopping-cart #checkout-items').append(content);    
+}
+
+fill_shopping_cart();
+
+/* -------------------------------------------------------------- */

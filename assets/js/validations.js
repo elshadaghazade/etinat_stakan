@@ -180,7 +180,16 @@ $('#confirm-button').on('click', function () {
         }
     }else{
         confirm_correctCase();
-        
+        var data = $('#checkout-form').serialize();
+        var items = encodeURIComponent(JSON.stringify(getItemsFromCart()));
+
+        $.ajax({
+            url: checkoutUri,
+            data: data + '&products=' + items,
+            method: 'POST',
+        }).done(result => {
+            $('#payment-popup').css('display', 'none');
+        });
     }
 });
 

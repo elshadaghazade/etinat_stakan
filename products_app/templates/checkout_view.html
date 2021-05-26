@@ -11,25 +11,26 @@
 
 {% block content %}
 <div id="payment-popup">
+    <form id="checkout-form" onsubmit="return false;">
     <div class="payment-popup-content">
         <span class="close"><i class="fas fa-times"></i></span>
         <h3 class="payment-popup-title">{% trans "Оформление"%}</h3>
         <hr>
         <div class="payment-popup-input-div">
             <label for="payment-name-input" class="me-2"><i class="fas fa-user me-2"></i>{% trans "Имя"%}</label>
-            <input id="payment-name-input" class="payment--input" type="text" placeholder="Имя">
+            <input name="name" id="payment-name-input" class="payment--input" type="text" placeholder="Имя">
         </div>
         <div class="payment-popup-input-div">
             <label for="payment-mail-input" class="me-2"><i class="fas fa-envelope me-2"></i>{% trans "Эл. почта"%}</label>
-            <input id="payment-mail-input" class="payment--input" type="email" placeholder="Эл. почта">
+            <input name="email" id="payment-mail-input" class="payment--input" type="email" placeholder="Эл. почта">
         </div>
         <div class="payment-popup-input-div">
             <label for="payment-phone-input" class="me-2"><i class="fas fa-phone-alt me-2"></i>{% trans "Телефон"%}</label>
-            <input id="payment-phone-input" class="payment--input" type="number" placeholder="Телефон">
+            <input name="phone" id="payment-phone-input" class="payment--input" type="tel" placeholder="Телефон">
         </div>
         <div class="payment-popup-input-div">
             <label for="payment-delivery-selection" class="me-2"><i class="fas fa-truck me-2"></i>{% trans "Доставка"%}</label>
-            <select id="payment-delivery-selection" class="payment--input">
+            <select name="delivery_method" id="payment-delivery-selection" class="payment--input">
                 <option value="0"></option>
                 <option value="1">{% trans "Самовывоз"%}</option>
                 <option value="2">{% trans "Доставка по Москве - 300 руб."%}</option>
@@ -38,16 +39,18 @@
         </div>
         <div class="payment-popup-input-div">
             <label for="payment-adress-input" class="me-2"><i class="fas fa-map-marker-alt me-2"></i>{% trans "Адрес"%}</label>
-            <input id="payment-adress-input" class="payment--input" type="text" placeholder="Адрес">
+            <input name="address" id="payment-adress-input" class="payment--input" type="text" placeholder="Адрес">
         </div>
         <div class="payment-popup-input-div">
             <label for="payment-comment-input" class="me-2"><i class="fas fa-comments me-2"></i>{% trans "Коментарий"%}</label>
-            <textarea id="payment-comment-input" class="payment--input" placeholder="Коментарий"></textarea>
+            <textarea name="comment" id="payment-comment-input" class="payment--input" placeholder="Коментарий"></textarea>
         </div>
         <div class="payment-popup-input-div">
-            <button id="confirm-button">{% trans "Оформить"%}</button>
+            <button type="button" id="confirm-button">{% trans "Оформить"%}</button>
         </div>
     </div>
+    {% csrf_token %}
+    </form>
 </div>
 
 <div class="container-product-buy">
@@ -76,89 +79,10 @@
     <div class="col-md-7 col-sm-12 mx-auto">
         <div class="section-title-buy"><span><i class=" fas fa-shopping-cart "></i> {% trans "Корзина"%}</span></div>
         <div class="shopping-cart">
-            <!-- Product #1 -->
-            <div class="item">
-                <div class="buttons">
-                    <div class="delete-btn"><i class="fas fa-times"></i></div>
-                </div>
-
-                <div class="image">
-                    <img src="{% static 'images/cups/cup4.png' %}" alt="" />
-                </div>
-
-                <div class="description">
-                    <span>Sah Tea Cup</span>
-                </div>
-
-                <div class="quantity">
-                    <button class="minus-btn" type="button" name="button">
-                <img src="{% static 'images/product-buy/minus.svg' %}" alt="" />
-                </button>
-                    <input type="text" name="name" value="2">
-                    <button class="plus-btn" type="button" name="button">
-                <img class="m-0" src="{% static 'images/product-buy/plus.svg' %}" alt="" />
-                </button>
-                </div>
-
-                <div class="total-price">20,00₽</div>
-            </div>
-            <!-- Product #2 -->
-            <div class="item">
-                <div class="buttons">
-                    <div class="delete-btn"><i class="fas fa-times"></i></div>
-                </div>
-
-                <div class="image">
-                    <img src="{% static 'images/cups/cup3.png' %}" alt="" />
-                </div>
-
-                <div class="description">
-                    <span>Saffron Tea Cup</span>
-                </div>
-
-                <div class="quantity">
-                    <button class="minus-btn" type="button" name="button">
-                <img src="{% static 'images/product-buy/minus.svg' %}" alt="" />
-                </button>
-                    <input type="text" name="name" value="1">
-                    <button class="plus-btn" type="button" name="button">
-                <img class="m-0" src="{% static 'images/product-buy/plus.svg' %}" alt="" />
-                </button>
-                </div>
-
-                <div class="total-price">10,00₽</div>
-            </div>
-
-            <!-- Product #3 -->
-            <div class="item">
-                <div class="buttons">
-                    <div class="delete-btn"><i class="fas fa-times"></i></div>
-                </div>
-
-                <div class="image">
-                    <img src="{% static 'images/cups/cup6.png' %}" alt="" />
-                </div>
-
-                <div class="description">
-                    <span>Quince Tea Cup</span>
-                </div>
-
-                <div class="quantity">
-                    <button class="minus-btn" type="button" name="button">
-                <img src="{% static 'images/product-buy/minus.svg' %}" alt="" />
-                </button>
-                    <input type="text" name="name" value="3">
-                    <button class="plus-btn" type="button" name="button">
-                <img class="m-0" src="{% static 'images/product-buy/plus.svg' %}" alt="" />
-                </button>
-                </div>
-
-                <div class="total-price">30,00₽</div>
-            </div>
-
+            <div id="checkout-items"></div>
             <div class="item-total p-3">
                 <div class="ps-3"><i class="fas fa-coins me-2"></i><strong>{% trans "Общее : "%}</strong></div>
-                <div class="pe-5"><span>60,00₽</span></div>
+                <div class="pe-5"><span id="checkout-total-price">0.00</span>₽</div>
             </div>
             <div class="main-buttons">
                 <button class="btn-back" onclick="window.location.href='{% url 'products' %}'"><i class="fas fa-undo me-1"></i> {% trans "Назад"%}</button>
