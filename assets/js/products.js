@@ -7,8 +7,10 @@ if (choosed_products == null) {
 
 // Minicarta əlavə olunma
 $('.buy').on('click', function() {
-    var count = 0;
-    count++;
+    choosed_products = JSON.parse(window.localStorage.getItem('choosed_products'));
+    if (choosed_products == null) {
+        choosed_products = [];
+    }
     // Dizayn
     $('.bottom').removeClass('clicked');
     $(this).parents('.bottom').addClass('clicked');
@@ -20,7 +22,20 @@ $('.buy').on('click', function() {
         image: $(this).parents('.product-item').parents().data('img'),
         count: 1
     }
-    choosed_products.push(product);
+    if (choosed_products.length === 0) {
+        choosed_products.push(product);
+    } else {
+        for (let i of choosed_products) {
+            if (product.id === i.id) {
+                i.count++;
+                console.log('beraberdir');
+                break;
+            } else {
+                choosed_products.push(product);
+            }
+        }
+    }
+
     window.localStorage.setItem('choosed_products', JSON.stringify(choosed_products));
     $('.minicart--ul').html('');
     fill_minicart();
@@ -84,6 +99,7 @@ $('.remove-from-minicart').on('click', function() {
     for (let i in choosed_products) {
         if (choosed_products[i].name === name) {
             choosed_products.splice(i, 1);
+            break;
         }
     }
     window.localStorage.setItem('choosed_products', JSON.stringify(choosed_products));
