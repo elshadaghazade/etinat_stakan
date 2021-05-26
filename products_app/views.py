@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.http import JsonResponse
 from .models import *
 
 def products_view(request):
@@ -16,3 +17,8 @@ def products_view(request):
 
 def checkout_view(request):
     return render(request, 'checkout_view.html')
+
+def checkout_complete_view(request):
+    return JsonResponse({
+        'status': 'OK'
+    })
