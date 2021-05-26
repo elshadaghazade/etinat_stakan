@@ -1,0 +1,206 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% load i18n %}
+
+{% block page_title %}{% trans "Оформления" %}{% endblock page_title %}
+
+{% block css_addition %}
+<link rel="stylesheet" href="{% static 'css/product-buy.css' %}" />
+{% endblock css_addition %}
+
+{% block content %}
+<div id="payment-popup">
+    <div class="payment-popup-content">
+        <span class="close"><i class="fas fa-times"></i></span>
+        <h3 class="payment-popup-title">{% trans "Оформление"%}</h3>
+        <hr>
+        <div class="payment-popup-input-div">
+            <label for="payment-name-input" class="me-2"><i class="fas fa-user me-2"></i>{% trans "Имя"%}</label>
+            <input id="payment-name-input" class="payment--input" type="text" placeholder="Имя">
+        </div>
+        <div class="payment-popup-input-div">
+            <label for="payment-mail-input" class="me-2"><i class="fas fa-envelope me-2"></i>{% trans "Эл. почта"%}</label>
+            <input id="payment-mail-input" class="payment--input" type="email" placeholder="Эл. почта">
+        </div>
+        <div class="payment-popup-input-div">
+            <label for="payment-phone-input" class="me-2"><i class="fas fa-phone-alt me-2"></i>{% trans "Телефон"%}</label>
+            <input id="payment-phone-input" class="payment--input" type="number" placeholder="Телефон">
+        </div>
+        <div class="payment-popup-input-div">
+            <label for="payment-delivery-selection" class="me-2"><i class="fas fa-truck me-2"></i>{% trans "Доставка"%}</label>
+            <select id="payment-delivery-selection" class="payment--input">
+                <option value="0"></option>
+                <option value="1">{% trans "Самовывоз"%}</option>
+                <option value="2">{% trans "Доставка по Москве - 300 руб."%}</option>
+                <option value="3">{% trans "Доставка за МКАД - 300 руб. + 40 руб/км."%}</option>
+            </select>
+        </div>
+        <div class="payment-popup-input-div">
+            <label for="payment-adress-input" class="me-2"><i class="fas fa-map-marker-alt me-2"></i>{% trans "Адрес"%}</label>
+            <input id="payment-adress-input" class="payment--input" type="text" placeholder="Адрес">
+        </div>
+        <div class="payment-popup-input-div">
+            <label for="payment-comment-input" class="me-2"><i class="fas fa-comments me-2"></i>{% trans "Коментарий"%}</label>
+            <textarea id="payment-comment-input" class="payment--input" placeholder="Коментарий"></textarea>
+        </div>
+        <div class="payment-popup-input-div">
+            <button id="confirm-button">{% trans "Оформить"%}</button>
+        </div>
+    </div>
+</div>
+
+<div class="container-product-buy">
+    <div class="bg-img">
+        <main class="product-buy-main mb-1">
+            <div class="product-buy-page px-5">
+                <div class="product-buy-page-1">
+                    <h1 class="text-center">{% trans "Оформления"%}</h1>
+                    <h3 class="text-center">
+                        <a href="{% url 'homepage' %}">{% trans "Главная"%}</a> / {% trans "Оформления"%}
+                    </h3>
+                </div>
+            </div>
+            <div class="wave-opacity-2">
+                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                    <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                    <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                    <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+                </svg>
+            </div>
+        </main>
+    </div>
+</div>
+
+<section class="row ms-0 me-0 product-buy-page-2">
+    <div class="col-md-7 col-sm-12 mx-auto">
+        <div class="section-title-buy"><span><i class=" fas fa-shopping-cart "></i> {% trans "Корзина"%}</span></div>
+        <div class="shopping-cart">
+            <!-- Product #1 -->
+            <div class="item">
+                <div class="buttons">
+                    <div class="delete-btn"><i class="fas fa-times"></i></div>
+                </div>
+
+                <div class="image">
+                    <img src="{% static 'images/cups/cup4.png' %}" alt="" />
+                </div>
+
+                <div class="description">
+                    <span>Sah Tea Cup</span>
+                </div>
+
+                <div class="quantity">
+                    <button class="minus-btn" type="button" name="button">
+                <img src="{% static 'images/product-buy/minus.svg' %}" alt="" />
+                </button>
+                    <input type="text" name="name" value="2">
+                    <button class="plus-btn" type="button" name="button">
+                <img class="m-0" src="{% static 'images/product-buy/plus.svg' %}" alt="" />
+                </button>
+                </div>
+
+                <div class="total-price">20,00₽</div>
+            </div>
+            <!-- Product #2 -->
+            <div class="item">
+                <div class="buttons">
+                    <div class="delete-btn"><i class="fas fa-times"></i></div>
+                </div>
+
+                <div class="image">
+                    <img src="{% static 'images/cups/cup3.png' %}" alt="" />
+                </div>
+
+                <div class="description">
+                    <span>Saffron Tea Cup</span>
+                </div>
+
+                <div class="quantity">
+                    <button class="minus-btn" type="button" name="button">
+                <img src="{% static 'images/product-buy/minus.svg' %}" alt="" />
+                </button>
+                    <input type="text" name="name" value="1">
+                    <button class="plus-btn" type="button" name="button">
+                <img class="m-0" src="{% static 'images/product-buy/plus.svg' %}" alt="" />
+                </button>
+                </div>
+
+                <div class="total-price">10,00₽</div>
+            </div>
+
+            <!-- Product #3 -->
+            <div class="item">
+                <div class="buttons">
+                    <div class="delete-btn"><i class="fas fa-times"></i></div>
+                </div>
+
+                <div class="image">
+                    <img src="{% static 'images/cups/cup6.png' %}" alt="" />
+                </div>
+
+                <div class="description">
+                    <span>Quince Tea Cup</span>
+                </div>
+
+                <div class="quantity">
+                    <button class="minus-btn" type="button" name="button">
+                <img src="{% static 'images/product-buy/minus.svg' %}" alt="" />
+                </button>
+                    <input type="text" name="name" value="3">
+                    <button class="plus-btn" type="button" name="button">
+                <img class="m-0" src="{% static 'images/product-buy/plus.svg' %}" alt="" />
+                </button>
+                </div>
+
+                <div class="total-price">30,00₽</div>
+            </div>
+
+            <div class="item-total p-3">
+                <div class="ps-3"><i class="fas fa-coins me-2"></i><strong>{% trans "Общее : "%}</strong></div>
+                <div class="pe-5"><span>60,00₽</span></div>
+            </div>
+            <div class="main-buttons">
+                <button class="btn-back" onclick="window.location.href='{% url 'products' %}'"><i class="fas fa-undo me-1"></i> {% trans "Назад"%}</button>
+                <button class="btn-payment">{% trans "Оформить"%} <i class="fas fa-check ms-1"></i></button>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}
+
+{% block js_addition %}
+<script type="text/javascript">
+        $('.minus-btn').on('click', function(e) {
+            e.preventDefault();
+            var $this = $(this);
+            var $input = $this.closest('div').find('input');
+            var value = parseInt($input.val());
+
+            if (value > 1) {
+                value = value - 1;
+            } else {
+                value = 0;
+            }
+
+            $input.val(value);
+
+        });
+
+        $('.plus-btn').on('click', function(e) {
+            e.preventDefault();
+            var $this = $(this);
+            var $input = $this.closest('div').find('input');
+            var value = parseInt($input.val());
+
+            if (value < 100) {
+                value = value + 1;
+            } else {
+                value = 100;
+            }
+
+            $input.val(value);
+        });
+    </script>
+{% endblock js_addition %}
+

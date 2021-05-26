@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
     <!-- Font Awsome -->
     <script src="https://kit.fontawesome.com/5484ef70c0.js" crossorigin="anonymous"></script>
+    {% block css_addition %}{% endblock css_addition %}
 </head>
 
 <body>
@@ -59,8 +60,8 @@
                                     <button href="#" class="position-relative menu-nav call-back-link">Обратный звонок <i class="fas fa-phone"></i></button>
                                 </li>
                                 <li class="nav-item-basket">
-                                    <button id="cart-button" class="position-relative menu-nav basket-link" onclick="window.location.href='./product-buy.html'"><i class="fas fa-shopping-cart"></i> <span>0 шт</span> <span>0.0₽</span></button>
-                                    <button id="cart-button-phone" class="position-relative menu-nav basket-link" onclick="window.location.href='./product-buy.html'"><i class="fas fa-shopping-cart"></i> <span>0 шт</span> <span>0.0₽</span></button>
+                                    <a id="cart-button" class="position-relative menu-nav basket-link" href="{% url 'checkout' %}"><i class="fas fa-shopping-cart"></i> <span>0 шт</span> <span>0.0₽</span></a>
+                                    <a id="cart-button-phone" class="position-relative menu-nav basket-link" href="{% url 'checkout' %}"><i class="fas fa-shopping-cart"></i> <span>0 шт</span> <span>0.0₽</span></a>
                                     <div class="cart-items">
                                         <div class="minicart">
                                             <div class="minicart--item-container">
@@ -74,7 +75,7 @@
                                                 <p class="minicart--subtotal-title">Всего товаров:</p>
                                                 <p class="minicart--subtotal-amount"><span id="cart-items-all-prices">0</span> ₽</p>
                                             </div>
-                                            <input id="minicart--input" onclick="window.location.href='./product-buy.html'" type="button" value="Просмотр сведений о корзине">
+                                            <input id="minicart--input" onclick="window.location.href='{% url 'checkout' %}'" type="button" value="Просмотр сведений о корзине">
                                         </div>
                                     </div>
                                 </li>

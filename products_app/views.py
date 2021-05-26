@@ -13,3 +13,6 @@ def products_view(request):
         'delivery_texts': deliveryTexts,
         'payment_texts': paymentTexts
     })
+
+def checkout_view(request):
+    return render(request, 'checkout_view.html')
