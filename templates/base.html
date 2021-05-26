@@ -60,8 +60,8 @@
                                     <button href="#" class="position-relative menu-nav call-back-link">Обратный звонок <i class="fas fa-phone"></i></button>
                                 </li>
                                 <li class="nav-item-basket">
-                                    <a id="cart-button" class="position-relative menu-nav basket-link" href="{% url 'checkout' %}"><i class="fas fa-shopping-cart"></i> <span>0 шт</span> <span>0.0₽</span></a>
-                                    <a id="cart-button-phone" class="position-relative menu-nav basket-link" href="{% url 'checkout' %}"><i class="fas fa-shopping-cart"></i> <span>0 шт</span> <span>0.0₽</span></a>
+                                    <a id="cart-button" class="position-relative menu-nav basket-link" href="{% url 'checkout' %}"><i class="fas fa-shopping-cart"></i> <span class="total-cart-count">0</span> шт <span class="total-cart-price">0.0</span>₽</a>
+                                    <a id="cart-button-phone" class="position-relative menu-nav basket-link" href="{% url 'checkout' %}"><i class="fas fa-shopping-cart"></i> <span class="total-cart-count">0</span> шт <span class="total-cart-price">0.0</span>₽</a>
                                     <div class="cart-items">
                                         <div class="minicart">
                                             <div class="minicart--item-container">
