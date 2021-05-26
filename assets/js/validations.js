@@ -180,9 +180,7 @@ $('#confirm-button').on('click', function () {
         }
     }else{
         confirm_correctCase();
-        $('.payment-popup-content').html('Поздравления !');
-        $('.payment-popup-content').css('text-align','center');
-        $('.payment-popup-content').css('top','30%');
+        
     }
 });
 
