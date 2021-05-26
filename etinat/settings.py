@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/2.2/ref/settings/
 
 import os
 from posixpath import basename
+from urllib.parse import urlparse
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -29,6 +30,17 @@ DEBUG = True
 ALLOWED_HOSTS = [
     '*'
 ]
+
+if not DEBUG:
+    SECURE_HSTS_SECONDS=True
+    SECURE_CONTENT_TYPE_NOSNIFF=True
+    SECURE_BROWSER_XSS_FILTER=True
+    SECURE_SSL_REDIRECT=True
+    SESSION_COOKIE_SECURE=True
+    CSRF_COOKIE_SECURE=True
+    SECURE_HSTS_INCLUDE_SUBDOMAINS=True
+    SECURE_HSTS_PRELOAD=True
+    X_FRAME_OPTIONS='SAMEORIGIN'
 
 
 # Application definition
@@ -85,10 +97,23 @@ WSGI_APPLICATION = 'etinat.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
+if not DEBUG:
+    DATABASE_URL = os.getenv('DATABASE_URL', 'postgres://gphvmvpulvbaoc:2b2c25c205ddcca9d961f926080def97b332975c23c3c7c979fdffb0debbd66b@localhost:5432/d1tprufjurqgu8')
+else:
+    DATABASE_URL = os.getenv('DATABASE_URL', 'postgres://gphvmvpulvbaoc:2b2c25c205ddcca9d961f926080def97b332975c23c3c7c979fdffb0debbd66b@localhost:5432/d1tprufjurqgu8')
+
+DATABASE_URL = urlparse(DATABASE_URL)
+
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': DATABASE_URL.path[1:],
+        'USER': DATABASE_URL.username,
+        'PASSWORD': DATABASE_URL.password,
+        'HOST': DATABASE_URL.hostname,
+        'PORT': DATABASE_URL.port,
+        'CONN_MAX_AGE': 600,
     }
 }
 
