@@ -1,0 +1,25 @@
+version: '3.1'
+
+services:
+
+  db:
+    image: postgres
+    restart: always
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_PASSWORD: 2b2c25c205ddcca9d961f926080def97b332975c23c3c7c979fdffb0debbd66b
+      POSTGRES_USER: gphvmvpulvbaoc
+      POSTGRES_DB: d1tprufjurqgu8
+    #   PGDATA: /var/lib/postgresql/data/pgdata
+    #   POSTGRES_INITDB_WALDIR: /var/lib/postgresql/data/trx_log_dir
+    # volumes:
+    #   - /app/db_data_dir/:/var/lib/postgresql/data/pgdata
+    #   - /app/db_trx_log_dir/:/var/lib/postgresql/data/trx_log_dir
+      
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
