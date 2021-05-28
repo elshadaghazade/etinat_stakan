@@ -10,6 +10,8 @@ def send_message_view(request):
     email = request.POST.get('email')
     message = request.POST.get('message')
 
+    SentMessage.objects.create(name=name, phone=phone, email=email, message=message)
+
     return JsonResponse({
         'status': 'OK'
     })
