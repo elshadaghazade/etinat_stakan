@@ -2030,6 +2030,16 @@ input[type="search"]::-webkit-search-cancel-button {
     transition: all 0.3s linear;
 }
 
+.normal-link, .normal-link:hover {
+    color: #0d6efd; 
+    text-decoration: underline; 
+    font-size: 1.75rem;
+    border: none;
+    padding: none;
+    display: inline;
+    background: none;
+}
+
 @media screen and (max-width:1400px) {
     .nav-item a {
         font-size: 1.05rem;

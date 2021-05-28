@@ -45,7 +45,7 @@ $('.call-back-link').on('click', function() {
 
 $('.close').on('click', function() {
     $('#callback-popup').css('display', 'none');
-})
+});
 
 $(window).on('click', function(event) {
     if ($('#callback-popup').is(event.target)) {

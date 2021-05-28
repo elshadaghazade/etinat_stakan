@@ -13,7 +13,7 @@
                 <li>
                     <i class="fas fa-ruble-sign"></i>
                     <p>
-                        Купленный товар стоимостью <strong>10 рублей</strong> можете продать <strong>15 раз (150 рублей)</strong> дороже себестоимости!
+                        Купленный товар стоимостью <strong><a href="#askPriceList">предложенной суммой</a></strong> можете продать <strong>намного</strong> дороже себестоимости!
                     </p>
                 </li>
                 <li>
@@ -65,6 +65,17 @@
         </div>
         <button class="btn my-2" onclick="window.location.href='{% url 'products' %}">Заказать</button>
     </div>
+    
+    <div class="business row" id="askPriceList">
+        <div id="offer" class="business-content col-lg-5 col-sm-12">
+            <h3>Если вы хотите узнать цену на оптовое количество звоните нам по телефону <a href="tel:+74992499000">+7 (499) 249-90-00</a> или <a href="tel:+79299009009">+7 (929) 900-90-09</a> или пишите на электронную почту <a href="mailto:info@etinat.org">info@etinat.org</a>. Или же <a href="javascript:void(0)" class="call-back-link normal-link">оставляйте нам свой номер, мы свяжемся с вами.</a></h3> 
+        </div>
+        <div class="business-img col-lg-7 col-sm-12">
+            <img src="{% static 'images/contact-us-to-get-price-list.png' %}" alt="" />
+        </div>
+    </div>
+
+
     <div class="business-carousel-section row">
         <div class="section-title" style="color: #366837">Наши награды</div>
         <div class="col-lg-5 business-certificate-content mb-4">

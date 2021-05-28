@@ -1,11 +1,19 @@
 var cartKeyword = "products-in-the-cart";
 
 function getItemsFromCart () {
-    if (choosed_products == null) {
-        choosed_products = [];
+    var cartItems = null;
+    if (!window.localStorage) {
+        return {};
     }
 
-    return choosed_products;
+    cartItems = JSON.parse(window.localStorage.getItem(cartKeyword));
+    if (!cartItems) {
+        cartItems = {};
+    }
+
+    console.log('xxx', cartItems);
+
+    return cartItems;
 }
 
 function isItemExistsInTheCart (id) {

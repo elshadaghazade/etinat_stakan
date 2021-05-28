@@ -1,15 +1,15 @@
 // Local Storage'dəki JSON massivi
-var choosed_products = JSON.parse(window.localStorage.getItem('choosed_products'));
+var cartItems = JSON.parse(window.localStorage.getItem(cartKeyword));
 // İlk dəfəyə məxsus yoxlanır
-if (choosed_products == null) {
-    choosed_products = [];
+if (cartItems == null) {
+    cartItems = [];
 }
 
 // Minicarta əlavə olunma
 $('.buy').on('click', function() {
-    choosed_products = JSON.parse(window.localStorage.getItem('choosed_products'));
-    if (choosed_products == null) {
-        choosed_products = {};
+    cartItems = JSON.parse(window.localStorage.getItem(cartKeyword));
+    if (cartItems == null) {
+        cartItems = {};
     }
     // Dizayn
     $('.bottom').removeClass('clicked');
@@ -23,35 +23,35 @@ $('.buy').on('click', function() {
         count: 1
     }
 
-    if (choosed_products[product.id]) {
-        choosed_products[product.id].count++;
+    if (cartItems[product.id]) {
+        cartItems[product.id].count++;
     } else {
-        choosed_products[product.id] = product;
+        cartItems[product.id] = product;
     }
 
-    window.localStorage.setItem('choosed_products', JSON.stringify(choosed_products));
+    window.localStorage.setItem(cartKeyword, JSON.stringify(cartItems));
     $('.minicart--ul').html('');
     fill_minicart();
 })
 
 $('.remove').on('click', function() {
     $(this).parents('.bottom').removeClass('clicked');
-    choosed_products = JSON.parse(window.localStorage.getItem('choosed_products'));
-    if (choosed_products == null) {
-        choosed_products = {};
+    cartItems = JSON.parse(window.localStorage.getItem(cartKeyword));
+    if (cartItems == null) {
+        cartItems = {};
     }
 })
 
 // Mini cartın LocalStorage'dən gələn data ilə doldurulması
 function fill_minicart() {
-    choosed_products = JSON.parse(window.localStorage.getItem('choosed_products'));
-    if (choosed_products == null) {
-        choosed_products = {};
+    cartItems = JSON.parse(window.localStorage.getItem(cartKeyword));
+    if (cartItems == null) {
+        cartItems = {};
     }
     var total_count = 0;
     var total_price = 0;
     $('.minicart--ul').html('');
-    for (let i of Object.values(choosed_products)) {
+    for (let i of Object.values(cartItems)) {
         add_to_cart(i.id, i.name, i.count, i.price, i.image);
         total_count += parseFloat(i.count);
         total_price += parseFloat(i.price) * parseInt(i.count);
@@ -59,15 +59,16 @@ function fill_minicart() {
     $('#cart-items-all-prices').html(`${total_price.toFixed(2)}`);
     $('#cart-items-all-count').html(`${total_count}`);
     updateTotalCartInfos();
+    fill_shopping_cart();
 }
 
 function updateTotalCartInfos() {
-    choosed_products = JSON.parse(window.localStorage.getItem('choosed_products'));
-    if (choosed_products == null) {
+    cartItems = JSON.parse(window.localStorage.getItem(cartKeyword));
+    if (cartItems == null) {
         $('.total-cart-count').html(0);
         $('.total-cart-price').html('0.0');
     } else {
-        var values = Object.values(choosed_products);
+        var values = Object.values(cartItems);
         var count = values.reduce((p1, p2) => {
             if (p1.count) {
                 return parseInt(p1.count) + parseInt(p2.count);
@@ -105,9 +106,8 @@ function add_to_cart(id, name, count, price, image) {
         <p class="choosed--items-count">
         <span style="font-weight: 600;">Число:<br></span><span id="cart-item-count">${count}</span></p>
         <p class="choosed--items-price">
-            <span style="font-weight: 600;">Цена товара:<br></span><span id="cart-item-price">${price}</span> ₽</p>
+            <span style="font-weight: 600;">Цена товара:<br></span><span id="cart-item-price"><a href="${_APP_SETTINGS.paths.wholesalersUri}#askPriceList">узнать цену</a></span></p>
         <p class="minicart--item-price">
-        <span style="font-weight: 600;">Общее:<br></span><span id="cart-item-total-price">${count*price}</span>₽ (<span id="cart-item-count">${count}</span>x)</p>
         <p class="minicart--item-remove">
             <div class="remove-from-minicart" data-id="${id}"><i class="fa fa-trash-o"></i></div>
         </p>
@@ -123,33 +123,30 @@ fill_minicart();
 $(document).on('click', '.remove-from-minicart', function() {
     var id = $(this).data('id');
     // Storage
-    choosed_products = JSON.parse(window.localStorage.getItem('choosed_products'));
-    if (choosed_products == null) {
-        choosed_products = {};
+    cartItems = JSON.parse(window.localStorage.getItem(cartKeyword));
+    if (cartItems == null) {
+        cartItems = {};
     }
-    console.log(choosed_products, id, choosed_products[id])
-    if (choosed_products[id]) {
-        delete choosed_products[id];
+    console.log(cartItems, id, cartItems[id])
+    if (cartItems[id]) {
+        delete cartItems[id];
     }
-    window.localStorage.setItem('choosed_products', JSON.stringify(choosed_products));
+    window.localStorage.setItem(cartKeyword, JSON.stringify(cartItems));
     fill_minicart();
 });
 
 
 /* ------------------ checkout page codes ---------------------- */
-
 $(document).on('click', '.minus-btn', function(e){
     var id = $(this).data('id');
     decreaseProductQty(id, 1);
     fill_minicart();
-    fill_shopping_cart();
 });
 
 $(document).on('click', '.plus-btn', function(e){
     var id = $(this).data('id');
     increaseProductQty(id, 1);
     fill_minicart();
-    fill_shopping_cart();
 });
 
 var timeout1 = -1;
@@ -167,7 +164,6 @@ $(document).on('input', '.checkout-product-qty', function(e){
 
         setProductQty(id, qty);
         fill_minicart();
-        fill_shopping_cart();
     }, 1000);
 });
 
@@ -175,18 +171,17 @@ $(document).on('click', '.delete-btn', function(){
     var id = $(this).data('id');
     removeProduct(id);
     fill_minicart();
-    fill_shopping_cart();
 });
 
 function fill_shopping_cart () {
-    var choosed_products = JSON.parse(window.localStorage.getItem('choosed_products'));
-    if (choosed_products == null) {
-        choosed_products = {};
+    var cartItems = JSON.parse(window.localStorage.getItem(cartKeyword));
+    if (cartItems == null) {
+        cartItems = {};
     }
 
     $('.shopping-cart #checkout-items').empty();
     var totalPrice = 0;
-    for(let product of Object.values(choosed_products)) {
+    for(let product of Object.values(cartItems)) {
         appendNewItem(product);
         totalPrice += parseFloat(product.price) * product.count;
     }
@@ -211,20 +206,18 @@ function appendNewItem (product) {
 
         <div class="quantity">
             <button class="minus-btn" type="button" name="button" data-id="${product.id}">
-        <img src="${minusSVG}" alt="" />
+        <img src="${_APP_SETTINGS.statics.minusSVG}" alt="" />
         </button>
             <input class="checkout-product-qty" data-id="${product.id}" type="text" name="name" value="${product.count}">
             <button class="plus-btn" type="button" name="button" data-id="${product.id}">
-        <img class="m-0" src="${plusSVG}" alt="" />
+        <img class="m-0" src="${_APP_SETTINGS.statics.plusSVG}" alt="" />
         </button>
         </div>
 
-        <div class="total-price"><span class="price-decimal">${(product.count * parseFloat(product.price)).toFixed(2)}</span>₽</div>
+        <div class="total-price"><span class="price-decimal"><a href="${_APP_SETTINGS.paths.wholesalersUri}#askPriceList">узнать цену</a></span></div>
     </div>`;
 
     $('.shopping-cart #checkout-items').append(content);    
 }
-
-fill_shopping_cart();
 
 /* -------------------------------------------------------------- */

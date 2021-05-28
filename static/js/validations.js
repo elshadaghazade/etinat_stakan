@@ -131,9 +131,17 @@ $('#callback-send-button').on('click', function () {
     }
 
     if ($('#callback-name-input').val().trim() != '' && $('#callback-number-input').val().trim() != '') {
-        $('#callback-popup').css('display', 'none');
-        $('#callback-name-input').val('')
-        $('#callback-number-input').val('')
+        var name = $('#callback-name-input').val();
+        var number = $('#callback-number-input').val();
+        $.ajax({
+            url: _APP_SETTINGS.paths.callbackUri,
+            data: $('#callback_form').serialize(),
+            method: 'post'
+        }).done(result => {
+            $('#callback-popup').css('display', 'none');
+            $('#callback-name-input').val('')
+            $('#callback-number-input').val('');
+        });
     }
 
 });
@@ -184,7 +192,7 @@ $('#confirm-button').on('click', function () {
         var items = encodeURIComponent(JSON.stringify(getItemsFromCart()));
 
         $.ajax({
-            url: checkoutUri,
+            url: _APP_SETTINGS.paths.checkoutUri,
             data: data + '&products=' + items,
             method: 'POST',
         }).done(result => {

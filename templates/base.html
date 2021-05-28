@@ -60,7 +60,9 @@
                                     <button href="#" class="position-relative menu-nav call-back-link">Обратный звонок <i class="fas fa-phone"></i></button>
                                 </li>
                                 <li class="nav-item-basket">
-                                    <a id="cart-button" class="position-relative menu-nav basket-link" href="{% url 'checkout' %}"><i class="fas fa-shopping-cart"></i> <span class="total-cart-count">0</span> шт <span class="total-cart-price">0.0</span>₽</a>
+                                    <a id="cart-button" class="position-relative menu-nav basket-link" href="{% url 'checkout' %}"><i class="fas fa-shopping-cart"></i> <span class="total-cart-count">0</span> шт 
+                                    {% comment %} <span class="total-cart-price">0.0</span>₽ {% endcomment %}
+                                    </a>
                                     <a id="cart-button-phone" class="position-relative menu-nav basket-link" href="{% url 'checkout' %}"><i class="fas fa-shopping-cart"></i> <span class="total-cart-count">0</span> шт <span class="total-cart-price">0.0</span>₽</a>
                                     <div class="cart-items">
                                         <div class="minicart">
@@ -71,10 +73,10 @@
                                             <ul class="minicart--ul">
                                                 
                                             </ul>
-                                            <div class="minicart--subtotal">
+                                            {% comment %} <div class="minicart--subtotal">
                                                 <p class="minicart--subtotal-title">Всего товаров:</p>
                                                 <p class="minicart--subtotal-amount"><span id="cart-items-all-prices">0</span> ₽</p>
-                                            </div>
+                                            </div> {% endcomment %}
                                             <input id="minicart--input" onclick="window.location.href='{% url 'checkout' %}'" type="button" value="Просмотр сведений о корзине">
                                         </div>
                                     </div>
@@ -86,14 +88,17 @@
             </div>
         </div>
         <div id="callback-popup" class="popup">
-            <div class="callback-popup-content">
-                <span class="close"><i class="fas fa-times"></i></span>
-                <label for="callback-name-input"><img src="{% static 'images/svg/user.svg' %}" alt="" style="height: 25px;width: 35px;">Имя</label>
-                <input id="callback-name-input" class="callback-input" type="text" />
-                <label for="callback-number-input"><img src="{% static 'images/svg/phone-call.svg' %}" alt="" style="height: 25px;width: 40px;"> Телефонный номер</label>
-                <input id="callback-number-input" class="callback-input" type="number" />
-                <button id="callback-send-button">Отправить</button>
-            </div>
+            <form id="callback_form" onsubmit="return false;">
+                <div class="callback-popup-content">
+                    <span class="close"><i class="fas fa-times"></i></span>
+                    <label for="callback-name-input"><img src="{% static 'images/svg/user.svg' %}" alt="" style="height: 25px;width: 35px;">Имя</label>
+                    <input id="callback-name-input" class="callback-input" name="name" type="text" />
+                    <label for="callback-number-input"><img src="{% static 'images/svg/phone-call.svg' %}" alt="" style="height: 25px;width: 40px;"> Телефонный номер</label>
+                    <input id="callback-number-input" name="phone" class="callback-input" type="number" />
+                    <button id="callback-send-button">Отправить</button>
+                </div>
+                {% csrf_token %}
+            </form>
         </div>
     </header>
 
@@ -101,7 +106,10 @@
     {% block content %}{% endblock content %}
     
     <!-- Scroll Button -->
-    <button id="scrolltoTop"><i class="fas fa-arrow-up"></i></button>
+    <button id="scrolltoTop">
+        <i class="fas fa-arrow-up"></i>
+        <span style="position: absolute; left: 50%; top: -30px; margin-left: -20px; color: black;">вверх</span>
+    </button>
     <!-- Footer begins -->
     <footer class="row ">
         <!-- <section class="container-fluid "> -->
@@ -165,9 +173,17 @@
 
     <!-- jQuery -->
     <script>
-        var minusSVG = '{% static 'images/product-buy/minus.svg' %}';
-        var plusSVG = '{% static 'images/product-buy/plus.svg' %}';
-        var checkoutUri = "{% url 'checkout_complete' %}";
+        const _APP_SETTINGS = {
+            statics: {
+                minusSVG: '{% static 'images/product-buy/minus.svg' %}',
+                plusSVG: '{% static 'images/product-buy/plus.svg' %}',
+            },
+            paths: {
+                checkoutUri: "{% url 'checkout_complete' %}",
+                wholesalersUri: "{% url 'wholesalers' %}",
+                callbackUri: "{% url 'callback' %}"
+            }
+        }
     </script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js "></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js " integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf " crossorigin="anonymous "></script>
