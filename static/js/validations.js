@@ -74,8 +74,10 @@ function correctCase() {
 $('#send-button-hm').on('click', function () {
     var name = $('#name-input-hm').val()
     var email = $('#email-input-hm').val()
+    var phone = $('#phone-input-hm').val()
     var message = $('#message-textarea-hm').val()
-    if (name.trim() == '' || email.trim() == '' || message.trim() == '') {
+    
+    if (name.trim() == '' || email.trim() == '' || message.trim() == '' || phone.trim() == '') {
         correctCase_hm();
         check_hm('#name-input-hm');
         check_hm('#email-input-hm');
@@ -90,7 +92,12 @@ $('#send-button-hm').on('click', function () {
             url: _APP_SETTINGS.paths.sendMessage,
             method: 'POST',
             data: $('#contact-form').serialize()
-        }).done(result => {}).catch(error => {})
+        }).done(result => {
+            $('#name-input-hm').val('')
+            $('#email-input-hm').val('')
+            $('#phone-input-hm').val('')
+            $('#message-textarea-hm').val('')
+        }).catch(error => {})
     }
 });
 
