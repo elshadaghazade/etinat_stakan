@@ -1,8 +1,9 @@
 {% extends 'base.html' %}
 
 {% load static %}
+{% load i18n %}
 
-{% block page_title %}Контакты{% endblock page_title %}
+{% block page_title %}{% trans "Контакты"%}{% endblock page_title %}
 
 {% block content %}
 <div class="container-fluid container-contact">
@@ -27,9 +28,9 @@
 <div id="question" class="contact-3">
     <div class="form row row ms-0 me-0">
         <img class="col-lg-6 col-sm-12 mx-auto" src="{% static 'images/svg/call.svg' %}" alt="" />
-        <form class="col-lg-6 col-sm-12 mx-auto form-inner my-5">
+        <form id="contact-form" onsubmit="return false;" class="col-lg-6 col-sm-12 mx-auto form-inner my-5">
             <p class="text-center">
-                По интересующим вопросам логистики, участия в выставках, предложениях о сотрудничестве Вы можете связаться напрямую через форму ниже. Ответ поступит в течении 10-15 минут.
+                {% trans "По интересующим вопросам логистики, участия в выставках, предложениях о сотрудничестве Вы можете связаться напрямую через форму ниже."%}
             </p>
             <!-- Form Name Input -->
             <div class="form-div">
@@ -38,7 +39,7 @@
                         <i class="fas fa-user"></i>
                     </div>
                     <div class="input-div">
-                        <input id="name-input" class="border-0 common-input" type="text" placeholder="Ваше имя" />
+                        <input id="name-input" name="name" class="border-0 common-input" type="text" placeholder="Ваше имя" />
                     </div>
                 </div>
                 <!-- Form Number Input -->
@@ -47,7 +48,7 @@
                         <i class="fas fa-mobile-alt"></i>
                     </div>
                     <div class="input-div">
-                        <input id="number-input" class="border-0 common-input" type="number" placeholder="Введите номер телефона" />
+                        <input id="number-input" name="phone" class="border-0 common-input" type="number" placeholder="Введите номер телефона" />
                     </div>
                 </div>
                 <!-- Form Email Input -->
@@ -56,7 +57,7 @@
                         <i class="far fa-envelope"></i>
                     </div>
                     <div class="input-div">
-                        <input id="email-input" class="border-0 common-input" type="email" placeholder="Введите ваш email" />
+                        <input id="email-input" name="email" class="border-0 common-input" type="email" placeholder="Введите ваш email" />
                     </div>
                 </div>
                 <!-- Form Message TextArea -->
@@ -65,12 +66,11 @@
                         <i class="far fa-list-alt"></i>
                     </div>
                     <div class="message-textarea-div">
-                        <textarea id="message-textarea" class="mt-2 ms-1 common-input" placeholder="Ваш запрос или предложение"></textarea>
+                        <textarea id="message-textarea" name="message" class="mt-2 ms-1 common-input" placeholder="Ваш запрос или предложение"></textarea>
                     </div>
                 </div>
-                <button id="send-button" type="button" class="btn-form">
-            Отправить
-        </button>
+                <button id="send-button" type="button" class="btn-form">Отправить</button>
+                {% csrf_token %}
             </div>
         </form>
     </div>
@@ -101,8 +101,9 @@
             </div>
             <h4>Телефон</h4>
             <p>
-                <a class="phone" href="tel:84992499000">8 (499) 249-90-00</a><br />
-                <a class="phone" href="tel:89299009009">8 (929) 900-90-09</a>
+                {% for phone in phones %}
+                    <a class="phone" href="tel:{{phone}}">{{phone}}</a><br />
+                {% endfor %}
             </p>
         </div>
         <div class="card card-body card-box col-md-3 col-sm-12 mt-3 mb-2">
@@ -111,8 +112,9 @@
             </div>
             <h4>Электронная почта</h4>
             <p>
-                <a class="mail" href="mailto:natte@gmail.com">NATTE@gmail.com</a><br />
-                <a class="mail" href="mailto:natte@gmail.com">NATTE@gmail.com</a>
+                {% for email in emails %}
+                    <a class="mail" href="mailto:{{email}}">{{email}}</a><br />
+                {% endfor %}
             </p>
         </div>
         <div class="card card-body card-box col-md-3 col-sm-12 mt-3 mb-2">
@@ -121,7 +123,10 @@
             </div>
             <h4>АДРЕС</h4>
             <p>
-                Россия, 125299, г.Москва<br/>ул.Большая Дорогомиловская, дом 1
+                {% for address in addresses %}
+                    {{address|safe}}<br>
+                {% endfor %}
+                
             </p>
         </div>
     </div>
@@ -131,7 +136,11 @@
                 <span><i class="far fa-building"></i></span>
             </div>
             <h4>Наименование организации</h4>
-            <p>Общество с ограниченной,<br />ответственностью «Русский стакан»</p>
+            <p>
+                {% for company_name in company_names %}
+                    {{company_name|safe}}
+                {% endfor %}
+            </p>
         </div>
         <div class="card card-body card-box col-md-3 col-sm-12 my-3">
             <div class="icon">
@@ -139,10 +148,10 @@
             </div>
             <h4>Банковские реквизиты</h4>
             <p>
-                ФИЛИАЛ ЦЕНТРАЛЬНЫЙ ПАО БАНКА "ФК ОТКРЫТИЕ",<br /><strong>
-            р/с 40702810104080000166</strong
-        >
-        </p>
+                {% for bank in banks %}
+                    {{bank|safe}}
+                {% endfor %}
+            </p>
     </div>
     <div class="card card-body card-box col-md-3 col-sm-12 my-3">
         <div class="icon">
@@ -150,9 +159,11 @@
         </div>
         <h4>ИНН / КПП</h4>
         <p>
-        <strong> 7713472961,<br />771301001</strong>
-            </p>
-        </div>
+            {% for iin in iins %}
+                {{iin|safe}}
+            {% endfor %}
+        </p>
+    </div>
     </div>
 </div>
 {% endblock content %}

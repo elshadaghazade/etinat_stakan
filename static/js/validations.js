@@ -20,7 +20,13 @@ $('#send-button').on('click', function () {
             `<p class="warning-p text-danger"><i class="me-2 fas fa-exclamation-triangle"></i>Пожалуйста, заполните все поля.</p>`
         )
     } else {
-        correctCase()
+        correctCase();
+
+        $.ajax({
+            url: _APP_SETTINGS.paths.sendMessage,
+            method: 'POST',
+            data: $('#contact-form').serialize()
+        }).done(result => {}).catch(error => {})
     }
 })
 

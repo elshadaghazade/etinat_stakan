@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from django.http import JsonResponse
+from django.views.decorators.http import require_http_methods
 from .models import *
 
 def products_view(request):
@@ -18,6 +19,7 @@ def products_view(request):
 def checkout_view(request):
     return render(request, 'checkout_view.html')
 
+@require_http_methods('POST')
 def checkout_complete_view(request):
     return JsonResponse({
         'status': 'OK'

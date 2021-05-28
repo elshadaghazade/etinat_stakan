@@ -8,3 +8,7 @@ class Callback(models.Model):
 
     def __str__(self):
         return f'{self.name}, {self.phone}, {self.created_at}'
+
+    class Meta:
+        verbose_name = _('Запрос на обратный звонок')
+        verbose_name_plural = _('Запросы на обратные звонки')
