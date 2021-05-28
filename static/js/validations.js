@@ -81,6 +81,7 @@ $('#send-button-hm').on('click', function () {
         correctCase_hm();
         check_hm('#name-input-hm');
         check_hm('#email-input-hm');
+        check_hm('#phone-input-hm');
         check_hm('#message-textarea-hm');
         $('<div class="warning-div"></div>').insertBefore('#send-button-hm')
         $('.warning-div').append(
