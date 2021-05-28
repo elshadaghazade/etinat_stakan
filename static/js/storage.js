@@ -11,8 +11,6 @@ function getItemsFromCart () {
         cartItems = {};
     }
 
-    console.log('xxx', cartItems);
-
     return cartItems;
 }
 
