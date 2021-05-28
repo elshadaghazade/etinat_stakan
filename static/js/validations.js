@@ -86,6 +86,11 @@ $('#send-button-hm').on('click', function () {
         )
     } else {
         correctCase_hm();
+        $.ajax({
+            url: _APP_SETTINGS.paths.sendMessage,
+            method: 'POST',
+            data: $('#contact-form').serialize()
+        }).done(result => {}).catch(error => {})
     }
 });
 
@@ -102,6 +107,7 @@ function check_hm(input_element) {
 function correctCase_hm() {
     $('#name-input-hm').css('border', '2px solid #306d34');
     $('#email-input-hm').css('border', '2px solid #306d34');
+    $('#phone-input-hm').css('border', '2px solid #306d34');
     $('#message-textarea-hm').css('border', '2px solid #306d34');
     $('.warning-div').remove();
 }
@@ -112,6 +118,8 @@ $('.common-input-hm').keyup(function (e) {
         check_hm('#name-input-hm');
     } else if ($(this).is('#email-input-hm')) {
         check_hm('#email-input-hm');
+    } else if ($(this).is('#phone-input-hm')) {
+        check_hm('#phone-input-hm');
     } else if ($(this).is('#message-textarea-hm')) {
         check_hm('#message-textarea-hm');
     }

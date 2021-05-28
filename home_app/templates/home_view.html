@@ -311,16 +311,19 @@
             <div class="col-lg-6 ">
                 <div class="card card-body card-design">
                     <p class="text-center my-3 mx-auto">
-                        Мы с удовольствием на них ответим.Заполните форму ниже и наш менеджер перезвонит Вам в течении 10 минут!
+                        Мы с удовольствием на них ответим.Заполните форму ниже и наш менеджер перезвонит Вам!
                     </p>
-                    <form class="home-form mx-auto my-3">
+                    <form class="home-form mx-auto my-3" id="contact-form">
                         <img src="{% static 'images/svg/user.svg' %}" alt=" " />
-                        <input id="name-input-hm" class="common-input-hm form-control text-center my-2 " type="text " placeholder="Ваше имя" />
+                        <input name="name" id="name-input-hm" class="common-input-hm form-control text-center my-2 " type="text " placeholder="Ваше имя" />
                         <img src="{% static 'images/svg/email.svg' %}" alt=" " />
-                        <input id="email-input-hm" class="common-input-hm form-control text-center my-2 " type="email " placeholder="Введите ваш email" />
+                        <input name="email" id="email-input-hm" class="common-input-hm form-control text-center my-2 " type="email " placeholder="Введите ваш email" />
+                        <img src="{% static 'images/svg/phone-call.svg' %}" alt=" " />
+                        <input name="phone" id="phone-input-hm" class="common-input-hm form-control text-center my-2 " type="tel " placeholder="Введите ваш телефон" />
                         <img src="{% static 'images/svg/text.svg' %}" alt=" " />
-                        <textarea id="message-textarea-hm" class="common-input-hm form-control text-center my-2" placeholder="Ваш запрос или предложение"></textarea>
+                        <textarea name="message" id="message-textarea-hm" class="common-input-hm form-control text-center my-2" placeholder="Ваш запрос или предложение"></textarea>
                         <button id="send-button-hm" type="button" class="btn-home-form my-2">Отправить</button>
+                        {% csrf_token %}
                     </form>
                 </div>
             </div>
