@@ -1,26 +1,20 @@
 {% extends 'base.html' %}
 
+{% load i18n %}
 {% load static %}
 
-{% block page_title %}
-
-{% trans "Главная" %}
-
-{% endblock page_title %}
+{% block page_title %}{% trans "Главная" %}{% endblock page_title %}
 
 {% block content %}
 <main class="container-fluid container-home">
-  <div id="etinat-stakan" class="row content row ms-0 me-0 px-5">
-    <div class="col-md-7 col-sm-8 content-1 mx-auto" style="z-index: 1">
-      <h1>
-        {% trans "начни день с" %} <br /><span style="color: #6a6b6a">{% trans "ETINAT" %}</span>{% trans "-стакан" %}
-      </h1>
-      <p style="font-weight: 600">{% trans "Просто добавь кипяток!" %}</p>
-      <button type="button" class="home-button" onclick="window.location.href='./wholeseller.html#offer'">
-       <span></span> {% trans "Информация для предпринимателей" %}
-      </button>
-    </div>
-        <div class="col-md-5 image header-cup" style="z-index: 1">
+    <div id="etinat-stakan" class="row content row ms-0 me-0 px-5">
+        <div class="col-md-7 col-sm-8 content-1 mx-auto" style="z-index: 1;">
+            <h1>{% trans "начни день" %} с<br><span style="color: #306d34;">{% trans "ETINAT" %}</span>{% trans "-стакан" %}</h1>
+            <p style="font-weight: 600;">{% trans "Просто добавь кипяток!" %}</p>
+            <button type="button" class="home-button" onclick="window.location.href='./wholeseller.html#offer'">
+        <span></span>{% trans "Информация для предпринимателей" %}</button>
+        </div>
+        <div class="col-md-5 image header-cup" style="z-index: 1;">
             <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active" data-bs-interval="3500">
@@ -84,465 +78,298 @@
                         <img src="{% static 'images/cups-all/Thyme-Tea.png' %}" class="d-block w-100" alt="...">
                     </div>
                 </div>
-             </div>
+            </div>
         </div>
-  </div>
+    </div>
 
-  <img src="{% static 'images/wavesNegative.svg' %}" alt="" class="wave"/>
+    <img src="{% static 'images/wavesNegative.svg' %}" alt="" class="wave" />
 </main>
 <section class="filtered-cup-section container">
-  <div class="row ms-0 me-0 my-5">
-    <div class="section-title col-lg-12 mb-3">
-        <span style="font-family: 'Rubik', sans-serif; font-weight: 600">
-            <span style="color: #306d34"> {% trans "ETINAT" %} 
-            </span> {% trans "-стакан это" %} 
-        </span>
-      <i class="fas fa-long-arrow-alt-down" style="color: #306d34"></i>
+    <div class="row ms-0 me-0 my-5">
+        <div class="section-title col-lg-12 mb-3"><span style="font-family:'Rubik',sans-serif;font-weight: 600;"><span style="color: #306d34;">ETINAT</span>-стакан это</span> <i class="fas fa-long-arrow-alt-down" style="color: #306d34;"></i>
+        </div>
+        <div class="col-lg-6 filtered-cup-image">
+            <img src="{% static 'images/cup-filtered2.png' %}" alt="">
+            <span class="first-circle-icon"><i class="fas fa-certificate"></i>
+                <small>1</small>
+            </span>
+            <span class="second-circle-icon"><i class="fas fa-certificate"></i>
+                <small>2</small>
+            </span>
+            <span class="third-circle-icon"><i class="fas fa-certificate"></i>
+                <small>3</small>
+            </span>
+            <span class="fourth-circle-icon"><i class="fas fa-certificate"></i>
+                <small>4</small>
+            </span>
+            <!-- <span>5</span> -->
+        </div>
+        <div class="col-lg-6 filtered-cup-content">
+            <div class="default active circle ">
+                <p><i class="fab fa-envira "></i> {% trans "ПОЛНОСТЬЮ РОССИЙСКОЕ ИЗОБРЕТЕНИЕ" %} </p>
+                <p><i class="fab fa-envira "></i> {% trans "ПАТЕНТ НА ВСЮ РОССИЮ И 16 СТРАН ЕВРОСОЮЗА" %}</p>
+                <p><i class="fab fa-envira "></i> {% trans "СТАКАН ВЫПОЛНЕН ИЗ ЦЕЛЛЮЛОЗНОГО КАРТОНА" %} </p>
+                <p><i class="fab fa-envira "></i> {% trans "УНИКАЛЬНАЯ РЕЦЕПТУРА ИНГРЕДИЕНТОВ" %} </p>
+                <p><i class="fab fa-envira "></i> {% trans "СОБСТВЕННОЕ ПРОИЗВОДСТВО В Г.ПОДОЛЬСК М.О." %}</p>
+                <p><i class="fab fa-envira "></i> {% trans "ВСЯ ПРОДУКЦИЯ СЕРТИФИЦИРОВАНА" %}</p>
+            </div>
+            <div class="first-circle circle ">
+                <h5>{% trans "Одноразовый бумажный стакан ёмкостью 250мл. выполненный из целлюлозного картона!" %}</h5>
+                <p><i class="fab fa-envira "></i> {% trans "При нагревании не выделяет вредных веществ,отсутствует неприятный запах" %} </p>
+                <p><i class="fab fa-envira "></i> {% trans "Минимальный шанс обжечься" %}</p>
+                <p><i class="fab fa-envira "></i> {% trans "Крутой дизайн" %}</p>
+                <p><i class="fab fa-envira "></i> {% trans "Возможность нанести собственный прин" %}т</p>
+            </div>
+            <div class="second-circle circle ">
+                <h5>{% trans "Одноразовая крышка-ложка выполненная из целлюлозного картона!" %}</h5>
+                <p><i class="fab fa-envira "></i> {% trans "Верхняя защитная крышка является дополнительно 'КРЫШКОЙ-ЛОЖКОЙ' , которая после вскрытия складывается по линиям сгиба и используется для размешивания напитка" %}</p>
+                <p><i class="fab fa-envira "></i> {% trans "Запрессовывается в стакан без применения клея" %}</p>
+            </div>
+            <div class="third-circle circle ">
+                <h5>{% trans "Мембрана выполненная из целлюлозного картона!" %}</h5>
+                <p><i class="fab fa-envira "></i> {% trans "Удерживает основную массу завариваемых ингредиентов" %} </p>
+                <p><i class="fab fa-envira "></i> {% trans "Запрессовывается в стакан без применения клея" %}</p>
+            </div>
+            <div class="fourth-circle circle ">
+                <h5>{% trans "Вкуснейшие и качественные ингредиенты без глутамата и ГМО!" %}</h5>
+                <p><i class="fab fa-envira "></i> {% trans "Только листовые чаи — чёрный, зелёный" %}</p>
+                <p><i class="fab fa-envira "></i> {% trans "Проверенная рецептура" %}</p>
+                <p><i class="fab fa-envira "></i> {% trans "Строгая порционность" %}</p>
+                <p><i class="fab fa-envira "></i> {% trans "Разнообразие ингредиентов" %}</p>
+            </div>
+        </div>
     </div>
-    <div class="col-lg-6 filtered-cup-image">
-      <img src="{% static 'images/cup-filtered2.png' %}" alt="" />
-      <span class="first-circle-icon"><i class="fas fa-certificate"></i>
-        <small>1</small>
-      </span>
-      <span class="second-circle-icon"><i class="fas fa-certificate"></i>
-        <small>2</small>
-      </span>
-      <span class="third-circle-icon"><i class="fas fa-certificate"></i>
-        <small>3</small>
-      </span>
-      <span class="fourth-circle-icon"><i class="fas fa-certificate"></i>
-        <small>4</small>
-      </span>
-      <!-- <span>5</span> -->
-    </div>
-    <div class="col-lg-6 filtered-cup-content">
-      <div class="default active circle">
-        <p>
-          <i class="fab fa-envira"></i> {% trans "ПОЛНОСТЬЮ РОССИЙСКОЕ ИЗОБРЕТЕНИЕ" %}
-        </p>
-        <p>
-          <i class="fab fa-envira"></i> {% trans "ПАТЕНТ НА ВСЮ РОССИЮ И 16 СТРАН ЕВРОСОЮЗА" %}
-        </p>
-        <p>
-          <i class="fab fa-envira"></i> {% trans "СТАКАН ВЫПОЛНЕН ИЗ ЦЕЛЛЮЛОЗНОГО КАРТОНА" %}
-        </p>
-        <p>
-          <i class="fab fa-envira"></i> {% trans "УНИКАЛЬНАЯ РЕЦЕПТУРА ИНГРЕДИЕНТОВ" %}
-        </p>
-        <p>
-          <i class="fab fa-envira"></i> {% trans "СОБСТВЕННОЕ ПРОИЗВОДСТВО В Г.ПОДОЛЬСК М.О." %}
-        </p>
-        <p>
-          <i class="fab fa-envira"></i> {% trans "ВСЯ ПРОДУКЦИЯ СЕРТИФИЦИРОВАНА" %}
-        </p>
-      </div>
-      <div class="first-circle circle">
-        <h5>
-          {% trans "Одноразовый бумажный стакан ёмкостью 250мл. выполненный из целлюлозного картона!" %}
-        </h5>
-        <p>
-          <i class="fab fa-envira"></i> {% trans "При нагревании не выделяет вредных веществ,отсутствует неприятный запах" %}
-        </p>
-        <p>
-          <i class="fab fa-envira"></i> {% trans "Минимальный шанс обжечься" %}
-        </p>
-        <p><i class="fab fa-envira"></i> {% trans "Крутой дизайн" %}</p>
-        <p>
-          <i class="fab fa-envira"></i> {% trans "Возможность нанести собственный принт" %}
-        </p>
-      </div>
-      <div class="second-circle circle">
-        <h5>
-          {% trans "Одноразовая крышка-ложка выполненная из целлюлозного картона!" %}
-        </h5>
-        <p>
-          <i class="fab fa-envira"></i> {% trans 'Верхняя защитная крышка является дополнительно "КРЫШКОЙ-ЛОЖКОЙ ", которая после вскрытия складывается по линиям сгиба и используется для размешивания напитка' %}
-        </p>
-        <p>
-          <i class="fab fa-envira"></i> {% trans "Запрессовывается в стакан без применения клея" %}
-        </p>
-      </div>
-      <div class="third-circle circle">
-        <h5>{% trans "Мембрана выполненная из целлюлозного картона!" %}</h5>
-        <p>
-          <i class="fab fa-envira"></i> {% trans "Удерживает основную массу завариваемых ингредиентов" %}
-        </p>
-        <p>
-          <i class="fab fa-envira"></i> {% trans "Запрессовывается в стакан без применения клея" %}
-        </p>
-      </div>
-        <div class="fourth-circle circle">
-            <h5>
-                {% trans "Вкуснейшие и качественные ингредиенты без глутамата и ГМО!" %}
-            </h5>
-            <p>
-                <i class="fab fa-envira"></i> {% trans "Только листовые чаи — чёрный, зелёный" %}
-            </p>
-            <p><i class="fab fa-envira"></i> {% trans "Проверенная рецептура" %}</p>
-            <p><i class="fab fa-envira"></i> {% trans "Строгая порционность" %}</p>
-            <p>
-                <i class="fab fa-envira"></i> {% trans "Разнообразие ингредиентов" %}
-            </p>
-      </div>
-    </div>
-  </div>
+
 </section>
 <section class="about-us row ms-0 me-0">
-  <div class="section-title">
-    <span> {% trans "Почему нас выбирают" %} </span>
-  </div>
-  <div class="about-1 col-lg-4 col-sm-12">
-    <div class="item-1 row">
-      <div class="about-item col-lg-10 col-sm-8">
-        <h5>{% trans "РОССИЙСКОЕ" %}</h5>
-        <p>{% trans "ПОЛНОСТЬЮ РОССИЙСКОЕ ИЗОБРЕТЕНИЕ" %}</p>
-      </div>
-      <div
-        class="about-icon icon-1 col-lg-2 col-sm-4"
-        data-id="1"
-        data-color="rgba(139, 113, 140, 0.643)"
-      >
-        <img src="{% static 'images/cups/cup1.png' %}" alt="" />
-      </div>
+    <div class="section-title"><span>{% trans "Почему нас выбирают" %}</span></div>
+    <div class="about-1 col-lg-4 col-sm-12">
+        <div class="item-1 row">
+            <div class="about-item col-lg-10 col-sm-8">
+                <h5>{% trans "РОССИЙСКОЕ" %}</h5>
+                <p>П{% trans "ОЛНОСТЬЮ РОССИЙСКОЕ ИЗОБРЕТЕНИЕ" %}</p>
+            </div>
+            <div class="about-icon icon-1 col-lg-2 col-sm-4" data-id="1" data-color="rgba(139, 113, 140, 0.643)">
+                <img src="{% static 'images/cups/cup1.png' %}" alt="" />
+            </div>
+        </div>
+        <div class="item-1 row">
+            <div class="about-item col-lg-10 col-sm-8">
+                <h5>{% trans "ЦЕЛЛЮЛОЗНОГО" %}</h5>
+                <p>{% trans "СТАКАН ВЫПОЛНЕН ИЗ ЦЕЛЛЮЛОЗНОГО КАРТОНА" %}</p>
+            </div>
+            <div class="about-icon icon-2 col-lg-2 col-sm-4" data-id="2" data-color="rgba(134, 127, 117, 0.643)">
+                <img src="{% static 'images/cups/cup2.png' %}" alt="" />
+            </div>
+        </div>
+        <div class="item-1 row">
+            <div class="about-item col-lg-10 col-sm-8">
+                <h5>{% trans "ПРОИЗВОДСТВО" %}</h5>
+                <p>{% trans "СОБСТВЕННОЕ ПРОИЗВОДСТВО В Г.ПОДОЛЬСК М.О." %}</p>
+            </div>
+            <div class="about-icon icon-3 col-lg-2 col-sm-4" data-id="3" data-color="rgb(241, 83, 55, 0.643)">
+                <img src="{% static 'images/cups/cup3.png' %}" alt="" />
+            </div>
+        </div>
     </div>
-    <div class="item-1 row">
-      <div class="about-item col-lg-10 col-sm-8">
-        <h5>{% trans "ЦЕЛЛЮЛОЗНОГО" %}</h5>
-        <p>{% trans "СТАКАН ВЫПОЛНЕН ИЗ ЦЕЛЛЮЛОЗНОГО КАРТОНА" %}</p>
-      </div>
-      <div
-        class="about-icon icon-2 col-lg-2 col-sm-4"
-        data-id="2"
-        data-color="rgba(134, 127, 117, 0.643)"
-      >
-        <img src="{% static 'images/cups/cup2.png' %}" alt="" />
-      </div>
+    <div class="about-2 col-lg-4 col-sm-12">
+        <div class="home-image">
+            <img src="{% static 'images/cups/cup1.png' %}">
+        </div>
     </div>
-    <div class="item-1 row">
-      <div class="about-item col-lg-10 col-sm-8">
-        <h5>{% trans "ПРОИЗВОДСТВО" %}</h5>
-        <p>{% trans "СОБСТВЕННОЕ ПРОИЗВОДСТВО В Г.ПОДОЛЬСК М.О." %}</p>
-      </div>
-      <div
-        class="about-icon icon-3 col-lg-2 col-sm-4"
-        data-id="3"
-        data-color="rgb(241, 83, 55, 0.643)"
-      >
-        <img src="{% static 'images/cups/cup3.png' %}" alt="" />
-      </div>
+    <div class="about-3 col-lg-4 col-sm-12">
+        <div class="item-1 row ms-1">
+            <div class="about-icon icon-4 col-lg-2 col-sm-4" data-id="4" data-color="rgb(114, 46, 139, 0.643)">
+                <img src="{% static 'images/cups/cup4.png' %}" alt="" />
+            </div>
+            <div class="about-item col-lg-10 col-sm-8">
+                <h5>{% trans "ПРОСТОТА" %}</h5>
+                <p>{% trans "ПРОСТОТА УЧЁТА И ОТЧЁТНОСТИ" %}</p>
+            </div>
+        </div>
+        <div class="item-1 row ms-1">
+            <div class="about-icon icon-5 col-lg-2 col-sm-4" data-id="5" data-color="rgba(243, 148, 190, 0.643)">
+                <img src="{% static 'images/cups/cup5.png' %}" alt="" />
+            </div>
+            <div class="about-item col-lg-10 col-sm-8">
+                <h5>{% trans "СЕРТИФИЦИРОВАНА" %}</h5>
+                <p>{% trans "ВСЯ ПРОДУКЦИЯ СЕРТИФИЦИРОВАНА" %}</p>
+            </div>
+        </div>
+        <div class="item-1 row ms-1">
+            <div class="about-icon icon-6 col-lg-2 col-sm-4" data-id="6" data-color="rgba(253, 226, 70, 0.582)">
+                <img src="{% static 'images/cups/cup6.png' %}" alt="" />
+            </div>
+            <div class="about-item col-lg-10 col-sm-8">
+                <h5>{% trans "ЛЕГКО" %}</h5>
+                <p>{% trans "ЛЕГКО УТИЛИЗИРУЕТСЯ РАБОТАЕМ С 2010 ГОДА" %}</p>
+            </div>
+        </div>
     </div>
-  </div>
-  <div class="about-2 col-lg-4 col-sm-12">
-    <div class="home-image">
-      <img src="{% static 'images/cups/cup1.png' %}" />
-    </div>
-  </div>
-  <div class="about-3 col-lg-4 col-sm-12">
-    <div class="item-1 row ms-1">
-      <div
-        class="about-icon icon-4 col-lg-2 col-sm-4"
-        data-id="4"
-        data-color="rgb(114, 46, 139, 0.643)"
-      >
-        <img src="{% static 'images/cups/cup4.png' %}" alt="" />
-      </div>
-      <div class="about-item col-lg-10 col-sm-8">
-        <h5>{% trans "ПРОСТОТА" %}</h5>
-        <p>{% trans " ПРОСТОТА УЧЁТА И ОТЧЁТНОСТИ" %}</p>
-      </div>
-    </div>
-    <div class="item-1 row ms-1">
-      <div
-        class="about-icon icon-5 col-lg-2 col-sm-4"
-        data-id="5"
-        data-color="rgba(243, 148, 190, 0.643)"
-      >
-        <img src="{% static 'images/cups/cup5.png' %}" alt="" />
-      </div>
-      <div class="about-item col-lg-10 col-sm-8">
-        <h5>{% trans "СЕРТИФИЦИРОВАНА" %}</h5>
-        <p>{% trans "ВСЯ ПРОДУКЦИЯ СЕРТИФИЦИРОВАНА" %}</p>
-      </div>
-    </div>
-    <div class="item-1 row ms-1">
-      <div
-        class="about-icon icon-6 col-lg-2 col-sm-4"
-        data-id="6"
-        data-color="rgba(253, 226, 70, 0.582)"
-      >
-        <img src="{% static 'images/cups/cup6.png' %}" alt="" />
-      </div>
-      <div class="about-item col-lg-10 col-sm-8">
-        <h5>{% trans "ЛЕГКО " %}</h5>
-        <p>{% trans "ЛЕГКО УТИЛИЗИРУЕТСЯ РАБОТАЕМ С 2010 ГОДА" %}</p>
-      </div>
-    </div>
-  </div>
 </section>
 
-<section class="row row ms-0 me-0 mb-5">
-  <div class="photos col-md-12 mx-auto">
-    <div class="section-title">
-      <span> {% trans "Везде будет к месту" %} </span>
+<section class="row row ms-0 me-0 mb-5 ">
+    <div class="photos col-md-12 mx-auto ">
+        <div class="section-title "><span>{% trans "Везде будет к месту" %}</span></div>
+        <div class="row ">
+            <div class="col-lg-2 col-sm-4">
+                <div class="photos-div">
+                    <img src="{% static 'images/photo1.png' %}" alt=" " />
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-4">
+                <div class="photos-div ">
+                    <img src="{% static 'images/photo2.png' %}" alt=" " />
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-4">
+                <div class="photos-div">
+                    <img src="{% static 'images/photo6.png' %}" alt=" " />
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-4">
+                <div class="photos-div">
+                    <img src="{% static 'images/photo5.png' %}" alt=" " />
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-4">
+                <div class="photos-div">
+                    <img src="{% static 'images/photo3.png' %}" alt=" " />
+                </div>
+            </div>
+            <div class="col-lg-2 col-sm-4">
+                <div class="photos-div">
+                    <img src="{% static 'images/photo4.png' %}" alt=" " />
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="row">
-      <div class="col-lg-2 col-sm-4">
-        <div class="photos-div">
-          <img src="{% static 'images/photo1.png' %}" alt=" " />
-        </div>
-      </div>
-      <div class="col-lg-2 col-sm-4">
-        <div class="photos-div">
-          <img src="{% static 'images/photo2.png' %}" alt=" " />
-        </div>
-      </div>
-      <div class="col-lg-2 col-sm-4">
-        <div class="photos-div">
-          <img src="{% static 'images/photo6.png' %}" alt=" " />
-        </div>
-      </div>
-      <div class="col-lg-2 col-sm-4">
-        <div class="photos-div">
-          <img src="{% static 'images/photo5.png' %}" alt=" " />
-        </div>
-      </div>
-      <div class="col-lg-2 col-sm-4">
-        <div class="photos-div">
-          <img src="{% static 'images/photo3.png' %}" alt=" " />
-        </div>
-      </div>
-      <div class="col-lg-2 col-sm-4">
-        <div class="photos-div">
-          <img src="{% static 'images/photo4.png' %}" alt=" " />
-        </div>
-      </div>
-    </div>
-  </div>
 </section>
 <section class="compare container">
-  <div class="row row ms-0 me-0">
-    <div class="section-title">
-      <span> {% trans "давайте сравним" %} </span>
+    <div class="row row ms-0 me-0">
+        <div class="section-title "><span>{% trans "давайте сравним" %}</span></div>
+        <div class="cup col-md-6 green">
+            <div class="cup-image">
+                <img src="{% static 'images/cup-filtered-big.png' %}" alt=" " />
+            </div>
+            <div class="criterias">
+                <ul>
+                    <li>
+                        <i class="fas fa-check green "></i> {% trans "Сохраняет свою изначальную форму, бережёт ваши руки, отсутствует посторонний запах." %}
+                    </li>
+                    <li>
+                        <i class="fas fa-check green "></i> {% trans "Если заполнить кипятком - заварится вкусный и ароматный чай, ничего лишнего." %}
+                    </li>
+                    <li>
+                        <i class="fas fa-check green "></i> {% trans "Мешалка в комплекте, выполненная из того же картона, что и сам ETINAT-стакан." %}
+                    </li>
+                    <li>
+                        <i class="fas fa-check green "></i> {% trans "Мембрана которая позволяет использовать листовые чаи с фруктами и лепестками цветов не позволяя чаинкам всплывать." %}
+                    </li>
+                    <li>
+                        <i class="fas fa-check green "></i> {% trans "Вкуснейшие ингредиенты уже внутри, нет нужды покупать их отдельно." %}
+                    </li>
+                    <li>
+                        <i class="fas fa-check green "></i> {% trans "К донышку прикреплён сошет с сладкой смесью. Удобно держать, удобно взять с собой. Презентабельный внешний вид." %}
+                    </li>
+                    <li>
+                        <i class="fas fa-check green "></i> {% trans "Экологически безопасен, вносит свою лепту в сохранение окружающей среды, время разложения - до 3х месяцев." %}
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="cup col-md-6 red ">
+            <div class="cup-image ">
+                <img src="{% static 'images/plast_stakan-min-min-u5127.png' %}" alt=" " />
+            </div>
+            <div class="criterias ">
+                <ul>
+                    <li>
+                        <i class="fas fa-check red "></i> {% trans "Деформируется, обжигает руки, посторонний запах в 8 стаканчиках из 10." %}
+                    </li>
+                    <li>
+                        <i class="fas fa-check red "></i> {% trans "Если заполнить кипятком - заварится чай, а так же канцерогены и токсины." %}
+                    </li>
+                    <li>
+                        <i class="fas fa-check red "></i> {% trans "Мешалку надо покупать отдельно, при чём тоже пластиковую." %}
+                    </li>
+                    <li>
+                        <i class="fas fa-check red "></i> {% trans "Отсутствует мембрана, что обрекает пользоваться пакетированным чаем. Не все пакетированные чаи хорошего качества." %}
+                    </li>
+                    <li>
+                        <i class="fas fa-check red "></i> {% trans "Отдельно надо покупать ингредиенты." %}
+                    </li>
+                    <li>
+                        <i class="fas fa-check red "></i> {% trans "Сахар надо покупать отдельно. Неудобно держать, неудобно взять с собой. Выглядит уныло." %}
+                    </li>
+                    <li>
+                        <i class="fas fa-check red "></i> {% trans "Экологически опасен, т.к среднее время разложения - 600 месяцев или 50 лет." %}
+                    </li>
+                </ul>
+            </div>
+        </div>
     </div>
-    <div class="cup col-md-6 green">
-      <div class="cup-image">
-        <img src="{% static 'images/cup-filtered-big.png' %}" alt=" " />
-      </div>
-      <div class="criterias">
-        <ul>
-          <li>
-            <i class="fas fa-check green"></i> {% trans "Сохраняет свою
-            изначальную форму, бережёт ваши руки, отсутствует посторонний
-            запах." %}
-          </li>
-          <li>
-            <i class="fas fa-check green"></i> {% trans "Если заполнить кипятком
-            - заварится вкусный и ароматный чай, ничего лишнего." %}
-          </li>
-          <li>
-            <i class="fas fa-check green"></i> {% trans "Мешалка в комплекте,
-            выполненная из того же картона, что и сам ETINAT-стакан." %}
-          </li>
-          <li>
-            <i class="fas fa-check green"></i> {% trans "Мембрана которая
-            позволяет использовать листовые чаи с фруктами и лепестками цветов
-            не позволяя чаинкам всплывать." %}
-          </li>
-          <li>
-            <i class="fas fa-check green"></i> {% trans "Вкуснейшие ингредиенты
-            уже внутри, нет нужды покупать их отдельно." %}
-          </li>
-          <li>
-            <i class="fas fa-check green"></i> {% trans " К донышку прикреплён
-            сошет с сладкой смесью. Удобно держать, удобно взять с собой.
-            Презентабельный внешний вид." %}
-          </li>
-          <li>
-            <i class="fas fa-check green"></i> {% trans "Экологически безопасен,
-            вносит свою лепту в сохранение окружающей среды, время разложения -
-            до 3х месяцев." %}
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="cup col-md-6 red">
-      <div class="cup-image">
-        <img
-          src="{% static 'images/plast_stakan-min-min-u5127.png' %}"
-          alt=" "
-        />
-      </div>
-      <div class="criterias">
-        <ul>
-          <li>
-            <i class="fas fa-check red"></i> {% trans "Деформируется, обжигает
-            руки, посторонний запах в 8 стаканчиках из 10." %}
-          </li>
-          <li>
-            <i class="fas fa-check red"></i> {% trans "Если заполнить кипятком -
-            заварится чай, а так же канцерогены и токсины." %}
-          </li>
-          <li>
-            <i class="fas fa-check red"></i> {% trans "Мешалку надо покупать
-            отдельно, при чём тоже пластиковую." %}
-          </li>
-          <li>
-            <i class="fas fa-check red"></i> {% trans "Отсутствует мембрана, что
-            обрекает пользоваться пакетированным чаем. Не все пакетированные чаи
-            хорошего качества." %}
-          </li>
-          <li>
-            <i class="fas fa-check red"></i> {% trans "Отдельно надо покупать
-            ингредиенты." %}
-          </li>
-          <li>
-            <i class="fas fa-check red"></i> {% trans "Сахар надо покупать
-            отдельно. Неудобно держать, неудобно взять с собой. Выглядит уныло."
-            %}
-          </li>
-          <li>
-            <i class="fas fa-check red"></i> {% trans "Экологически опасен, т.к
-            среднее время разложения - 600 месяцев или 50 лет." %}
-          </li>
-        </ul>
-      </div>
-    </div>
-  </div>
 </section>
-<div class="row row ms-0 me-0 mb-5">
-  <div class="products products-bg col-md-12 mx-auto">
-    <div class="section-title">
-      <span style="font-family: 'Rubik', sans-serif; font-weight: 500">
-        {% trans "Наше производство" %}
-      </span>
+<div class="row row ms-0 me-0 mb-5 ">
+    <div class="products products-bg col-md-12 mx-auto">
+        <div class="section-title "><span style="font-family: 'Rubik', sans-serif; font-weight: 500 ">{% trans "Наше производство" %}</span></div>
+        <div id="carouselExampleFade2" class="carousel slide business-carousel-home carousel-dark" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="2000">
+                    <img src="{% static 'images/production1.jpg' %}" class="d-block w-100 " alt="... " />
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="{% static 'images/production2.jpg' %}" class="d-block w-100 " alt="... " />
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="{% static 'images/production3.jpg' %}" class="d-block w-100 " alt="... " />
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="{% static 'images/production4.jpg' %}" class="d-block w-100 " alt="... " />
+                </div>
+                <div class="carousel-item" data-bs-interval="2000">
+                    <img src="{% static 'images/production5.jpg' %}" class="d-block w-100 " alt="... " />
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+                <span class="visually-hidden">{% trans "Previous" %}</span>
+                </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade2" data-bs-slide="next">
+                <span class="carousel-control-next-icon " aria-hidden="true"></span>
+                <span class="visually-hidden">{% trans "Next" %}</span>
+                </button>
+        </div>
     </div>
-    <div
-      id="carouselExampleFade2"
-      class="carousel slide business-carousel-home carousel-dark"
-      data-bs-ride="carousel"
-    >
-      <div class="carousel-inner">
-        <div class="carousel-item active" data-bs-interval="2000">
-          <img
-            src="{% static 'images/production1.jpg' %}"
-            class="d-block w-100"
-            alt="... "
-          />
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img
-            src="{% static 'images/production2.jpg' %}"
-            class="d-block w-100"
-            alt="... "
-          />
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img
-            src="{% static 'images/production3.jpg' %}"
-            class="d-block w-100"
-            alt="... "
-          />
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img
-            src="{% static 'images/production4.jpg' %}"
-            class="d-block w-100"
-            alt="... "
-          />
-        </div>
-        <div class="carousel-item" data-bs-interval="2000">
-          <img
-            src="{% static 'images/production5.jpg' %}"
-            class="d-block w-100"
-            alt="... "
-          />
-        </div>
-      </div>
-      <button
-        class="carousel-control-prev"
-        type="button"
-        data-bs-target="#carouselExampleFade2"
-        data-bs-slide="prev"
-      >
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden"> {% trans "Previous" %} </span>
-      </button>
-      <button
-        class="carousel-control-next"
-        type="button"
-        data-bs-target="#carouselExampleFade2"
-        data-bs-slide="next"
-      >
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden"> {% trans "Next" %} </span>
-      </button>
-    </div>
-  </div>
 </div>
 <div id="question-main" class="row row ms-0 me-0 mb-5">
-  <div class="question col-md-12 mx-auto">
-    <div class="section-title">
-      <span style="font-family: 'Rubik', sans-serif; font-weight: 800">
-        {% trans "Остались вопросы?" %}</span
-      >
-    </div>
-    <div class="row d-flex align-items-center home-form-row mx-auto">
-      <div class="col-lg-6">
-        <div class="card card-body card-design">
-          <p class="text-center my-3 mx-auto">
-            {% trans "Мы с удовольствием на них ответим.Заполните форму ниже и
-            наш менеджер перезвонит Вам!" %}
-          </p>
-          <form class="home-form mx-auto my-3" id="contact-form">
-            <img src="{% static 'images/svg/user.svg' %}" alt=" " />
-            <input
-              name="name"
-              id="name-input-hm"
-              class="common-input-hm form-control text-center my-2"
-              type="text "
-              placeholder="{% trans
-            'Ваше имя' %}"
-            />
-            <img src="{% static 'images/svg/email.svg' %}" alt=" " />
-            <input
-              name="email"
-              id="email-input-hm"
-              class="common-input-hm form-control text-center my-2"
-              type="email "
-              placeholder="{% trans 'Введите ваш email' %}"
-            />
-            <img src="{% static 'images/svg/phone-call.svg' %}" alt=" " />
-            <input
-              name="phone"
-              id="phone-input-hm"
-              class="common-input-hm form-control text-center my-2"
-              type="tel"
-              placeholder=" {% trans 'Введите ваш телефон' %} "
-            />
-            <img src="{% static 'images/svg/text.svg' %}" alt=" " />
-            <textarea
-              name="message"
-              id="message-textarea-hm"
-              class="common-input-hm form-control text-center my-2"
-              placeholder="{% trans 'Ваш запрос или предложение' %}"
-            ></textarea>
-            <button
-              id="send-button-hm"
-              type="button"
-              class="btn-home-form my-2"
-            >
-              {% trans "Отправить" %}
-            </button>
-            {% csrf_token %}
-          </form>
+    <div class="question col-md-12 mx-auto">
+        <div class="section-title">
+            <span style="font-family: 'Rubik', sans-serif; font-weight: 800">{% trans "Остались вопросы?" %}</span>
         </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="question-img">
-          <img src="{% static 'images/svg/question.svg' %}" alt=" " />
+        <div class="row d-flex align-items-center home-form-row mx-auto">
+            <div class="col-lg-6 ">
+                <div class="card card-body card-design">
+                    <p class="text-center my-3 mx-auto">
+                        {% trans "Мы с удовольствием на них ответим.Заполните форму ниже и наш менеджер перезвонит Вам в течении 10 минут!" %}
+                    </p>
+                    <form class="home-form mx-auto my-3">
+                        <img src="{% static 'images/svg/user.svg' %}" alt=" " />
+                        <input id="name-input-hm" class="common-input-hm form-control text-center my-2 " type="text " placeholder="Ваше имя" />
+                        <img src="{% static 'images/svg/email.svg' %}" alt=" " />
+                        <input id="email-input-hm" class="common-input-hm form-control text-center my-2 " type="email " placeholder="Введите ваш email" />
+                        <img src="{% static 'images/svg/text.svg' %}" alt=" " />
+                        <textarea id="message-textarea-hm" class="common-input-hm form-control text-center my-2" placeholder="Ваш запрос или предложение"></textarea>
+                        <button id="send-button-hm" type="button" class="btn-home-form my-2">{% trans "Отправить" %}</button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-lg-6 ">
+                <div class="question-img ">
+                    <img src="{% static 'images/svg/question.svg' %}" alt=" " />
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 </div>
 {% endblock content %}

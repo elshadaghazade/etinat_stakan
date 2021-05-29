@@ -1759,7 +1759,7 @@ input[type="search"]::-webkit-search-cancel-button {
     display: none;
     position: fixed;
     top: 278px;
-    right: -210px;
+    right: -240px;
     z-index: 100;
     transform: translate(-50%, -50%);
     width: auto;
@@ -2293,6 +2293,17 @@ input[type="search"]::-webkit-search-cancel-button {
     .home-image {
         width: 100%;
         height: 280px;
+    }
+    .about-1 .item-1 {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column-reverse;
+    }
+    .about-3 .item-1 {
+        margin-left: 0 !important;
+    }
+    .about-2 {
+        display: none !important;
     }
 }
 
