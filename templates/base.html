@@ -2,7 +2,6 @@
 {% load i18n %}
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -25,7 +24,6 @@
     <script src="https://kit.fontawesome.com/5484ef70c0.js" crossorigin="anonymous"></script>
     {% block css_addition %}{% endblock css_addition %}
 </head>
-
 <body>
     <header id="header">
         <div class="container-fluid p-0 position-fixed container-nav" style="z-index: 100;">
@@ -46,33 +44,32 @@
                                     <a href="{% url 'homepage' %}" class="position-relative menu-nav">{% trans "Главная"%}</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="{% url 'products' %}" class="position-relative menu-nav">Продукция</a>
+                                    <a href="{% url 'products' %}" class="position-relative menu-nav">{% trans "Продукция"%}</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="{% url 'wholesalers' %}" class="position-relative menu-nav">Оптовикам</a>
+                                    <a href="{% url 'wholesalers' %}" class="position-relative menu-nav">{% trans "Оптовикам"%}</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="{% url 'about' %}" class="position-relative menu-nav">О компании</a>
+                                    <a href="{% url 'about' %}" class="position-relative menu-nav">{% trans "О компании"%}</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="{% url 'contacts' %}" class="position-relative menu-nav">Контакты</a>
+                                    <a href="{% url 'contacts' %}" class="position-relative menu-nav">{% trans "Контакты"%}</a>
                                 </li>
                                 <li class="nav-item-call">
-                                    <button href="#" class="position-relative menu-nav call-back-link">Обратный звонок <i class="fas fa-phone"></i></button>
+                                    <button href="#" class="position-relative menu-nav call-back-link">{% trans "Обратный звонок "%}<i class="fas fa-phone"></i></button>
                                 </li>
                                 <li class="nav-item-basket">
-                                    <a id="cart-button" class="position-relative menu-nav basket-link" href="{% url 'checkout' %}"><i class="fas fa-shopping-cart"></i> <span class="total-cart-count">0</span> шт 
+                                    <a id="cart-button" class="position-relative menu-nav basket-link" href="{% url 'checkout' %}"><i class="fas fa-shopping-cart"></i> <span class="total-cart-count">0</span>{% trans " шт "%}
                                     {% comment %} <span class="total-cart-price">0.0</span>₽ {% endcomment %}
                                     </a>
-                                    <a id="cart-button-phone" class="position-relative menu-nav basket-link" href="{% url 'checkout' %}"><i class="fas fa-shopping-cart"></i> <span class="total-cart-count">0</span> шт <span class="total-cart-price">0.0</span>₽</a>
+                                    <a id="cart-button-phone" class="position-relative menu-nav basket-link" href="{% url 'checkout' %}"><i class="fas fa-shopping-cart"></i> <span class="total-cart-count">0</span>{% trans " шт "%}<span class="total-cart-price">0.0</span>₽</a>
                                     <div class="cart-items">
                                         <div class="minicart">
                                             <div class="minicart--item-container">
-                                                У вас
-                                                <span class="minicart--item-count" id="cart-items-all-count"></span> товара в корзине</div>
+                                                {% trans "У вас"%}
+                                                <span class="minicart--item-count" id="cart-items-all-count"></span>{% trans " товара в корзине"%}</div>
                                             <hr>
                                             <ul class="minicart--ul">
-                                                
                                             </ul>
                                             {% comment %} <div class="minicart--subtotal">
                                                 <p class="minicart--subtotal-title">Всего товаров:</p>
@@ -92,86 +89,81 @@
             <form id="callback_form" onsubmit="return false;">
                 <div class="callback-popup-content">
                     <span class="close"><i class="fas fa-times"></i></span>
-                    <label for="callback-name-input"><img src="{% static 'images/svg/user.svg' %}" alt="" style="height: 25px;width: 35px;">Имя</label>
+                    <label for="callback-name-input"><img src="{% static 'images/svg/user.svg' %}" alt="" style="height: 25px;width: 35px;">{% trans "Имя"%}</label>
                     <input id="callback-name-input" class="callback-input" name="name" type="text" />
-                    <label for="callback-number-input"><img src="{% static 'images/svg/phone-call.svg' %}" alt="" style="height: 25px;width: 40px;"> Телефонный номер</label>
+                    <label for="callback-number-input"><img src="{% static 'images/svg/phone-call.svg' %}" alt="" style="height: 25px;width: 40px;">{% trans " Телефонный номер"%}</label>
                     <input id="callback-number-input" name="phone" class="callback-input" type="number" />
-                    <button id="callback-send-button">Отправить</button>
+                    <button id="callback-send-button">{% trans "Отправить"%}</button>
                 </div>
                 {% csrf_token %}
             </form>
         </div>
     </header>
-
-
     {% block content %}{% endblock content %}
-    
     <!-- Scroll Button -->
     <button id="scrolltoTop">
         <i class="fas fa-arrow-up"></i>
-        <span style="position: absolute; left: 50%; top: -30px; margin-left: -20px; color: black;">вверх</span>
+        <span style="position: absolute; left: 50%; top: -30px; margin-left: -20px; color: black;">{% trans "вверх"%}</span>
     </button>
     <!-- Footer begins -->
     <footer class="row ">
         <!-- <section class="container-fluid "> -->
         <div class="col-md-3 ">
             <img src="{% static 'images/logo.png' %}" style="width: 100% " alt=" " />
-            <h3>Подпишитесь на нашу рассылку и получите скидка 30%</h3>
+            <h3>{% trans "Подпишитесь на нашу рассылку и получите скидка 30%"%}</h3>
             <i class="fab fa-instagram "></i>
             <i class="fab fa-facebook "></i>
             <i class="fab fa-twitter "></i>
             <i class="fab fa-linkedin-in "></i>
         </div>
         <div class="col-md-3 ">
-            <h2>ПРОДУКЦИЯ</h2>
+            <h2>{% trans "ПРОДУКЦИЯ"%}</h2>
             <div class="underline "></div>
             <ul>
-                <li><a href="{% static 'files/pdf-1.pdf' %}">Каталог номер Один</a></li>
-                <li><a href="{% static 'files/pdf-2.pdf' %}">каталог номер Два</a></li>
-                <li><a href="{% static 'files/pdf-3.pdf' %}">каталог номер Три</a></li>
-                <li><a href="{% static 'files/pdf-4.pdf' %}">каталог номер Четыре</a></li>
+                <li><a href="{% static 'files/pdf-1.pdf' %}">{% trans "Каталог номер Один"%}</a></li>
+                <li><a href="{% static 'files/pdf-2.pdf' %}">{% trans "Каталог номер Два"%}</a></li>
+                <li><a href="{% static 'files/pdf-3.pdf' %}">{% trans "Каталог номер Три"%}</a></li>
+                <li><a href="{% static 'files/pdf-4.pdf' %}">{% trans "Каталог номер Четыре"%}</a></li>
             </ul>
         </div>
         <div class="col-md-3 ">
-            <h2>ИНФОРМАЦИЯ</h2>
+            <h2>{% trans "ИНФОРМАЦИЯ"%}</h2>
             <div class="underline "></div>
             <ul>
-                <li><a href="{% url 'contacts' %}#question ">Помощь в выборе продукции </a></li>
-                <li><a href="{% url 'products' %}#dostavka ">Доставка </a></li>
-                <li><a href="{% url 'products' %}#dostavka ">Оплата</a></li>
-                <li><a href="{% url 'homepage' %}#question-main ">Задать вопрос </a></li>
-                <li><a href="{% url 'wholesalers' %}#offer ">Предложение оптовикам</a></li>
-                <li><a href="{% url 'contacts' %}#question ">Получить оптовый прайс </a></li>
-                <li><a href="{% url 'about' %}#about ">О компании </a></li>
+                <li><a href="{% url 'contacts' %}#question ">{% trans "Помощь в выборе продукции "%}</a></li>
+                <li><a href="{% url 'products' %}#dostavka ">{% trans "Доставка "%}</a></li>
+                <li><a href="{% url 'products' %}#dostavka ">{% trans "Оплата"%}</a></li>
+                <li><a href="{% url 'homepage' %}#question-main ">{% trans "Задать вопрос"%} </a></li>
+                <li><a href="{% url 'wholesalers' %}#offer ">{% trans "Предложение оптовикам"%}</a></li>
+                <li><a href="{% url 'contacts' %}#question ">{% trans "Получить оптовый прайс"%} </a></li>
+                <li><a href="{% url 'about' %}#about ">{% trans "О компании "%}</a></li>
             </ul>
         </div>
         <div class="col-md-3 ">
-            <h2>КОНТАКТЫ</h2>
+            <h2>{% trans "КОНТАКТЫ"%}</h2>
             <div class="underline "></div>
             <ul>
                 <li>
-                    <a href="{% url 'contacts' %}#adres ">Наш адрес г.Москва
-                        ул.Большая Дорогомиловская, дом 1
+                    <a href="{% url 'contacts' %}#adres ">{% trans "Наш адрес г.Москва
+                        ул.Большая Дорогомиловская, дом 1"%}
               </a>
                 </li>
-                <li><a href="{% url 'contacts' %}#adres ">Схема проезда </a></li>
-                <li><a href="{% url 'contacts' %}#question ">Задать вопрос </a></li>
-                <li><a href="{% url 'contacts' %}#question "> Сотрудничество </a></li>
-                <li><a href="{% url 'contacts' %}#rekvizit ">Реквизиты </a></li>
-                <li><a href="{% url 'contacts' %}#adres ">Часы работы </a></li>
-                <li><a href="{% url 'contacts' %}#rekvizit ">Торговая марка</a></li>
+                <li><a href="{% url 'contacts' %}#adres ">{% trans "Схема проезда"%} </a></li>
+                <li><a href="{% url 'contacts' %}#question ">{% trans "Задать вопрос"%} </a></li>
+                <li><a href="{% url 'contacts' %}#question "> {% trans "Сотрудничество"%} </a></li>
+                <li><a href="{% url 'contacts' %}#rekvizit ">{% trans "Реквизиты "%}</a></li>
+                <li><a href="{% url 'contacts' %}#adres ">{% trans "Часы работы "%}</a></li>
+                <li><a href="{% url 'contacts' %}#rekvizit ">{% trans "Торговая марка"%}</a></li>
             </ul>
         </div>
         <!-- Copyright -->
         <div class="text-center copyright ">
-            <a class="text-dark " href="{% url 'homepage' %}#etinat-stakan ">© ETINAT-стакан Россия, 2021</a>
+            <a class="text-dark " href="{% url 'homepage' %}#etinat-stakan ">{% trans "© ETINAT-стакан Россия, 2021"%}</a>
         </div>
     </footer>
-
     <div class="loader-wrapper ">
         <span class="loader "><img src="{% static 'images/logo.png' %}" alt=" " /></span>
     </div>
-
     <!-- jQuery -->
     <script>
         const _APP_SETTINGS = {
@@ -198,5 +190,4 @@
     <script src="{% static 'js/products.js' %}"></script>
     {% block js_addition %}{% endblock js_addition %}
 </body>
-
 </html>
