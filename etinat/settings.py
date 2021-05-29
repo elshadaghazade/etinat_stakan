@@ -109,18 +109,25 @@ else:
 DATABASE_URL = urlparse(DATABASE_URL)
 
 
-DATABASES = {
+if not DEBUG:
+    DATABASES = {
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': DATABASE_URL.path[1:],
+            'USER': DATABASE_URL.username,
+            'PASSWORD': DATABASE_URL.password,
+            'HOST': DATABASE_URL.hostname,
+            'PORT': DATABASE_URL.port,
+            'CONN_MAX_AGE': 600,
+        }
+    }
+else:
+    DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': DATABASE_URL.path[1:],
-        'USER': DATABASE_URL.username,
-        'PASSWORD': DATABASE_URL.password,
-        'HOST': DATABASE_URL.hostname,
-        'PORT': DATABASE_URL.port,
-        'CONN_MAX_AGE': 600,
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'db.sqlite3',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref//#auth-password-validators

@@ -101,20 +101,20 @@
     </header>
     {% block content %}{% endblock content %}
     <!-- Scroll Button -->
-    <button id="scrolltoTop">
+    {% comment %} <button id="scrolltoTop">
         <i class="fas fa-arrow-up"></i>
         <span style="position: absolute; left: 50%; top: -30px; margin-left: -20px; color: black;">{% trans "вверх"%}</span>
-    </button>
+    </button> {% endcomment %}
     <!-- Footer begins -->
     <footer class="row ">
         <!-- <section class="container-fluid "> -->
         <div class="col-md-3 ">
             <img src="{% static 'images/logo.png' %}" style="width: 100% " alt=" " />
-            <h3>{% trans "Подпишитесь на нашу рассылку и получите скидка 30%"%}</h3>
+            {% comment %} <h3>{% trans  'Подпишитесь на нашу рассылку и получите скидка 30%' %}</h3>
             <i class="fab fa-instagram "></i>
             <i class="fab fa-facebook "></i>
             <i class="fab fa-twitter "></i>
-            <i class="fab fa-linkedin-in "></i>
+            <i class="fab fa-linkedin-in "></i> {% endcomment %}
         </div>
         <div class="col-md-3 ">
             <h2>{% trans "ПРОДУКЦИЯ"%}</h2>
