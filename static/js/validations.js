@@ -1,5 +1,5 @@
 // Kontakt səhifəsindəki validation
-$('#send-button').on('click', function () {
+$('#send-button').on('click', function() {
     var name = $('#name-input').val()
     var number = $('#number-input').val()
     var email = $('#email-input').val()
@@ -31,7 +31,7 @@ $('#send-button').on('click', function () {
 })
 
 // İnput-a hərf yazanda yoxlaması üçün
-$('.common-input').keyup(function (e) {
+$('.common-input').keyup(function(e) {
     if ($(this).is('#name-input')) {
         check('#name-input', '.name-form')
     } else if ($(this).is('#number-input')) {
@@ -71,12 +71,12 @@ function correctCase() {
 }
 
 // Ana səhifədəki validation
-$('#send-button-hm').on('click', function () {
+$('#send-button-hm').on('click', function() {
     var name = $('#name-input-hm').val()
     var email = $('#email-input-hm').val()
     var phone = $('#phone-input-hm').val()
     var message = $('#message-textarea-hm').val()
-    
+
     if (name.trim() == '' || email.trim() == '' || message.trim() == '' || phone.trim() == '') {
         correctCase_hm();
         check_hm('#name-input-hm');
@@ -121,7 +121,7 @@ function correctCase_hm() {
 }
 
 // Ana səhifədəki validation üçün input daxil ediləndə yoxlanma
-$('.common-input-hm').keyup(function (e) {
+$('.common-input-hm').keyup(function(e) {
     if ($(this).is('#name-input-hm')) {
         check_hm('#name-input-hm');
     } else if ($(this).is('#email-input-hm')) {
@@ -138,7 +138,7 @@ $('.common-input-hm').keyup(function (e) {
 
 // CallBack Validation
 
-$('#callback-send-button').on('click', function () {
+$('#callback-send-button').on('click', function() {
 
     if ($('#callback-name-input').val().trim() == '') {
         $('#callback-name-input').css('border', '2px solid #f00');
@@ -168,7 +168,7 @@ $('#callback-send-button').on('click', function () {
 
 });
 
-$('.callback-input').keyup(function (e) {
+$('.callback-input').keyup(function(e) {
     if ($(this).val().trim() == '') {
         $(this).css('border', '2px solid #f00');
     } else {
@@ -183,32 +183,32 @@ function confirm_popup_check(element) {
     return $(element).val().trim() == '';
 }
 
-function confirm_correctCase() { 
-    $('.payment--input').css('border','2px solid rgb(115, 171, 132)');
- }
+function confirm_correctCase() {
+    $('.payment--input').css('border', '2px solid rgb(115, 171, 132)');
+}
 
-$('#confirm-button').on('click', function () {
+$('#confirm-button').on('click', function() {
     if (confirm_popup_check('#payment-name-input') || confirm_popup_check('#payment-mail-input') || confirm_popup_check('#payment-phone-input') || $('#payment-delivery-selection').val() == 0 || confirm_popup_check('#payment-adress-input') || confirm_popup_check('#payment-comment-input')) {
         confirm_correctCase();
-        if(confirm_popup_check('#payment-name-input')){
-            $('#payment-name-input').css('border','2px solid #f00')
+        if (confirm_popup_check('#payment-name-input')) {
+            $('#payment-name-input').css('border', '2px solid #f00')
         }
-        if(confirm_popup_check('#payment-mail-input')){
-            $('#payment-mail-input').css('border','2px solid #f00')
+        if (confirm_popup_check('#payment-mail-input')) {
+            $('#payment-mail-input').css('border', '2px solid #f00')
         }
-        if(confirm_popup_check('#payment-phone-input')){
-            $('#payment-phone-input').css('border','2px solid #f00')
+        if (confirm_popup_check('#payment-phone-input')) {
+            $('#payment-phone-input').css('border', '2px solid #f00')
         }
-        if($('#payment-delivery-selection').val() == 0){
-            $('#payment-delivery-selection').css('border','2px solid #f00')
+        if ($('#payment-delivery-selection').val() == 0) {
+            $('#payment-delivery-selection').css('border', '2px solid #f00')
         }
-        if(confirm_popup_check('#payment-adress-input')){
-            $('#payment-adress-input').css('border','2px solid #f00')
+        if (confirm_popup_check('#payment-adress-input')) {
+            $('#payment-adress-input').css('border', '2px solid #f00')
         }
-        if(confirm_popup_check('#payment-comment-input')){
-            $('#payment-comment-input').css('border','2px solid #f00')
+        if (confirm_popup_check('#payment-comment-input')) {
+            $('#payment-comment-input').css('border', '2px solid #f00')
         }
-    }else{
+    } else {
         confirm_correctCase();
         var data = $('#checkout-form').serialize();
         var items = encodeURIComponent(JSON.stringify(getItemsFromCart()));
@@ -223,15 +223,15 @@ $('#confirm-button').on('click', function () {
     }
 });
 
-$('#payment-delivery-selection').on('click',function () {
-    if($('#payment-delivery-selection').val() == 0){
-        $('#payment-delivery-selection').css('border','2px solid #f00')
-    }else{
-        $('#payment-delivery-selection').css('border','2px solid rgb(115, 171, 132');
+$('#payment-delivery-selection').on('click', function() {
+    if ($('#payment-delivery-selection').val() == 0) {
+        $('#payment-delivery-selection').css('border', '2px solid #f00')
+    } else {
+        $('#payment-delivery-selection').css('border', '2px solid rgb(115, 171, 132');
     }
- })
+})
 
-$('.payment--input').keyup(function (e) {
+$('.payment--input').keyup(function(e) {
     if ($(this).val().trim() == '') {
         $(this).css('border', '2px solid #f00');
     } else {
