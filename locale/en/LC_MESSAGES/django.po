@@ -1,0 +1,849 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2021-06-06 10:54+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: callback_app/models.py:5 contacts_app/models.py:5 products_app/models.py:45
+#: products_app/templates/checkout_view.html:20
+#: products_app/templates/products_view.html:104 templates/base.html:97
+msgid "Имя"
+msgstr ""
+
+#: callback_app/models.py:6 contacts_app/models.py:6 contacts_app/models.py:21
+#: contacts_app/models.py:27 contacts_app/templates/contacts_view.html:98
+#: products_app/models.py:47 products_app/templates/checkout_view.html:28
+msgid "Телефон"
+msgstr ""
+
+#: callback_app/models.py:7
+msgid "Время обращения"
+msgstr ""
+
+#: callback_app/models.py:13
+msgid "Запрос на обратный звонок"
+msgstr ""
+
+#: callback_app/models.py:14
+msgid "Запросы на обратные звонки"
+msgstr ""
+
+#: company_app/templates/about_view.html:4
+#: company_app/templates/about_view.html:11
+#: company_app/templates/about_view.html:13 templates/base.html:53
+msgid "О компании"
+msgstr ""
+
+#: company_app/templates/about_view.html:13
+#: contacts_app/templates/contacts_view.html:13
+#: home_app/templates/home_view.html:6
+#: products_app/templates/checkout_view.html:63 templates/base.html:44
+msgid "Главная"
+msgstr ""
+
+#: company_app/templates/about_view.html:29
+#: wholesaler_app/templates/wholesaler_view.html:117
+msgid "Производство"
+msgstr ""
+
+#: company_app/templates/about_view.html:30
+msgid ""
+"В октябре 2006 года в России и в странах Евросоюза было запатентовано "
+"уникальное изобретение – одноразовая ёмкость (стакан) для приготовления "
+"различных напитков, в том числе чая, кофе, какао, лекарственных средств, "
+"пищевых биодобавок, которая может использоваться как в быту, так и на "
+"предприятиях общественного питания, на морском, авиационном, железнодорожном "
+"и автомобильном транспорте."
+msgstr ""
+
+#: company_app/templates/about_view.html:30
+msgid ""
+"Наша компания осуществляет свою деятельность с 2009 года. Совместно с нашими "
+"зарубежными партнерами была разработана не имеющая аналогов в мире, "
+"технологическая линия по производству, фасовке и упаковке нашей продукции. "
+"Поэтому с сентября 2010 года в компании произведён запуск производственной "
+"площадки по выпуску одноразовых стаканов с наполнителем."
+msgstr ""
+
+#: company_app/templates/about_view.html:30
+msgid ""
+"За 5 лет продуктивной работы мы добились серьезных результатов и подарили "
+"Российскому и Европейскому потребителю «ETINAT-стакан»."
+msgstr ""
+
+#: company_app/templates/about_view.html:30
+msgid ""
+"Производственные мощности оборудования позволяют выпускать более 5 000 000 "
+"единиц продукции ежемесячно, при этом гарантировать высокое качество за счет "
+"полной автоматизации производственного процесса."
+msgstr ""
+
+#: company_app/templates/about_view.html:30
+msgid ""
+"Команда наших технологов непрерывно работает над улучшением вкусовых "
+"характеристик существующей продукции, а так же ведет поиск новых "
+"качественных ингредиентов, для того что бы удивлять наших клиентов и "
+"партнеров и приносить радость конечным потребителям."
+msgstr ""
+
+#: company_app/templates/about_view.html:30
+msgid ""
+"«ETINAT-стакан» способен удовлетворить самых требовательных клиентов, за "
+"счет своего качества, практичности и простоты использования. Именно поэтому "
+"многие компании уже выбрали нашу продукцию!"
+msgstr ""
+
+#: company_app/templates/about_view.html:34
+msgid "Наши Награди"
+msgstr ""
+
+#: company_app/templates/about_view.html:50
+#: home_app/templates/home_view.html:336
+#: wholesaler_app/templates/wholesaler_view.html:78
+msgid "Previous"
+msgstr ""
+
+#: company_app/templates/about_view.html:54
+#: home_app/templates/home_view.html:340
+#: wholesaler_app/templates/wholesaler_view.html:82
+msgid "Next"
+msgstr ""
+
+#: contacts_app/models.py:7
+msgid "Email"
+msgstr ""
+
+#: contacts_app/models.py:8 contacts_app/models.py:15
+msgid "Сообщения"
+msgstr ""
+
+#: contacts_app/models.py:16
+msgid "Сообщении"
+msgstr ""
+
+#: contacts_app/models.py:28
+msgid "Телефоны"
+msgstr ""
+
+#: contacts_app/models.py:33 contacts_app/models.py:39
+#: contacts_app/templates/contacts_view.html:109
+msgid "Электронная почта"
+msgstr ""
+
+#: contacts_app/models.py:40
+msgid "Электронные почты"
+msgstr ""
+
+#: contacts_app/models.py:45 contacts_app/models.py:51
+#: products_app/models.py:49 products_app/templates/checkout_view.html:41
+msgid "Адрес"
+msgstr ""
+
+#: contacts_app/models.py:52
+msgid "Адреса"
+msgstr ""
+
+#: contacts_app/models.py:57 contacts_app/models.py:63
+#: contacts_app/models.py:64 contacts_app/templates/contacts_view.html:133
+msgid "Наименование организации"
+msgstr ""
+
+#: contacts_app/models.py:69 contacts_app/models.py:75
+#: contacts_app/models.py:76 contacts_app/templates/contacts_view.html:144
+msgid "Банковские реквизиты"
+msgstr ""
+
+#: contacts_app/models.py:81 contacts_app/models.py:87
+#: contacts_app/models.py:88 contacts_app/templates/contacts_view.html:155
+msgid "ИНН / КПП"
+msgstr ""
+
+#: contacts_app/templates/contacts_view.html:4
+#: contacts_app/templates/contacts_view.html:11
+#: contacts_app/templates/contacts_view.html:13 templates/base.html:56
+msgid "Контакты"
+msgstr ""
+
+#: contacts_app/templates/contacts_view.html:30
+msgid ""
+"По интересующим вопросам логистики, участия в выставках, предложениях о "
+"сотрудничестве Вы можете связаться напрямую через форму ниже."
+msgstr ""
+
+#: contacts_app/templates/contacts_view.html:39
+msgid "Ваше имя"
+msgstr ""
+
+#: contacts_app/templates/contacts_view.html:48
+msgid "Введите номер телефона"
+msgstr ""
+
+#: contacts_app/templates/contacts_view.html:57
+msgid "Введите ваш email"
+msgstr ""
+
+#: contacts_app/templates/contacts_view.html:66
+msgid "Ваш запрос или предложение"
+msgstr ""
+
+#: contacts_app/templates/contacts_view.html:69
+#: home_app/templates/home_view.html:363 templates/base.html:101
+msgid "Отправить"
+msgstr ""
+
+#: contacts_app/templates/contacts_view.html:78 templates/base.html:156
+msgid "Схема проезда"
+msgstr ""
+
+#: contacts_app/templates/contacts_view.html:80
+msgid "Предварительно позвоните по телефону указанному в шапке сайта!"
+msgstr ""
+
+#: contacts_app/templates/contacts_view.html:83
+msgid "Часы работы:"
+msgstr ""
+
+#: contacts_app/templates/contacts_view.html:83
+msgid " 09:00 до 18:00. Суб.- Вск. - выходной"
+msgstr ""
+
+#: contacts_app/templates/contacts_view.html:86
+msgid "Большая Дорогомиловская улица, 1 — Яндекс.Карты"
+msgstr ""
+
+#: contacts_app/templates/contacts_view.html:92
+msgid "Наши реквизиты"
+msgstr ""
+
+#: contacts_app/templates/contacts_view.html:120
+msgid "АДРЕС"
+msgstr ""
+
+#: etinat/settings.py:184
+msgid "Русский"
+msgstr ""
+
+#: etinat/settings.py:185
+msgid "English"
+msgstr ""
+
+#: etinat/settings.py:186
+msgid "Azərbaycan dili"
+msgstr ""
+
+#: home_app/templates/home_view.html:12
+msgid "начни день"
+msgstr ""
+
+#: home_app/templates/home_view.html:12
+msgid "ETINAT"
+msgstr ""
+
+#: home_app/templates/home_view.html:12
+msgid "-стакан"
+msgstr ""
+
+#: home_app/templates/home_view.html:13
+msgid "Просто добавь кипяток!"
+msgstr ""
+
+#: home_app/templates/home_view.html:15
+msgid "Информация для предпринимателей"
+msgstr ""
+
+#: home_app/templates/home_view.html:109
+msgid "ПОЛНОСТЬЮ РОССИЙСКОЕ ИЗОБРЕТЕНИЕ"
+msgstr ""
+
+#: home_app/templates/home_view.html:110
+msgid "ПАТЕНТ НА ВСЮ РОССИЮ И 16 СТРАН ЕВРОСОЮЗА"
+msgstr ""
+
+#: home_app/templates/home_view.html:111 home_app/templates/home_view.html:159
+msgid "СТАКАН ВЫПОЛНЕН ИЗ ЦЕЛЛЮЛОЗНОГО КАРТОНА"
+msgstr ""
+
+#: home_app/templates/home_view.html:112
+msgid "УНИКАЛЬНАЯ РЕЦЕПТУРА ИНГРЕДИЕНТОВ"
+msgstr ""
+
+#: home_app/templates/home_view.html:113
+msgid "СОБСТВЕННОЕ ПРОИЗВОДСТВО В Г.ПОДОЛЬСК М.О."
+msgstr ""
+
+#: home_app/templates/home_view.html:114 home_app/templates/home_view.html:196
+msgid "ВСЯ ПРОДУКЦИЯ СЕРТИФИЦИРОВАНА"
+msgstr ""
+
+#: home_app/templates/home_view.html:117
+msgid ""
+"Одноразовый бумажный стакан ёмкостью 250мл. выполненный из целлюлозного "
+"картона!"
+msgstr ""
+
+#: home_app/templates/home_view.html:118
+msgid "При нагревании не выделяет вредных веществ,отсутствует неприятный запах"
+msgstr ""
+
+#: home_app/templates/home_view.html:119
+msgid "Минимальный шанс обжечься"
+msgstr ""
+
+#: home_app/templates/home_view.html:120
+msgid "Крутой дизайн"
+msgstr ""
+
+#: home_app/templates/home_view.html:121
+msgid "Возможность нанести собственный прин"
+msgstr ""
+
+#: home_app/templates/home_view.html:124
+msgid "Одноразовая крышка-ложка выполненная из целлюлозного картона!"
+msgstr ""
+
+#: home_app/templates/home_view.html:125
+msgid ""
+"Верхняя защитная крышка является дополнительно 'КРЫШКОЙ-ЛОЖКОЙ' , которая "
+"после вскрытия складывается по линиям сгиба и используется для размешивания "
+"напитка"
+msgstr ""
+
+#: home_app/templates/home_view.html:126 home_app/templates/home_view.html:131
+msgid "Запрессовывается в стакан без применения клея"
+msgstr ""
+
+#: home_app/templates/home_view.html:129
+msgid "Мембрана выполненная из целлюлозного картона!"
+msgstr ""
+
+#: home_app/templates/home_view.html:130
+msgid "Удерживает основную массу завариваемых ингредиентов"
+msgstr ""
+
+#: home_app/templates/home_view.html:134
+msgid "Вкуснейшие и качественные ингредиенты без глутамата и ГМО!"
+msgstr ""
+
+#: home_app/templates/home_view.html:135
+msgid "Только листовые чаи — чёрный, зелёный"
+msgstr ""
+
+#: home_app/templates/home_view.html:136
+msgid "Проверенная рецептура"
+msgstr ""
+
+#: home_app/templates/home_view.html:137
+msgid "Строгая порционность"
+msgstr ""
+
+#: home_app/templates/home_view.html:138
+msgid "Разнообразие ингредиентов"
+msgstr ""
+
+#: home_app/templates/home_view.html:145
+msgid "Почему нас выбирают"
+msgstr ""
+
+#: home_app/templates/home_view.html:149
+msgid "РОССИЙСКОЕ"
+msgstr ""
+
+#: home_app/templates/home_view.html:150
+msgid "ОЛНОСТЬЮ РОССИЙСКОЕ ИЗОБРЕТЕНИЕ"
+msgstr ""
+
+#: home_app/templates/home_view.html:158
+msgid "ЦЕЛЛЮЛОЗНОГО"
+msgstr ""
+
+#: home_app/templates/home_view.html:167
+msgid "ПРОИЗВОДСТВО"
+msgstr ""
+
+#: home_app/templates/home_view.html:168
+msgid "СОБСТВЕННОЕ ПРОИЗВОДСТВО В Г.ГРОЗНЫЙ"
+msgstr ""
+
+#: home_app/templates/home_view.html:186
+msgid "ПРОСТОТА"
+msgstr ""
+
+#: home_app/templates/home_view.html:187
+msgid "ПРОСТОТА УЧЁТА И ОТЧЁТНОСТИ"
+msgstr ""
+
+#: home_app/templates/home_view.html:195
+msgid "СЕРТИФИЦИРОВАНА"
+msgstr ""
+
+#: home_app/templates/home_view.html:204
+msgid "ЛЕГКО"
+msgstr ""
+
+#: home_app/templates/home_view.html:205
+msgid "ЛЕГКО УТИЛИЗИРУЕТСЯ РАБОТАЕМ С 2010 ГОДА"
+msgstr ""
+
+#: home_app/templates/home_view.html:213
+msgid "Везде будет к месту"
+msgstr ""
+
+#: home_app/templates/home_view.html:250
+msgid "давайте сравним"
+msgstr ""
+
+#: home_app/templates/home_view.html:258
+msgid ""
+"Сохраняет свою изначальную форму, бережёт ваши руки, отсутствует посторонний "
+"запах."
+msgstr ""
+
+#: home_app/templates/home_view.html:261
+msgid ""
+"Если заполнить кипятком - заварится вкусный и ароматный чай, ничего лишнего."
+msgstr ""
+
+#: home_app/templates/home_view.html:264
+msgid ""
+"Мешалка в комплекте, выполненная из того же картона, что и сам ETINAT-стакан."
+msgstr ""
+
+#: home_app/templates/home_view.html:267
+msgid ""
+"Мембрана которая позволяет использовать листовые чаи с фруктами и лепестками "
+"цветов не позволяя чаинкам всплывать."
+msgstr ""
+
+#: home_app/templates/home_view.html:270
+msgid "Вкуснейшие ингредиенты уже внутри, нет нужды покупать их отдельно."
+msgstr ""
+
+#: home_app/templates/home_view.html:273
+msgid ""
+"К донышку прикреплён сошет с сладкой смесью. Удобно держать, удобно взять с "
+"собой. Презентабельный внешний вид."
+msgstr ""
+
+#: home_app/templates/home_view.html:276
+msgid ""
+"Экологически безопасен, вносит свою лепту в сохранение окружающей среды, "
+"время разложения - до 3х месяцев."
+msgstr ""
+
+#: home_app/templates/home_view.html:288
+msgid "Деформируется, обжигает руки, посторонний запах в 8 стаканчиках из 10."
+msgstr ""
+
+#: home_app/templates/home_view.html:291
+msgid ""
+"Если заполнить кипятком - заварится чай, а так же канцерогены и токсины."
+msgstr ""
+
+#: home_app/templates/home_view.html:294
+msgid "Мешалку надо покупать отдельно, при чём тоже пластиковую."
+msgstr ""
+
+#: home_app/templates/home_view.html:297
+msgid ""
+"Отсутствует мембрана, что обрекает пользоваться пакетированным чаем. Не все "
+"пакетированные чаи хорошего качества."
+msgstr ""
+
+#: home_app/templates/home_view.html:300
+msgid "Отдельно надо покупать ингредиенты."
+msgstr ""
+
+#: home_app/templates/home_view.html:303
+msgid ""
+"Сахар надо покупать отдельно. Неудобно держать, неудобно взять с собой. "
+"Выглядит уныло."
+msgstr ""
+
+#: home_app/templates/home_view.html:306
+msgid ""
+"Экологически опасен, т.к среднее время разложения - 600 месяцев или 50 лет."
+msgstr ""
+
+#: home_app/templates/home_view.html:315
+#: wholesaler_app/templates/wholesaler_view.html:87
+msgid "Наше производство"
+msgstr ""
+
+#: home_app/templates/home_view.html:348
+msgid "Остались вопросы?"
+msgstr ""
+
+#: home_app/templates/home_view.html:354
+msgid ""
+"Мы с удовольствием на них ответим.Заполните форму ниже и наш менеджер "
+"перезвонит Вам в течении 10 минут!"
+msgstr ""
+
+#: products_app/models.py:5
+msgid "Имя продукта"
+msgstr ""
+
+#: products_app/models.py:7
+msgid "Описания продукта"
+msgstr ""
+
+#: products_app/models.py:8 products_app/templates/products_view.html:105
+msgid "Цена"
+msgstr ""
+
+#: products_app/models.py:9
+msgid "Фото"
+msgstr ""
+
+#: products_app/models.py:17
+msgid "Продукт"
+msgstr ""
+
+#: products_app/models.py:18
+msgid "Продукты"
+msgstr ""
+
+#: products_app/models.py:21
+msgid "Товары"
+msgstr ""
+
+#: products_app/models.py:22
+msgid "Количество"
+msgstr ""
+
+#: products_app/models.py:23
+msgid "Заказчик"
+msgstr ""
+
+#: products_app/models.py:29
+msgid "Заказанный товар"
+msgstr ""
+
+#: products_app/models.py:30
+msgid "Заказанные товары"
+msgstr ""
+
+#: products_app/models.py:46 products_app/templates/checkout_view.html:24
+msgid "Эл. почта"
+msgstr ""
+
+#: products_app/models.py:48 products_app/models.py:73
+#: products_app/models.py:79 products_app/models.py:80
+#: products_app/templates/checkout_view.html:32
+#: products_app/templates/products_view.html:37
+msgid "Доставка"
+msgstr ""
+
+#: products_app/models.py:50 products_app/templates/checkout_view.html:45
+msgid "Коментарий"
+msgstr ""
+
+#: products_app/models.py:57
+msgid "Заказ"
+msgstr ""
+
+#: products_app/models.py:58
+msgid "Заказы"
+msgstr ""
+
+#: products_app/models.py:62 products_app/models.py:68
+#: products_app/models.py:69 products_app/templates/products_view.html:36
+msgid "Минимальный заказ"
+msgstr ""
+
+#: products_app/models.py:84 products_app/models.py:90
+#: products_app/models.py:91 products_app/templates/products_view.html:38
+#: templates/base.html:142
+msgid "Оплата"
+msgstr ""
+
+#: products_app/templates/checkout_view.html:6
+#: products_app/templates/checkout_view.html:61
+#: products_app/templates/checkout_view.html:63
+msgid "Оформления"
+msgstr ""
+
+#: products_app/templates/checkout_view.html:17
+msgid "Оформление"
+msgstr ""
+
+#: products_app/templates/checkout_view.html:35
+msgid "Самовывоз"
+msgstr ""
+
+#: products_app/templates/checkout_view.html:36
+msgid "Доставка по Москве - 300 руб."
+msgstr ""
+
+#: products_app/templates/checkout_view.html:37
+msgid "Доставка за МКАД - 300 руб. + 40 руб/км."
+msgstr ""
+
+#: products_app/templates/checkout_view.html:49
+#: products_app/templates/checkout_view.html:90
+msgid "Оформить"
+msgstr ""
+
+#: products_app/templates/checkout_view.html:80
+msgid "Корзина"
+msgstr ""
+
+#: products_app/templates/checkout_view.html:89
+msgid "Назад"
+msgstr ""
+
+#: products_app/templates/products_view.html:6
+#: products_app/templates/products_view.html:13 templates/base.html:47
+msgid "Продукция"
+msgstr ""
+
+#: products_app/templates/products_view.html:14
+msgid "Показать Продукты"
+msgstr ""
+
+#: products_app/templates/products_view.html:92
+msgid "Добавлен в корзину"
+msgstr ""
+
+#: products_app/templates/products_view.html:109
+msgid "узнать цену"
+msgstr ""
+
+#: templates/base.html:50 wholesaler_app/templates/wholesaler_view.html:4
+msgid "Оптовикам"
+msgstr ""
+
+#: templates/base.html:59
+msgid "Обратный звонок "
+msgstr ""
+
+#: templates/base.html:62 templates/base.html:66
+msgid " шт "
+msgstr ""
+
+#: templates/base.html:73
+msgid "У вас"
+msgstr ""
+
+#: templates/base.html:74
+msgid " товара в корзине"
+msgstr ""
+
+#: templates/base.html:99
+msgid " Телефонный номер"
+msgstr ""
+
+#: templates/base.html:127
+msgid "ПРОДУКЦИЯ"
+msgstr ""
+
+#: templates/base.html:130
+msgid "Каталог номер Один"
+msgstr ""
+
+#: templates/base.html:131
+msgid "Каталог номер Два"
+msgstr ""
+
+#: templates/base.html:132
+msgid "Каталог номер Три"
+msgstr ""
+
+#: templates/base.html:133
+msgid "Каталог номер Четыре"
+msgstr ""
+
+#: templates/base.html:137
+msgid "ИНФОРМАЦИЯ"
+msgstr ""
+
+#: templates/base.html:140
+msgid "Помощь в выборе продукции "
+msgstr ""
+
+#: templates/base.html:141
+msgid "Доставка "
+msgstr ""
+
+#: templates/base.html:143 templates/base.html:157
+msgid "Задать вопрос"
+msgstr ""
+
+#: templates/base.html:144
+msgid "Предложение оптовикам"
+msgstr ""
+
+#: templates/base.html:145
+msgid "Получить оптовый прайс"
+msgstr ""
+
+#: templates/base.html:146
+msgid "О компании "
+msgstr ""
+
+#: templates/base.html:150
+msgid "КОНТАКТЫ"
+msgstr ""
+
+#: templates/base.html:154
+msgid "Наш адрес г.Москва ул.Большая Дорогомиловская, дом 1"
+msgstr ""
+
+#: templates/base.html:158
+msgid "Сотрудничество"
+msgstr ""
+
+#: templates/base.html:159
+msgid "Реквизиты "
+msgstr ""
+
+#: templates/base.html:160
+msgid "Часы работы "
+msgstr ""
+
+#: templates/base.html:161
+msgid "Торговая марка"
+msgstr ""
+
+#: templates/base.html:166
+msgid "© ETINAT-стакан Россия, 2021"
+msgstr ""
+
+#: wholesaler_app/templates/wholesaler_view.html:9
+msgid "Преимущества ETINAT-стаканчик для предпринимателей"
+msgstr ""
+
+#: wholesaler_app/templates/wholesaler_view.html:13
+msgid "Купленный товар стоимостью "
+msgstr ""
+
+#: wholesaler_app/templates/wholesaler_view.html:13
+msgid "предложенной суммой"
+msgstr ""
+
+#: wholesaler_app/templates/wholesaler_view.html:13
+msgid " можете продать "
+msgstr ""
+
+#: wholesaler_app/templates/wholesaler_view.html:13
+msgid "намного"
+msgstr ""
+
+#: wholesaler_app/templates/wholesaler_view.html:13
+msgid " дороже себестоимости!"
+msgstr ""
+
+#: wholesaler_app/templates/wholesaler_view.html:17
+msgid ""
+"Вам нет нужды контролировать процесс закупки, доставку, подачу. Расскажите "
+"нам о своей задаче и мы подскажем наилучшее решение с участием нашего ETINAT-"
+"стаканчика."
+msgstr ""
+
+#: wholesaler_app/templates/wholesaler_view.html:21
+msgid ""
+"В отличии от кофе-машин — не ломается, не обязывает Вас к постоянному "
+"техническому обслуживанию и покупке ингредиентов в одном месте."
+msgstr ""
+
+#: wholesaler_app/templates/wholesaler_view.html:25
+msgid "Сфера применения настолько обширна, что не уместится в этом блоке."
+msgstr ""
+
+#: wholesaler_app/templates/wholesaler_view.html:29
+msgid ""
+"Наполнитель (напиток), сахар, ложка - все в одном стаканчике! Нет нужды "
+"покупать что-либо отдельно!"
+msgstr ""
+
+#: wholesaler_app/templates/wholesaler_view.html:33
+msgid ""
+"Вы всегда контролируете свою прибыль и эффективность в направлении горячих "
+"напитков!"
+msgstr ""
+
+#: wholesaler_app/templates/wholesaler_view.html:37
+msgid ""
+"Ваши клиенты отметят отличный вкус, удобство и заботу с которой вы к ним "
+"относитесь!"
+msgstr ""
+
+#: wholesaler_app/templates/wholesaler_view.html:41
+msgid ""
+"По Москве и М.О доставка на следующий день! В некоторых случаях возможна "
+"доставка в день заказа!"
+msgstr ""
+
+#: wholesaler_app/templates/wholesaler_view.html:48
+msgid "Заказать"
+msgstr ""
+
+#: wholesaler_app/templates/wholesaler_view.html:52
+msgid ""
+"Если вы хотите узнать цену на оптовое количество звоните нам по телефону "
+msgstr ""
+
+#: wholesaler_app/templates/wholesaler_view.html:52
+msgid "+7 (499) 249-90-00"
+msgstr ""
+
+#: wholesaler_app/templates/wholesaler_view.html:52
+msgid " или "
+msgstr ""
+
+#: wholesaler_app/templates/wholesaler_view.html:52
+msgid "+7 (929) 900-90-09"
+msgstr ""
+
+#: wholesaler_app/templates/wholesaler_view.html:52
+msgid " или пишите на электронную почту "
+msgstr ""
+
+#: wholesaler_app/templates/wholesaler_view.html:52
+msgid "info@etinat.org"
+msgstr ""
+
+#: wholesaler_app/templates/wholesaler_view.html:52
+msgid ". Или же "
+msgstr ""
+
+#: wholesaler_app/templates/wholesaler_view.html:52
+msgid "оставляйте нам свой номер, мы свяжемся с вами."
+msgstr ""
+
+#: wholesaler_app/templates/wholesaler_view.html:59
+msgid "Наши награды"
+msgstr ""
+
+#: wholesaler_app/templates/wholesaler_view.html:61
+msgid ""
+"Мы всегда проявляем активность на выставках и форумах касающихся питания. За "
+"10 лет нашей работы, мы можем похвастаться наградами с многих тематических "
+"выставок и форумов, что характеризует наш продукт признанным сообществом "
+"быстрого питания. Посмотреть все наши заслуги вы можете по кнопке ниже."
+msgstr ""
+
+#: wholesaler_app/templates/wholesaler_view.html:62
+msgid "Награды"
+msgstr ""
+
+#: wholesaler_app/templates/wholesaler_view.html:116
+msgid ""
+"Мы являемся производителем и создателем ETINAT-стаканчика, оборудование было "
+"разработано исключительно по нашим чертежам и схемам. Более подробно по "
+"кнопке ниже."
+msgstr ""
