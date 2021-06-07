@@ -22,43 +22,43 @@ msgstr ""
 #: products_app/templates/checkout_view.html:20
 #: products_app/templates/products_view.html:104 templates/base.html:97
 msgid "Имя"
-msgstr ""
+msgstr "Ad"
 
 #: callback_app/models.py:6 contacts_app/models.py:6 contacts_app/models.py:21
 #: contacts_app/models.py:27 contacts_app/templates/contacts_view.html:98
 #: products_app/models.py:47 products_app/templates/checkout_view.html:28
 msgid "Телефон"
-msgstr ""
+msgstr "Telefon"
 
 #: callback_app/models.py:7
 msgid "Время обращения"
-msgstr ""
+msgstr "Müraciət vaxtı"
 
 #: callback_app/models.py:13
 msgid "Запрос на обратный звонок"
-msgstr ""
+msgstr "Geri zəng üçün sorğu"
 
 #: callback_app/models.py:14
 msgid "Запросы на обратные звонки"
-msgstr ""
+msgstr "Geri zəng üçün sorğular"
 
 #: company_app/templates/about_view.html:4
 #: company_app/templates/about_view.html:11
 #: company_app/templates/about_view.html:13 templates/base.html:53
 msgid "О компании"
-msgstr ""
+msgstr "Şirkət Haqqında"
 
 #: company_app/templates/about_view.html:13
 #: contacts_app/templates/contacts_view.html:13
 #: home_app/templates/home_view.html:6
 #: products_app/templates/checkout_view.html:63 templates/base.html:44
 msgid "Главная"
-msgstr ""
+msgstr "Ana Səhifə"
 
 #: company_app/templates/about_view.html:29
 #: wholesaler_app/templates/wholesaler_view.html:117
 msgid "Производство"
-msgstr ""
+msgstr "İstehsal"
 
 #: company_app/templates/about_view.html:30
 msgid ""
@@ -69,6 +69,11 @@ msgid ""
 "предприятиях общественного питания, на морском, авиационном, железнодорожном "
 "и автомобильном транспорте."
 msgstr ""
+"2006-cı ilin oktyabr ayında Rusiyada və AB ölkələrində bənzərsiz bir "
+"ixtira patentləşdirildi - həm gündəlik həyatda, həm də iaşə müəssisələri, "
+"dəniz, hava, dəmir yolu və avtomobil nəqliyyatında istifadə oluna bilən "
+"çay, qəhvə, kakao, dərmanlar, qida əlavələri daxil olmaqla müxtəlif içkilər "
+"hazırlamaq üçün birdəfəlik bir qab (şüşə)."
 
 #: company_app/templates/about_view.html:30
 msgid ""
@@ -78,12 +83,18 @@ msgid ""
 "Поэтому с сентября 2010 года в компании произведён запуск производственной "
 "площадки по выпуску одноразовых стаканов с наполнителем."
 msgstr ""
+"Şirkətimiz 2009-cu ildən fəaliyyət göstərir. Bizimlə birlikdə xarici tərəfdaşlar, "
+"məhsullarımızın istehsalı və qablaşdırılması üçün dünyada analoqu olmayan bir "
+"texnoloji xətt inkişaf etdirdi. Bu səbəbdən, 2010-cu ilin sentyabr ayından etibarən "
+"şirkət, birdəfəlik fincan istehsalı üçün bir istehsal sahəsi başlatdı."
 
 #: company_app/templates/about_view.html:30
 msgid ""
 "За 5 лет продуктивной работы мы добились серьезных результатов и подарили "
 "Российскому и Европейскому потребителю «ETINAT-стакан»."
 msgstr ""
+"5 illik məhsuldar işimiz ilə ciddi nəticələr əldə etdik və Rusiya, Avropa "
+"istehlakçılarına «ETINAT-стакан» təqdim etdik."
 
 #: company_app/templates/about_view.html:30
 msgid ""
@@ -91,6 +102,8 @@ msgid ""
 "единиц продукции ежемесячно, при этом гарантировать высокое качество за счет "
 "полной автоматизации производственного процесса."
 msgstr ""
+"Avadanlıqların istehsal gücü bizə 5.000.000-dən çox məhsul istehsal etməyə imkan "
+"verir. İstehsal prosesinin tam avtomatlaşdırılması yüksək keyfiyyətə zəmanət verir."
 
 #: company_app/templates/about_view.html:30
 msgid ""
@@ -99,6 +112,9 @@ msgid ""
 "качественных ингредиентов, для того что бы удивлять наших клиентов и "
 "партнеров и приносить радость конечным потребителям."
 msgstr ""
+"Texnoloqumuzun komandası mövcud məhsulların dad xüsusiyyətlərini yaxşılaşdırmaqla "
+"yanaşı, müştərilərimizi və tərəfdaşlarımızı təəccübləndirmək və istehlakçılara "
+"sevinc bəxş etmək üçün yeni yüksək keyfiyyətli maddələr axtarır."
 
 #: company_app/templates/about_view.html:30
 msgid ""
@@ -106,66 +122,69 @@ msgid ""
 "счет своего качества, практичности и простоты использования. Именно поэтому "
 "многие компании уже выбрали нашу продукцию!"
 msgstr ""
+"«ETINAT-стакан» keyfiyyəti, praktikliyi və istifadə rahatlığı sayəsində "
+"ən tələbkar müştəriləri razı sala bilir. Buna görə bir çox şirkət artıq "
+"bizim məhsullarımızı seçmişdir!"
 
 #: company_app/templates/about_view.html:34
 msgid "Наши Награди"
-msgstr ""
+msgstr "Mükafatlarımız"
 
 #: company_app/templates/about_view.html:50
 #: home_app/templates/home_view.html:336
 #: wholesaler_app/templates/wholesaler_view.html:78
 msgid "Previous"
-msgstr ""
+msgstr "Əvvəlki"
 
 #: company_app/templates/about_view.html:54
 #: home_app/templates/home_view.html:340
 #: wholesaler_app/templates/wholesaler_view.html:82
 msgid "Next"
-msgstr ""
+msgstr "Növbəti"
 
 #: contacts_app/models.py:7
 msgid "Email"
-msgstr ""
+msgstr "Email"
 
 #: contacts_app/models.py:8 contacts_app/models.py:15
 msgid "Сообщения"
-msgstr ""
+msgstr "Mesaj"
 
 #: contacts_app/models.py:16
 msgid "Сообщении"
-msgstr ""
+msgstr "Mesajlar"
 
 #: contacts_app/models.py:28
 msgid "Телефоны"
-msgstr ""
+msgstr "Telefonlar"
 
 #: contacts_app/models.py:33 contacts_app/models.py:39
 #: contacts_app/templates/contacts_view.html:109
 msgid "Электронная почта"
-msgstr ""
+msgstr "Elektron Poçt"
 
 #: contacts_app/models.py:40
 msgid "Электронные почты"
-msgstr ""
+msgstr "Elektron Poçt"
 
 #: contacts_app/models.py:45 contacts_app/models.py:51
 #: products_app/models.py:49 products_app/templates/checkout_view.html:41
 msgid "Адрес"
-msgstr ""
+msgstr "Ünvan"
 
 #: contacts_app/models.py:52
 msgid "Адреса"
-msgstr ""
+msgstr "Ünvanlar"
 
 #: contacts_app/models.py:57 contacts_app/models.py:63
 #: contacts_app/models.py:64 contacts_app/templates/contacts_view.html:133
 msgid "Наименование организации"
-msgstr ""
+msgstr "Şirkətin adı"
 
 #: contacts_app/models.py:69 contacts_app/models.py:75
 #: contacts_app/models.py:76 contacts_app/templates/contacts_view.html:144
 msgid "Банковские реквизиты"
-msgstr ""
+msgstr "Bank Məlumatları"
 
 #: contacts_app/models.py:81 contacts_app/models.py:87
 #: contacts_app/models.py:88 contacts_app/templates/contacts_view.html:155
@@ -176,102 +195,104 @@ msgstr ""
 #: contacts_app/templates/contacts_view.html:11
 #: contacts_app/templates/contacts_view.html:13 templates/base.html:56
 msgid "Контакты"
-msgstr ""
+msgstr "Əlaqə"
 
 #: contacts_app/templates/contacts_view.html:30
 msgid ""
 "По интересующим вопросам логистики, участия в выставках, предложениях о "
 "сотрудничестве Вы можете связаться напрямую через форму ниже."
 msgstr ""
+"Lojistik sərgilərdə iştirak, əməkdaşlıq təklifləri ilə maraqlanmaq "
+"üçün aşağıdakı formadan birbaşa əlaqə saxlaya bilərsiniz."
 
 #: contacts_app/templates/contacts_view.html:39
 msgid "Ваше имя"
-msgstr ""
+msgstr "Adınız"
 
 #: contacts_app/templates/contacts_view.html:48
 msgid "Введите номер телефона"
-msgstr ""
+msgstr "Telefon nömrənizi daxil edin"
 
 #: contacts_app/templates/contacts_view.html:57
 msgid "Введите ваш email"
-msgstr ""
+msgstr "Elektron poçtunuzu daxil edin"
 
 #: contacts_app/templates/contacts_view.html:66
 msgid "Ваш запрос или предложение"
-msgstr ""
+msgstr "İstəyiniz və ya təklifiniz"
 
 #: contacts_app/templates/contacts_view.html:69
 #: home_app/templates/home_view.html:363 templates/base.html:101
 msgid "Отправить"
-msgstr ""
+msgstr "Göndər"
 
 #: contacts_app/templates/contacts_view.html:78 templates/base.html:156
 msgid "Схема проезда"
-msgstr ""
+msgstr "Səyahət sxemi"
 
 #: contacts_app/templates/contacts_view.html:80
 msgid "Предварительно позвоните по телефону указанному в шапке сайта!"
-msgstr ""
+msgstr "Saytın başlığında göstərilən telefon nömrəsi ilə əvvəlcədən zəng edin!"
 
 #: contacts_app/templates/contacts_view.html:83
 msgid "Часы работы:"
-msgstr ""
+msgstr "İş saatları:"
 
 #: contacts_app/templates/contacts_view.html:83
 msgid " 09:00 до 18:00. Суб.- Вск. - выходной"
-msgstr ""
+msgstr " 09:00-18:00. Şənbə-Bazar - İstirahət günü"
 
 #: contacts_app/templates/contacts_view.html:86
 msgid "Большая Дорогомиловская улица, 1 — Яндекс.Карты"
-msgstr ""
+msgstr "'Большая Дорогомиловская' küçəsi 1. — Яндекс.Карты"
 
 #: contacts_app/templates/contacts_view.html:92
 msgid "Наши реквизиты"
-msgstr ""
+msgstr "Məlumatlarımız"
 
 #: contacts_app/templates/contacts_view.html:120
 msgid "АДРЕС"
-msgstr ""
+msgstr "Ünvan"
 
 #: etinat/settings.py:184
 msgid "Русский"
-msgstr ""
+msgstr "Русский"
 
 #: etinat/settings.py:185
 msgid "English"
-msgstr ""
+msgstr "English"
 
 #: etinat/settings.py:186
 msgid "Azərbaycan dili"
-msgstr ""
+msgstr "Azərbaycan dili"
 
 #: home_app/templates/home_view.html:12
 msgid "начни день"
-msgstr ""
+msgstr "Günə Başla"
 
 #: home_app/templates/home_view.html:12
 msgid "ETINAT"
-msgstr ""
+msgstr "ETINAT"
 
 #: home_app/templates/home_view.html:12
 msgid "-стакан"
-msgstr ""
+msgstr "-стакан"
 
 #: home_app/templates/home_view.html:13
 msgid "Просто добавь кипяток!"
-msgstr ""
+msgstr "Yalnız qaynar su əlavə edin!"
 
 #: home_app/templates/home_view.html:15
 msgid "Информация для предпринимателей"
-msgstr ""
+msgstr "Sahibkarlar üçün məlumat"
 
 #: home_app/templates/home_view.html:109
 msgid "ПОЛНОСТЬЮ РОССИЙСКОЕ ИЗОБРЕТЕНИЕ"
-msgstr ""
+msgstr "TAMAMİLƏ RUS İXTİRASI"
 
 #: home_app/templates/home_view.html:110
 msgid "ПАТЕНТ НА ВСЮ РОССИЮ И 16 СТРАН ЕВРОСОЮЗА"
-msgstr ""
+msgstr "BÜTÜN RUSİYA VƏ 16 AB ÖLKƏSİ ÜÇÜN PATENT"
 
 #: home_app/templates/home_view.html:111 home_app/templates/home_view.html:159
 msgid "СТАКАН ВЫПОЛНЕН ИЗ ЦЕЛЛЮЛОЗНОГО КАРТОНА"
@@ -279,7 +300,7 @@ msgstr ""
 
 #: home_app/templates/home_view.html:112
 msgid "УНИКАЛЬНАЯ РЕЦЕПТУРА ИНГРЕДИЕНТОВ"
-msgstr ""
+msgstr "BƏNZƏRSİZ INQREDENT RESEPTİ"
 
 #: home_app/templates/home_view.html:113
 msgid "СОБСТВЕННОЕ ПРОИЗВОДСТВО В Г.ПОДОЛЬСК М.О."
@@ -287,33 +308,34 @@ msgstr ""
 
 #: home_app/templates/home_view.html:114 home_app/templates/home_view.html:196
 msgid "ВСЯ ПРОДУКЦИЯ СЕРТИФИЦИРОВАНА"
-msgstr ""
+msgstr "BÜTÜN MƏHSULLAR SERTİFİKATLANDIRILIB"
 
 #: home_app/templates/home_view.html:117
 msgid ""
 "Одноразовый бумажный стакан ёмкостью 250мл. выполненный из целлюлозного "
 "картона!"
 msgstr ""
+"Sellüloz kartondan hazırlanmış 250 ml tutumlu birdəfəlik kağız fincan!"
 
 #: home_app/templates/home_view.html:118
 msgid "При нагревании не выделяет вредных веществ,отсутствует неприятный запах"
-msgstr ""
+msgstr "Qızdırıldıqda zərərli maddələr yaymır, xoşagəlməz bir qoxu yoxdur."
 
 #: home_app/templates/home_view.html:119
 msgid "Минимальный шанс обжечься"
-msgstr ""
+msgstr "Minimum yanma şansı"
 
 #: home_app/templates/home_view.html:120
 msgid "Крутой дизайн"
-msgstr ""
+msgstr "Xoş dizayn"
 
 #: home_app/templates/home_view.html:121
-msgid "Возможность нанести собственный прин"
-msgstr ""
+msgid "Возможность нанести собственный принт"
+msgstr "Öz çapınızı tətbiq etmək imkanı"
 
 #: home_app/templates/home_view.html:124
 msgid "Одноразовая крышка-ложка выполненная из целлюлозного картона!"
-msgstr ""
+msgstr "Selüloz kartondan hazırlanmış birdəfəlik qaşıq qapağı!"
 
 #: home_app/templates/home_view.html:125
 msgid ""
@@ -321,30 +343,32 @@ msgid ""
 "после вскрытия складывается по линиям сгиба и используется для размешивания "
 "напитка"
 msgstr ""
+"Üst qoruyucu örtük əlavə olaraq 'QAŞIQ-QAPAĞI'-dır, açıldıqdan sonra "
+"qat xətləri boyunca qatlanır və içkini qarışdırmaq üçün istifadə olunur."
 
 #: home_app/templates/home_view.html:126 home_app/templates/home_view.html:131
 msgid "Запрессовывается в стакан без применения клея"
-msgstr ""
+msgstr "Yapışqan istifadə edilmədən hazırlandı"
 
 #: home_app/templates/home_view.html:129
 msgid "Мембрана выполненная из целлюлозного картона!"
-msgstr ""
+msgstr "Selüloz kartondan hazırlanmış membran!"
 
 #: home_app/templates/home_view.html:130
 msgid "Удерживает основную массу завариваемых ингредиентов"
-msgstr ""
+msgstr "Dəmlənmiş maddələrin əsas hissəsini saxlayır"
 
 #: home_app/templates/home_view.html:134
 msgid "Вкуснейшие и качественные ингредиенты без глутамата и ГМО!"
-msgstr ""
+msgstr "Glutamat və GMO-lar olmadan ləzzətli və yüksək keyfiyyətli maddələr!"
 
 #: home_app/templates/home_view.html:135
 msgid "Только листовые чаи — чёрный, зелёный"
-msgstr ""
+msgstr "Yalnız yarpaq çayları - qara, yaşıl"
 
 #: home_app/templates/home_view.html:136
 msgid "Проверенная рецептура"
-msgstr ""
+msgstr "Təsdiqlənmiş resept"
 
 #: home_app/templates/home_view.html:137
 msgid "Строгая порционность"
@@ -352,11 +376,11 @@ msgstr ""
 
 #: home_app/templates/home_view.html:138
 msgid "Разнообразие ингредиентов"
-msgstr ""
+msgstr "Tərkibi müxtəlifdir"
 
 #: home_app/templates/home_view.html:145
 msgid "Почему нас выбирают"
-msgstr ""
+msgstr "Niyə bizi seçməli"
 
 #: home_app/templates/home_view.html:149
 msgid "РОССИЙСКОЕ"
@@ -364,15 +388,15 @@ msgstr ""
 
 #: home_app/templates/home_view.html:150
 msgid "ОЛНОСТЬЮ РОССИЙСКОЕ ИЗОБРЕТЕНИЕ"
-msgstr ""
+msgstr "TAMAMİLƏ RUS İXTİRASI"
 
 #: home_app/templates/home_view.html:158
 msgid "ЦЕЛЛЮЛОЗНОГО"
-msgstr ""
+msgstr "SELÜLOZ"
 
 #: home_app/templates/home_view.html:167
 msgid "ПРОИЗВОДСТВО"
-msgstr ""
+msgstr "İSTEHSAL"
 
 #: home_app/templates/home_view.html:168
 msgid "СОБСТВЕННОЕ ПРОИЗВОДСТВО В Г.ГРОЗНЫЙ"
@@ -380,23 +404,23 @@ msgstr ""
 
 #: home_app/templates/home_view.html:186
 msgid "ПРОСТОТА"
-msgstr ""
+msgstr "SADƏLİK"
 
 #: home_app/templates/home_view.html:187
 msgid "ПРОСТОТА УЧЁТА И ОТЧЁТНОСТИ"
-msgstr ""
+msgstr "MÜHASİBAT VƏ HESABATLARIN SADƏLİYİ"
 
 #: home_app/templates/home_view.html:195
 msgid "СЕРТИФИЦИРОВАНА"
-msgstr ""
+msgstr "SERTİFİKATLI"
 
 #: home_app/templates/home_view.html:204
 msgid "ЛЕГКО"
-msgstr ""
+msgstr "ASANLIQLA"
 
 #: home_app/templates/home_view.html:205
 msgid "ЛЕГКО УТИЛИЗИРУЕТСЯ РАБОТАЕМ С 2010 ГОДА"
-msgstr ""
+msgstr "2010-CU İLDƏN BƏRİ ASANLIQLA İŞLƏYİRİK"
 
 #: home_app/templates/home_view.html:213
 msgid "Везде будет к месту"
@@ -404,182 +428,197 @@ msgstr ""
 
 #: home_app/templates/home_view.html:250
 msgid "давайте сравним"
-msgstr ""
+msgstr "Gəlin müqayisə edək"
 
 #: home_app/templates/home_view.html:258
 msgid ""
 "Сохраняет свою изначальную форму, бережёт ваши руки, отсутствует посторонний "
 "запах."
 msgstr ""
+"Orijinal formasını saxlayır, əllərinizi qoruyur, xarici qoxu yoxdur."
 
 #: home_app/templates/home_view.html:261
 msgid ""
 "Если заполнить кипятком - заварится вкусный и ароматный чай, ничего лишнего."
 msgstr ""
+"Qaynar su ilə doldurursanız, ləzzətli və ətirli bir çay dəmlənəcək."
 
 #: home_app/templates/home_view.html:264
 msgid ""
 "Мешалка в комплекте, выполненная из того же картона, что и сам ETINAT-стакан."
 msgstr ""
+"ETINAT şüşəsinin özü ilə eyni kartondan hazırlanmış qarışdırıcı"
 
 #: home_app/templates/home_view.html:267
 msgid ""
 "Мембрана которая позволяет использовать листовые чаи с фруктами и лепестками "
 "цветов не позволяя чаинкам всплывать."
 msgstr ""
+"Çay yarpaqlarının üzməsinin qarşısını alan, meyvə və çiçək ləçəkləri ilə yarpaq çaylarının "
+"istifadəsinə imkan verən bir membran."
 
 #: home_app/templates/home_view.html:270
 msgid "Вкуснейшие ингредиенты уже внутри, нет нужды покупать их отдельно."
-msgstr ""
+msgstr "Dadlı inqredientlər artıq içəridədir, ayrıca satın almağa ehtiyac yoxdur."
 
 #: home_app/templates/home_view.html:273
 msgid ""
 "К донышку прикреплён сошет с сладкой смесью. Удобно держать, удобно взять с "
 "собой. Презентабельный внешний вид."
 msgstr ""
+"Dibinə şirin bir qarışıq əlavə olunur. Tutmaq və götürmək üçün əlverişlidir. Xoş görünür."
 
 #: home_app/templates/home_view.html:276
 msgid ""
 "Экологически безопасен, вносит свою лепту в сохранение окружающей среды, "
 "время разложения - до 3х месяцев."
 msgstr ""
+"Ekoloji cəhətdən təmiz, ətraf mühitin qorunmasına, parçalanma müddətinə "
+"kömək edir - 3 aya qədər."
 
 #: home_app/templates/home_view.html:288
 msgid "Деформируется, обжигает руки, посторонний запах в 8 стаканчиках из 10."
-msgstr ""
+msgstr "Hər 10 stəkandan 8-i deformasiya olur, əlləri yandırır, xarici qoxu gəlir."
 
 #: home_app/templates/home_view.html:291
 msgid ""
 "Если заполнить кипятком - заварится чай, а так же канцерогены и токсины."
 msgstr ""
+"Qaynar su ilə doldurursanız, çay, həmçinin kanserogenlər və toksinlər dəmləyəcəkdir."
 
 #: home_app/templates/home_view.html:294
 msgid "Мешалку надо покупать отдельно, при чём тоже пластиковую."
-msgstr ""
+msgstr "Qarışdırıcı ayrıca plastik şəkildə satın alınmalıdır."
 
 #: home_app/templates/home_view.html:297
 msgid ""
 "Отсутствует мембрана, что обрекает пользоваться пакетированным чаем. Не все "
 "пакетированные чаи хорошего качества."
 msgstr ""
+"Çay paketlərindən istifadə etməyi məcbur edən heç bir membran yoxdur və "
+"çay paketlərinin hamısı keyfiyyətli deyil."
 
 #: home_app/templates/home_view.html:300
 msgid "Отдельно надо покупать ингредиенты."
-msgstr ""
+msgstr "Tərkibləri ayrıca almalısınız."
 
 #: home_app/templates/home_view.html:303
 msgid ""
 "Сахар надо покупать отдельно. Неудобно держать, неудобно взять с собой. "
 "Выглядит уныло."
 msgstr ""
+"Şəkər ayrıca alınmalıdır. Tutmaq və özünüzlə aparmaq əlverişsizdir. Sönük görünür."
 
 #: home_app/templates/home_view.html:306
 msgid ""
 "Экологически опасен, т.к среднее время разложения - 600 месяцев или 50 лет."
 msgstr ""
+"Ekoloji cəhətdən təhlükəlidir, çünki ortalama parçalanma müddəti 600 ay və ya 50 ildir."
 
 #: home_app/templates/home_view.html:315
 #: wholesaler_app/templates/wholesaler_view.html:87
 msgid "Наше производство"
-msgstr ""
+msgstr "Bizim istehsal"
 
 #: home_app/templates/home_view.html:348
 msgid "Остались вопросы?"
-msgstr ""
+msgstr "Suallarınız var?"
 
 #: home_app/templates/home_view.html:354
 msgid ""
 "Мы с удовольствием на них ответим.Заполните форму ниже и наш менеджер "
 "перезвонит Вам в течении 10 минут!"
 msgstr ""
+"Sizə cavab verməkdən məmnun qalacağıq. Aşağıdakı formanı doldurun "
+"və menecerimiz sizə 10 dəqiqə ərzində zəng edəcək!"
 
 #: products_app/models.py:5
 msgid "Имя продукта"
-msgstr ""
+msgstr "Məhsulun adı"
 
 #: products_app/models.py:7
 msgid "Описания продукта"
-msgstr ""
+msgstr "Məhsulun görünüşü"
 
 #: products_app/models.py:8 products_app/templates/products_view.html:105
 msgid "Цена"
-msgstr ""
+msgstr "Qiymət"
 
 #: products_app/models.py:9
 msgid "Фото"
-msgstr ""
+msgstr "Şəkil"
 
 #: products_app/models.py:17
 msgid "Продукт"
-msgstr ""
+msgstr "Məhsul"
 
 #: products_app/models.py:18
 msgid "Продукты"
-msgstr ""
+msgstr "Məhsullar"
 
 #: products_app/models.py:21
 msgid "Товары"
-msgstr ""
+msgstr "Məhsullar"
 
 #: products_app/models.py:22
 msgid "Количество"
-msgstr ""
+msgstr "Say"
 
 #: products_app/models.py:23
 msgid "Заказчик"
-msgstr ""
+msgstr "Müştəri"
 
 #: products_app/models.py:29
 msgid "Заказанный товар"
-msgstr ""
+msgstr "Sifariş edilmiş mal"
 
 #: products_app/models.py:30
 msgid "Заказанные товары"
-msgstr ""
+msgstr "Sifarişli mallar"
 
 #: products_app/models.py:46 products_app/templates/checkout_view.html:24
 msgid "Эл. почта"
-msgstr ""
+msgstr "Elek. Poçt"
 
 #: products_app/models.py:48 products_app/models.py:73
 #: products_app/models.py:79 products_app/models.py:80
 #: products_app/templates/checkout_view.html:32
 #: products_app/templates/products_view.html:37
 msgid "Доставка"
-msgstr ""
+msgstr "Çatdırılma"
 
 #: products_app/models.py:50 products_app/templates/checkout_view.html:45
 msgid "Коментарий"
-msgstr ""
+msgstr "Şərh"
 
 #: products_app/models.py:57
 msgid "Заказ"
-msgstr ""
+msgstr "Sifariş"
 
 #: products_app/models.py:58
 msgid "Заказы"
-msgstr ""
+msgstr "Sifarişlər"
 
 #: products_app/models.py:62 products_app/models.py:68
 #: products_app/models.py:69 products_app/templates/products_view.html:36
 msgid "Минимальный заказ"
-msgstr ""
+msgstr "Minimal sifariş"
 
 #: products_app/models.py:84 products_app/models.py:90
 #: products_app/models.py:91 products_app/templates/products_view.html:38
 #: templates/base.html:142
 msgid "Оплата"
-msgstr ""
+msgstr "Ödəniş"
 
 #: products_app/templates/checkout_view.html:6
 #: products_app/templates/checkout_view.html:61
 #: products_app/templates/checkout_view.html:63
 msgid "Оформления"
-msgstr ""
+msgstr "Sifarişi Rəsmiləşdir"
 
 #: products_app/templates/checkout_view.html:17
 msgid "Оформление"
-msgstr ""
+msgstr "Sifarişi Rəsmiləşdir"
 
 #: products_app/templates/checkout_view.html:35
 msgid "Самовывоз"
@@ -587,7 +626,7 @@ msgstr ""
 
 #: products_app/templates/checkout_view.html:36
 msgid "Доставка по Москве - 300 руб."
-msgstr ""
+msgstr "Moskvaya Çatdırılma - 300 rubl."
 
 #: products_app/templates/checkout_view.html:37
 msgid "Доставка за МКАД - 300 руб. + 40 руб/км."
@@ -596,156 +635,156 @@ msgstr ""
 #: products_app/templates/checkout_view.html:49
 #: products_app/templates/checkout_view.html:90
 msgid "Оформить"
-msgstr ""
+msgstr "Rəsmiləşdir"
 
 #: products_app/templates/checkout_view.html:80
 msgid "Корзина"
-msgstr ""
+msgstr "Səbət"
 
 #: products_app/templates/checkout_view.html:89
 msgid "Назад"
-msgstr ""
+msgstr "Geri"
 
 #: products_app/templates/products_view.html:6
 #: products_app/templates/products_view.html:13 templates/base.html:47
 msgid "Продукция"
-msgstr ""
+msgstr "Məhsullar"
 
 #: products_app/templates/products_view.html:14
 msgid "Показать Продукты"
-msgstr ""
+msgstr "Məhsulları Göstər"
 
 #: products_app/templates/products_view.html:92
 msgid "Добавлен в корзину"
-msgstr ""
+msgstr "Səbətə əlavə olundu"
 
 #: products_app/templates/products_view.html:109
 msgid "узнать цену"
-msgstr ""
+msgstr "Qiyməti Öyrən"
 
 #: templates/base.html:50 wholesaler_app/templates/wholesaler_view.html:4
 msgid "Оптовикам"
-msgstr ""
+msgstr "Topdan Satış"
 
 #: templates/base.html:59
 msgid "Обратный звонок "
-msgstr ""
+msgstr "Geri Zəng"
 
 #: templates/base.html:62 templates/base.html:66
 msgid " шт "
-msgstr ""
+msgstr " ədəd "
 
 #: templates/base.html:73
 msgid "У вас"
-msgstr ""
+msgstr "Sizin səbətdə"
 
 #: templates/base.html:74
 msgid " товара в корзине"
-msgstr ""
+msgstr " malınız var"
 
 #: templates/base.html:99
 msgid " Телефонный номер"
-msgstr ""
+msgstr " Telefon nömrəsi"
 
 #: templates/base.html:127
 msgid "ПРОДУКЦИЯ"
-msgstr ""
+msgstr "MƏHSULLAR"
 
 #: templates/base.html:130
 msgid "Каталог номер Один"
-msgstr ""
+msgstr "Kataloq Nömrə Bir"
 
 #: templates/base.html:131
 msgid "Каталог номер Два"
-msgstr ""
+msgstr "Kataloq Nömrə İki"
 
 #: templates/base.html:132
 msgid "Каталог номер Три"
-msgstr ""
+msgstr "Kataloq Nömrə Üç"
 
 #: templates/base.html:133
 msgid "Каталог номер Четыре"
-msgstr ""
+msgstr "Kataloq Nömrə Dörd"
 
 #: templates/base.html:137
 msgid "ИНФОРМАЦИЯ"
-msgstr ""
+msgstr "MƏLUMATLAR"
 
 #: templates/base.html:140
 msgid "Помощь в выборе продукции "
-msgstr ""
+msgstr "Məhsul seçimində kömək "
 
 #: templates/base.html:141
 msgid "Доставка "
-msgstr ""
+msgstr "Çatdırılma "
 
 #: templates/base.html:143 templates/base.html:157
 msgid "Задать вопрос"
-msgstr ""
+msgstr "Sual ver"
 
 #: templates/base.html:144
 msgid "Предложение оптовикам"
-msgstr ""
+msgstr "Topdan-satış təklifi"
 
 #: templates/base.html:145
 msgid "Получить оптовый прайс"
-msgstr ""
+msgstr "Topdan-satış qiyməti əlavə edin"
 
 #: templates/base.html:146
 msgid "О компании "
-msgstr ""
+msgstr "Şirkət haqqında"
 
 #: templates/base.html:150
 msgid "КОНТАКТЫ"
-msgstr ""
+msgstr "ƏLAQƏ"
 
 #: templates/base.html:154
 msgid "Наш адрес г.Москва ул.Большая Дорогомиловская, дом 1"
-msgstr ""
+msgstr "Ünvanımız Moskva şəhəri, Большая Дорогомиловская küçəsi, Ev 1"
 
 #: templates/base.html:158
 msgid "Сотрудничество"
-msgstr ""
+msgstr "Əməkdaşlıq"
 
 #: templates/base.html:159
 msgid "Реквизиты "
-msgstr ""
+msgstr "Detallar "
 
 #: templates/base.html:160
 msgid "Часы работы "
-msgstr ""
+msgstr "İş saatları "
 
 #: templates/base.html:161
 msgid "Торговая марка"
-msgstr ""
+msgstr "Ticarət markası"
 
 #: templates/base.html:166
 msgid "© ETINAT-стакан Россия, 2021"
-msgstr ""
+msgstr "© ETINAT-стакан Россия, 2021"
 
 #: wholesaler_app/templates/wholesaler_view.html:9
 msgid "Преимущества ETINAT-стаканчик для предпринимателей"
-msgstr ""
+msgstr "ETINAT-stəkanlarının sahibkarlar üçün faydaları"
 
 #: wholesaler_app/templates/wholesaler_view.html:13
 msgid "Купленный товар стоимостью "
-msgstr ""
+msgstr "Satın alınan malları "
 
 #: wholesaler_app/templates/wholesaler_view.html:13
 msgid "предложенной суммой"
-msgstr ""
+msgstr "təklif olunan məbləğə "
 
 #: wholesaler_app/templates/wholesaler_view.html:13
 msgid " можете продать "
-msgstr ""
+msgstr "maya dəyərindən xeyli "
 
 #: wholesaler_app/templates/wholesaler_view.html:13
 msgid "намного"
-msgstr ""
+msgstr "çox sata bilərsiniz!"
 
 #: wholesaler_app/templates/wholesaler_view.html:13
 msgid " дороже себестоимости!"
-msgstr ""
+msgstr " maya dəyərindən daha bahalı!"
 
 #: wholesaler_app/templates/wholesaler_view.html:17
 msgid ""
@@ -753,12 +792,17 @@ msgid ""
 "нам о своей задаче и мы подскажем наилучшее решение с участием нашего ETINAT-"
 "стаканчика."
 msgstr ""
+"Satınalma prosesinə və çatdırılmasına nəzarət etmək lazım deyil. "
+"Sifarişiniz barədə bizə məlumat verin və ETINAT-stəkan iştirakı ilə ən yaxşı "
+"həlli təklif edəcəyik."
 
 #: wholesaler_app/templates/wholesaler_view.html:21
 msgid ""
 "В отличии от кофе-машин — не ломается, не обязывает Вас к постоянному "
 "техническому обслуживанию и покупке ингредиентов в одном месте."
 msgstr ""
+"Qəhvə maşınlarından fərqli olaraq parçalanmır və bir yerdə "
+"maddələr almağa məcbur etmir."
 
 #: wholesaler_app/templates/wholesaler_view.html:25
 msgid "Сфера применения настолько обширна, что не уместится в этом блоке."
@@ -769,18 +813,22 @@ msgid ""
 "Наполнитель (напиток), сахар, ложка - все в одном стаканчике! Нет нужды "
 "покупать что-либо отдельно!"
 msgstr ""
+"İçki, şəkər, qaşıq - hamısı bir fincanda! Ayrı bir şey almağa ehtiyac yoxdur!"
 
 #: wholesaler_app/templates/wholesaler_view.html:33
 msgid ""
 "Вы всегда контролируете свою прибыль и эффективность в направлении горячих "
 "напитков!"
 msgstr ""
+"İsti içkilərə qarşı səmərəliliyinizi hər zaman nəzarətdə saxlayırsınız!"
 
 #: wholesaler_app/templates/wholesaler_view.html:37
 msgid ""
 "Ваши клиенты отметят отличный вкус, удобство и заботу с которой вы к ним "
 "относитесь!"
 msgstr ""
+"Müştəriləriniz, onlara göstərdiyiniz mükəmməl ləzzəti, rahatlığı və "
+"diqqəti qeyd edəcəkdir!"
 
 #: wholesaler_app/templates/wholesaler_view.html:41
 msgid ""
@@ -790,28 +838,28 @@ msgstr ""
 
 #: wholesaler_app/templates/wholesaler_view.html:48
 msgid "Заказать"
-msgstr ""
+msgstr "Sifariş vermək"
 
 #: wholesaler_app/templates/wholesaler_view.html:52
 msgid ""
 "Если вы хотите узнать цену на оптовое количество звоните нам по телефону "
-msgstr ""
+msgstr "Topdan-satış miqdarın qiymətini bilmək istəyirsinizsə, bizə telefonla zəng edin "
 
 #: wholesaler_app/templates/wholesaler_view.html:52
 msgid "+7 (499) 249-90-00"
-msgstr ""
+msgstr "+7 (499) 249-90-00"
 
 #: wholesaler_app/templates/wholesaler_view.html:52
 msgid " или "
-msgstr ""
+msgstr " və ya "
 
 #: wholesaler_app/templates/wholesaler_view.html:52
 msgid "+7 (929) 900-90-09"
-msgstr ""
+msgstr "+7 (929) 900-90-09"
 
 #: wholesaler_app/templates/wholesaler_view.html:52
 msgid " или пишите на электронную почту "
-msgstr ""
+msgstr " və ya elektron poçtumuza göndərin - "
 
 #: wholesaler_app/templates/wholesaler_view.html:52
 msgid "info@etinat.org"
@@ -819,15 +867,15 @@ msgstr ""
 
 #: wholesaler_app/templates/wholesaler_view.html:52
 msgid ". Или же "
-msgstr ""
+msgstr ". Və yaxud "
 
 #: wholesaler_app/templates/wholesaler_view.html:52
 msgid "оставляйте нам свой номер, мы свяжемся с вами."
-msgstr ""
+msgstr "nömrənizi bizə təqdim edin, biz sizinlə əlaqə quracağıq."
 
 #: wholesaler_app/templates/wholesaler_view.html:59
 msgid "Наши награды"
-msgstr ""
+msgstr "Bizim Mükafatlar"
 
 #: wholesaler_app/templates/wholesaler_view.html:61
 msgid ""
@@ -836,10 +884,16 @@ msgid ""
 "выставок и форумов, что характеризует наш продукт признанным сообществом "
 "быстрого питания. Посмотреть все наши заслуги вы можете по кнопке ниже."
 msgstr ""
+""
+"Bəslənmə ilə əlaqəli sərgi və forumlarda hər zaman aktivik. "
+"İşimizin 10 ili ərzində məhsulumuzu tanınmış bir fast food "
+"topluluğu kimi xarakterizə edən bir çox temalı sərgi və forumun "
+"mükafatları ilə öyünə bilərik. Aşağıdakı düyməni klikləyərək bütün "
+"nailiyyətlərimizə baxa bilərsiniz."
 
 #: wholesaler_app/templates/wholesaler_view.html:62
 msgid "Награды"
-msgstr ""
+msgstr "Mükafatlar"
 
 #: wholesaler_app/templates/wholesaler_view.html:116
 msgid ""
@@ -847,3 +901,6 @@ msgid ""
 "разработано исключительно по нашим чертежам и схемам. Более подробно по "
 "кнопке ниже."
 msgstr ""
+"Biz ETINAT-stəkanların istehsalçısı və yaradıcısıyıq, avadanlıq yalnız rəsmlərimizə "
+"və diaqramlarımıza uyğun olaraq hazırlanmışdır. Aşağıdakı düyməyə klikləyərək "
+"daha ətraflı məlumat ala bilərsiniz."
