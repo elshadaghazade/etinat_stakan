@@ -887,7 +887,7 @@ msgstr ""
 ""
 "Bəslənmə ilə əlaqəli sərgi və forumlarda hər zaman aktivik. "
 "İşimizin 10 ili ərzində məhsulumuzu tanınmış bir fast food "
-"topluluğu kimi xarakterizə edən bir çox temalı sərgi və forumun "
+"topluluğu kimi xarakterizə edən bir çox mövzulu sərgi və forumun "
 "mükafatları ilə öyünə bilərik. Aşağıdakı düyməni klikləyərək bütün "
 "nailiyyətlərimizə baxa bilərsiniz."
 
