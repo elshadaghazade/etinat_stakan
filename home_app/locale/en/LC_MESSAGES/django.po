@@ -244,7 +244,7 @@ msgstr "Opening hours:"
 
 #: contacts_app/templates/contacts_view.html:83
 msgid " 09:00 до 18:00. Суб.- Вск. - выходной"
-msgstr "09:00 до 18:00. Saturday.- Sunday. - Day off"
+msgstr "from 09:00 to 18:00. Saturday.- Sunday. - Day off"
 
 #: contacts_app/templates/contacts_view.html:86
 msgid "Большая Дорогомиловская улица, 1 — Яндекс.Карты"
