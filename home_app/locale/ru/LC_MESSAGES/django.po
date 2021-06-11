@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-06 10:54+0000\n"
+"POT-Creation-Date: 2021-06-11 22:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -207,7 +207,7 @@ msgstr ""
 msgid "Отправить"
 msgstr ""
 
-#: contacts_app/templates/contacts_view.html:78 templates/base.html:156
+#: contacts_app/templates/contacts_view.html:78 templates/base.html:171
 msgid "Схема проезда"
 msgstr ""
 
@@ -248,15 +248,8 @@ msgid "Azərbaycan dili"
 msgstr ""
 
 #: home_app/templates/home_view.html:12
-msgid "начни день"
-msgstr ""
-
-#: home_app/templates/home_view.html:12
-msgid "ETINAT"
-msgstr ""
-
-#: home_app/templates/home_view.html:12
-msgid "-стакан"
+msgid ""
+"начни день с<br><span style='color: #306d34;'>ETINAT</span>-стакан</h1> "
 msgstr ""
 
 #: home_app/templates/home_view.html:13
@@ -569,7 +562,7 @@ msgstr ""
 
 #: products_app/models.py:84 products_app/models.py:90
 #: products_app/models.py:91 products_app/templates/products_view.html:38
-#: templates/base.html:142
+#: templates/base.html:157
 msgid "Оплата"
 msgstr ""
 
@@ -649,79 +642,79 @@ msgstr ""
 msgid " Телефонный номер"
 msgstr ""
 
-#: templates/base.html:127
+#: templates/base.html:142
 msgid "ПРОДУКЦИЯ"
 msgstr ""
 
-#: templates/base.html:130
+#: templates/base.html:145
 msgid "Каталог номер Один"
 msgstr ""
 
-#: templates/base.html:131
+#: templates/base.html:146
 msgid "Каталог номер Два"
 msgstr ""
 
-#: templates/base.html:132
+#: templates/base.html:147
 msgid "Каталог номер Три"
 msgstr ""
 
-#: templates/base.html:133
+#: templates/base.html:148
 msgid "Каталог номер Четыре"
 msgstr ""
 
-#: templates/base.html:137
+#: templates/base.html:152
 msgid "ИНФОРМАЦИЯ"
 msgstr ""
 
-#: templates/base.html:140
+#: templates/base.html:155
 msgid "Помощь в выборе продукции "
 msgstr ""
 
-#: templates/base.html:141
+#: templates/base.html:156
 msgid "Доставка "
 msgstr ""
 
-#: templates/base.html:143 templates/base.html:157
+#: templates/base.html:158 templates/base.html:172
 msgid "Задать вопрос"
 msgstr ""
 
-#: templates/base.html:144
+#: templates/base.html:159
 msgid "Предложение оптовикам"
 msgstr ""
 
-#: templates/base.html:145
+#: templates/base.html:160
 msgid "Получить оптовый прайс"
 msgstr ""
 
-#: templates/base.html:146
+#: templates/base.html:161
 msgid "О компании "
 msgstr ""
 
-#: templates/base.html:150
+#: templates/base.html:165
 msgid "КОНТАКТЫ"
 msgstr ""
 
-#: templates/base.html:154
+#: templates/base.html:169
 msgid "Наш адрес г.Москва ул.Большая Дорогомиловская, дом 1"
 msgstr ""
 
-#: templates/base.html:158
+#: templates/base.html:173
 msgid "Сотрудничество"
 msgstr ""
 
-#: templates/base.html:159
+#: templates/base.html:174
 msgid "Реквизиты "
 msgstr ""
 
-#: templates/base.html:160
+#: templates/base.html:175
 msgid "Часы работы "
 msgstr ""
 
-#: templates/base.html:161
+#: templates/base.html:176
 msgid "Торговая марка"
 msgstr ""
 
-#: templates/base.html:166
+#: templates/base.html:181
 msgid "© ETINAT-стакан Россия, 2021"
 msgstr ""
 

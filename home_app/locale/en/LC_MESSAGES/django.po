@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-06 10:54+0000\n"
+"POT-Creation-Date: 2021-06-11 22:31+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -70,11 +70,10 @@ msgid ""
 "и автомобильном транспорте."
 msgstr ""
 "In October 2006 in Russia and in the European Union countries were patented "
-"a unique invention - a disposable container (cup) for cooking "
-"various drinks, including tea, coffee, cocoa, medicines, "
-"food supplements, which can be used both at home and on "
-"catering establishments, at sea, aviation, railway "
-"and road transport."
+"a unique invention - a disposable container (cup) for cooking various "
+"drinks, including tea, coffee, cocoa, medicines, food supplements, which can "
+"be used both at home and on catering establishments, at sea, aviation, "
+"railway and road transport."
 
 #: company_app/templates/about_view.html:30
 msgid ""
@@ -84,19 +83,19 @@ msgid ""
 "Поэтому с сентября 2010 года в компании произведён запуск производственной "
 "площадки по выпуску одноразовых стаканов с наполнителем."
 msgstr ""
-"Our company has been operating since 2009. Together with our "
-"foreign partners have developed unparalleled in the world, "
-"technological line for the production, packaging and packaging of our products. "
-"Therefore, since September 2010, the company has launched a production "
-"platforms for the production of disposable cups with filler."
+"Our company has been operating since 2009. Together with our foreign "
+"partners have developed unparalleled in the world, technological line for "
+"the production, packaging and packaging of our products. Therefore, since "
+"September 2010, the company has launched a production platforms for the "
+"production of disposable cups with filler."
 
 #: company_app/templates/about_view.html:30
 msgid ""
 "За 5 лет продуктивной работы мы добились серьезных результатов и подарили "
 "Российскому и Европейскому потребителю «ETINAT-стакан»."
 msgstr ""
-"For 5 years of productive work, we have achieved serious results and presented "
-"To Russian and European consumers «ETINAT-cup»."
+"For 5 years of productive work, we have achieved serious results and "
+"presented To Russian and European consumers «ETINAT-cup»."
 
 #: company_app/templates/about_view.html:30
 msgid ""
@@ -104,8 +103,8 @@ msgid ""
 "единиц продукции ежемесячно, при этом гарантировать высокое качество за счет "
 "полной автоматизации производственного процесса."
 msgstr ""
-"The production capacity of the equipment allows the production of more than 5 000 000 "
-"units of products monthly, while guaranteeing high quality due to "
+"The production capacity of the equipment allows the production of more than "
+"5 000 000 units of products monthly, while guaranteeing high quality due to "
 "full automation of the production process."
 
 #: company_app/templates/about_view.html:30
@@ -116,9 +115,9 @@ msgid ""
 "партнеров и приносить радость конечным потребителям."
 msgstr ""
 "Our team of technologists is constantly working to improve the taste "
-"characteristics of existing products, as well as searches for new "
-"quality ingredients in order to surprise our customers and "
-"partners and bring joy to end consumers."
+"characteristics of existing products, as well as searches for new quality "
+"ingredients in order to surprise our customers and partners and bring joy to "
+"end consumers."
 
 #: company_app/templates/about_view.html:30
 msgid ""
@@ -126,9 +125,9 @@ msgid ""
 "счет своего качества, практичности и простоты использования. Именно поэтому "
 "многие компании уже выбрали нашу продукцию!"
 msgstr ""
-"«ETINAT-cup» is able to satisfy the most demanding customers, due "
-"to its quality, practicality and ease of use. That's why "
-"many companies have already chosen our products!"
+"«ETINAT-cup» is able to satisfy the most demanding customers, due to its "
+"quality, practicality and ease of use. That's why many companies have "
+"already chosen our products!"
 
 #: company_app/templates/about_view.html:34
 msgid "Наши Награди"
@@ -206,8 +205,8 @@ msgid ""
 "По интересующим вопросам логистики, участия в выставках, предложениях о "
 "сотрудничестве Вы можете связаться напрямую через форму ниже."
 msgstr ""
-"For questions of interest in logistics, participation in exhibitions, proposals for "
-"cooperation, you can contact directly through the form below."
+"For questions of interest in logistics, participation in exhibitions, "
+"proposals for cooperation, you can contact directly through the form below."
 
 #: contacts_app/templates/contacts_view.html:39
 msgid "Ваше имя"
@@ -230,7 +229,7 @@ msgstr "Your request or offer"
 msgid "Отправить"
 msgstr "Send"
 
-#: contacts_app/templates/contacts_view.html:78 templates/base.html:156
+#: contacts_app/templates/contacts_view.html:78 templates/base.html:171
 msgid "Схема проезда"
 msgstr "Driving directions"
 
@@ -271,16 +270,9 @@ msgid "Azərbaycan dili"
 msgstr "Azerbaijani"
 
 #: home_app/templates/home_view.html:12
-msgid "начни день"
-msgstr "Start the day"
-
-#: home_app/templates/home_view.html:12
-msgid "ETINAT"
-msgstr "ETINAT"
-
-#: home_app/templates/home_view.html:12
-msgid "-стакан"
-msgstr "-cup"
+msgid ""
+"начни день с<br><span style='color: #306d34;'>ETINAT</span>-стакан</h1> "
+msgstr "Start new day with <br><span style='color: #306d34;'>ETINAT</span></h1>"
 
 #: home_app/templates/home_view.html:13
 msgid "Просто добавь кипяток!"
@@ -319,12 +311,12 @@ msgid ""
 "Одноразовый бумажный стакан ёмкостью 250мл. выполненный из целлюлозного "
 "картона!"
 msgstr ""
-"Disposable paper cup with a capacity of 250 ml. made of cellulosic "
-"cardboard!"
+"Disposable paper cup with a capacity of 250 ml. made of cellulosic cardboard!"
 
 #: home_app/templates/home_view.html:118
 msgid "При нагревании не выделяет вредных веществ,отсутствует неприятный запах"
-msgstr "When heated, it does not emit harmful substances, there is no unpleasant odor"
+msgstr ""
+"When heated, it does not emit harmful substances, there is no unpleasant odor"
 
 #: home_app/templates/home_view.html:119
 msgid "Минимальный шанс обжечься"
@@ -348,9 +340,8 @@ msgid ""
 "после вскрытия складывается по линиям сгиба и используется для размешивания "
 "напитка"
 msgstr ""
-"The upper protective cover is additionally a 'SPOON COVER' , which "
-"after opening, folds along the fold lines and is used to stir "
-"the drink"
+"The upper protective cover is additionally a 'SPOON COVER' , which after "
+"opening, folds along the fold lines and is used to stir the drink"
 
 #: home_app/templates/home_view.html:126 home_app/templates/home_view.html:131
 msgid "Запрессовывается в стакан без применения клея"
@@ -441,14 +432,14 @@ msgid ""
 "Сохраняет свою изначальную форму, бережёт ваши руки, отсутствует посторонний "
 "запах."
 msgstr ""
-"Retains its original shape, protects your hands, there is no foreign "
-"smell."
+"Retains its original shape, protects your hands, there is no foreign smell."
 
 #: home_app/templates/home_view.html:261
 msgid ""
 "Если заполнить кипятком - заварится вкусный и ароматный чай, ничего лишнего."
 msgstr ""
-"If you fill it with boiling water - a delicious and aromatic tea will be brewed, nothing more."
+"If you fill it with boiling water - a delicious and aromatic tea will be "
+"brewed, nothing more."
 
 #: home_app/templates/home_view.html:264
 msgid ""
@@ -461,28 +452,30 @@ msgid ""
 "Мембрана которая позволяет использовать листовые чаи с фруктами и лепестками "
 "цветов не позволяя чаинкам всплывать."
 msgstr ""
-"Membrane that allows the use of leafy teas with fruits and petals "
-"flowers not allowing the tea leaves to float."
+"Membrane that allows the use of leafy teas with fruits and petals flowers "
+"not allowing the tea leaves to float."
 
 #: home_app/templates/home_view.html:270
 msgid "Вкуснейшие ингредиенты уже внутри, нет нужды покупать их отдельно."
-msgstr "The delicious ingredients are already inside, there is no need to buy them separately."
+msgstr ""
+"The delicious ingredients are already inside, there is no need to buy them "
+"separately."
 
 #: home_app/templates/home_view.html:273
 msgid ""
 "К донышку прикреплён сошет с сладкой смесью. Удобно держать, удобно взять с "
 "собой. Презентабельный внешний вид."
 msgstr ""
-"Attached to the bottom is a suture with a sweet mixture. Convenient to hold, convenient to take with "
-"you. Presentable appearance."
+"Attached to the bottom is a suture with a sweet mixture. Convenient to hold, "
+"convenient to take with you. Presentable appearance."
 
 #: home_app/templates/home_view.html:276
 msgid ""
 "Экологически безопасен, вносит свою лепту в сохранение окружающей среды, "
 "время разложения - до 3х месяцев."
 msgstr ""
-"Environmentally friendly, contributes to the preservation of the environment, "
-"decomposition time - up to 3 months."
+"Environmentally friendly, contributes to the preservation of the "
+"environment, decomposition time - up to 3 months."
 
 #: home_app/templates/home_view.html:288
 msgid "Деформируется, обжигает руки, посторонний запах в 8 стаканчиках из 10."
@@ -492,7 +485,8 @@ msgstr "Deformed, burns hands, foreign smell in 8 cups out of 10."
 msgid ""
 "Если заполнить кипятком - заварится чай, а так же канцерогены и токсины."
 msgstr ""
-"If you fill it with boiling water, it will brew tea, as well as carcinogens and toxins."
+"If you fill it with boiling water, it will brew tea, as well as carcinogens "
+"and toxins."
 
 #: home_app/templates/home_view.html:294
 msgid "Мешалку надо покупать отдельно, при чём тоже пластиковую."
@@ -503,8 +497,8 @@ msgid ""
 "Отсутствует мембрана, что обрекает пользоваться пакетированным чаем. Не все "
 "пакетированные чаи хорошего качества."
 msgstr ""
-"There is no membrane, which condemns to use tea bags. Not all "
-"packaged teas of good quality."
+"There is no membrane, which condemns to use tea bags. Not all packaged teas "
+"of good quality."
 
 #: home_app/templates/home_view.html:300
 msgid "Отдельно надо покупать ингредиенты."
@@ -515,14 +509,15 @@ msgid ""
 "Сахар надо покупать отдельно. Неудобно держать, неудобно взять с собой. "
 "Выглядит уныло."
 msgstr ""
-"Sugar must be purchased separately. It is uncomfortable to hold, uncomfortable to take with you. "
-"It looks dull."
+"Sugar must be purchased separately. It is uncomfortable to hold, "
+"uncomfortable to take with you. It looks dull."
 
 #: home_app/templates/home_view.html:306
 msgid ""
 "Экологически опасен, т.к среднее время разложения - 600 месяцев или 50 лет."
 msgstr ""
-"Environmentally dangerous, because the average decomposition - time is 600 months or 50 years."
+"Environmentally dangerous, because the average decomposition - time is 600 "
+"months or 50 years."
 
 #: home_app/templates/home_view.html:315
 #: wholesaler_app/templates/wholesaler_view.html:87
@@ -615,7 +610,7 @@ msgstr "Minimum order"
 
 #: products_app/models.py:84 products_app/models.py:90
 #: products_app/models.py:91 products_app/templates/products_view.html:38
-#: templates/base.html:142
+#: templates/base.html:157
 msgid "Оплата"
 msgstr "Payment"
 
@@ -695,79 +690,79 @@ msgstr " items in the cart"
 msgid " Телефонный номер"
 msgstr " Telephone number"
 
-#: templates/base.html:127
+#: templates/base.html:142
 msgid "ПРОДУКЦИЯ"
 msgstr "PRODUCTS"
 
-#: templates/base.html:130
+#: templates/base.html:145
 msgid "Каталог номер Один"
 msgstr "Catalog number One"
 
-#: templates/base.html:131
+#: templates/base.html:146
 msgid "Каталог номер Два"
 msgstr "Catalog number Two"
 
-#: templates/base.html:132
+#: templates/base.html:147
 msgid "Каталог номер Три"
 msgstr "Catalog number Three"
 
-#: templates/base.html:133
+#: templates/base.html:148
 msgid "Каталог номер Четыре"
 msgstr "Catalog number Four"
 
-#: templates/base.html:137
+#: templates/base.html:152
 msgid "ИНФОРМАЦИЯ"
 msgstr "INFORMATION"
 
-#: templates/base.html:140
+#: templates/base.html:155
 msgid "Помощь в выборе продукции "
 msgstr "Help in choosing products "
 
-#: templates/base.html:141
+#: templates/base.html:156
 msgid "Доставка "
 msgstr "Delivery "
 
-#: templates/base.html:143 templates/base.html:157
+#: templates/base.html:158 templates/base.html:172
 msgid "Задать вопрос"
 msgstr "Ask a Question"
 
-#: templates/base.html:144
+#: templates/base.html:159
 msgid "Предложение оптовикам"
 msgstr "Offer to wholesalers"
 
-#: templates/base.html:145
+#: templates/base.html:160
 msgid "Получить оптовый прайс"
 msgstr "Get a wholesale price list"
 
-#: templates/base.html:146
+#: templates/base.html:161
 msgid "О компании "
 msgstr "About company "
 
-#: templates/base.html:150
+#: templates/base.html:165
 msgid "КОНТАКТЫ"
 msgstr "CONTACTS"
 
-#: templates/base.html:154
+#: templates/base.html:169
 msgid "Наш адрес г.Москва ул.Большая Дорогомиловская, дом 1"
 msgstr "Our address Moscow city, street Bolshaya Doroqomilovskaya, home 1"
 
-#: templates/base.html:158
+#: templates/base.html:173
 msgid "Сотрудничество"
 msgstr "Cooperation"
 
-#: templates/base.html:159
+#: templates/base.html:174
 msgid "Реквизиты "
 msgstr "Requisites "
 
-#: templates/base.html:160
+#: templates/base.html:175
 msgid "Часы работы "
 msgstr "Opening hours "
 
-#: templates/base.html:161
+#: templates/base.html:176
 msgid "Торговая марка"
 msgstr "Trademark"
 
-#: templates/base.html:166
+#: templates/base.html:181
 msgid "© ETINAT-стакан Россия, 2021"
 msgstr "© ETINAT-cup Russia, 2021"
 
@@ -801,45 +796,45 @@ msgid ""
 "нам о своей задаче и мы подскажем наилучшее решение с участием нашего ETINAT-"
 "стаканчика."
 msgstr ""
-"You do not need to control the procurement process and delivery. Tell "
-"us about our task and we will suggest the best solution with the participation of our ETINAT-"
-"cup."
+"You do not need to control the procurement process and delivery. Tell us "
+"about our task and we will suggest the best solution with the participation "
+"of our ETINAT-cup."
 
 #: wholesaler_app/templates/wholesaler_view.html:21
 msgid ""
 "В отличии от кофе-машин — не ломается, не обязывает Вас к постоянному "
 "техническому обслуживанию и покупке ингредиентов в одном месте."
 msgstr ""
-"ВUnlike coffee-machines — it does not break down, does not oblige you to permanent "
-"maintenance and purchase of ingredients in one place."
+"ВUnlike coffee-machines — it does not break down, does not oblige you to "
+"permanent maintenance and purchase of ingredients in one place."
 
 #: wholesaler_app/templates/wholesaler_view.html:25
 msgid "Сфера применения настолько обширна, что не уместится в этом блоке."
-msgstr "The scope of application is so extensive that it will not fit in this block."
+msgstr ""
+"The scope of application is so extensive that it will not fit in this block."
 
 #: wholesaler_app/templates/wholesaler_view.html:29
 msgid ""
 "Наполнитель (напиток), сахар, ложка - все в одном стаканчике! Нет нужды "
 "покупать что-либо отдельно!"
 msgstr ""
-"Filler (drink), sugar, spoon - all in one cup! No need "
-"buy something separately!"
+"Filler (drink), sugar, spoon - all in one cup! No need buy something "
+"separately!"
 
 #: wholesaler_app/templates/wholesaler_view.html:33
 msgid ""
 "Вы всегда контролируете свою прибыль и эффективность в направлении горячих "
 "напитков!"
 msgstr ""
-"You always control your profit and efficiency towards the hottest "
-"drinks!"
+"You always control your profit and efficiency towards the hottest drinks!"
 
 #: wholesaler_app/templates/wholesaler_view.html:37
 msgid ""
 "Ваши клиенты отметят отличный вкус, удобство и заботу с которой вы к ним "
 "относитесь!"
 msgstr ""
-"Your customers will note the excellent taste, convenience and care with which you treat them "
-"treat!"
+"Your customers will note the excellent taste, convenience and care with "
+"which you treat them treat!"
 
 #: wholesaler_app/templates/wholesaler_view.html:41
 msgid ""
@@ -898,10 +893,10 @@ msgid ""
 "выставок и форумов, что характеризует наш продукт признанным сообществом "
 "быстрого питания. Посмотреть все наши заслуги вы можете по кнопке ниже."
 msgstr ""
-"We are always active at exhibitions and forums related to nutrition. Per "
-"10 years of our work, we can boast of awards from many thematic "
-"exhibitions and forums that characterize our product as a recognized community "
-"Fast food. You can view all our achievements by clicking the button below."
+"We are always active at exhibitions and forums related to nutrition. Per 10 "
+"years of our work, we can boast of awards from many thematic exhibitions and "
+"forums that characterize our product as a recognized community Fast food. "
+"You can view all our achievements by clicking the button below."
 
 #: wholesaler_app/templates/wholesaler_view.html:62
 msgid "Награды"
@@ -914,5 +909,14 @@ msgid ""
 "кнопке ниже."
 msgstr ""
 "We are the manufacturer and creator of ETINAT-cup, the equipment has been "
-"developed exclusively according to our drawings and diagrams. More details on "
-"button below."
+"developed exclusively according to our drawings and diagrams. More details "
+"on button below."
+
+#~ msgid "начни день"
+#~ msgstr "Start the day"
+
+#~ msgid "ETINAT"
+#~ msgstr "ETINAT"
+
+#~ msgid "-стакан"
+#~ msgstr "-cup"
