@@ -65,7 +65,7 @@ function check(input, form) {
 
 // Düzgün vəziyyət - yəni ki, hərşey normal hala qayıdır və xəbərdarlıq yox olur
 function correctCase() {
-    $('.form-element').css('border', '1px solid #c7a17a')
+    $('.form-element').css('border', '1px solid rgb(115, 171, 132)')
     $('.form-element i').css('color', '#000')
     $('.warning-div').remove()
 }
@@ -115,7 +115,6 @@ function check_hm(input_element) {
 function correctCase_hm() {
     $('#name-input-hm').css('border', '2px solid #306d34');
     $('#email-input-hm').css('border', '2px solid #306d34');
-    $('#phone-input-hm').css('border', '2px solid #306d34');
     $('#message-textarea-hm').css('border', '2px solid #306d34');
     $('.warning-div').remove();
 }
@@ -126,8 +125,6 @@ $('.common-input-hm').keyup(function(e) {
         check_hm('#name-input-hm');
     } else if ($(this).is('#email-input-hm')) {
         check_hm('#email-input-hm');
-    } else if ($(this).is('#phone-input-hm')) {
-        check_hm('#phone-input-hm');
     } else if ($(this).is('#message-textarea-hm')) {
         check_hm('#message-textarea-hm');
     }

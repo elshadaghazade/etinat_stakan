@@ -86,7 +86,7 @@
 </main>
 <section class="filtered-cup-section container">
     <div class="row ms-0 me-0 my-5">
-        <div class="section-title col-lg-12 mb-3"><span style="font-family:'Rubik',sans-serif;font-weight: 600;"><span style="color: #306d34;">ETINAT</span>-стакан это</span> <i class="fas fa-long-arrow-alt-down" style="color: #306d34;"></i>
+        <div class="section-title col-lg-12 mb-3"><span style="font-family:'Rubik',sans-serif;font-weight: 600;"><span style="color: #306d34;">ETINAT</span>{% trans "-стакан это" %}</span> <i class="fas fa-long-arrow-alt-down" style="color: #306d34;"></i>
         </div>
         <div class="col-lg-6 filtered-cup-image">
             <img src="{% static 'images/cup-filtered2.png' %}" alt="">
@@ -355,11 +355,11 @@
                     </p>
                     <form class="home-form mx-auto my-3">
                         <img src="{% static 'images/svg/user.svg' %}" alt=" " />
-                        <input id="name-input-hm" class="common-input-hm form-control text-center my-2 " type="text " placeholder="Ваше имя" />
+                        <input id="name-input-hm" class="common-input-hm form-control text-center my-2 " type="text " placeholder="{% trans 'Ваше имя'%}" />
                         <img src="{% static 'images/svg/email.svg' %}" alt=" " />
-                        <input id="email-input-hm" class="common-input-hm form-control text-center my-2 " type="email " placeholder="Введите ваш email" />
+                        <input id="email-input-hm" class="common-input-hm form-control text-center my-2 " type="email " placeholder="{% trans 'Введите ваш email' %}" />
                         <img src="{% static 'images/svg/text.svg' %}" alt=" " />
-                        <textarea id="message-textarea-hm" class="common-input-hm form-control text-center my-2" placeholder="Ваш запрос или предложение"></textarea>
+                        <textarea id="message-textarea-hm" class="common-input-hm form-control text-center my-2" placeholder="{% trans 'Ваш запрос или предложение'%}"></textarea>
                         <button id="send-button-hm" type="button" class="btn-home-form my-2">{% trans "Отправить" %}</button>
                     </form>
                 </div>
