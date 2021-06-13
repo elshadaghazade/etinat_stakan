@@ -304,6 +304,8 @@ input:focus {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-size: 36px;
+    text-align: center;
 }
 
 .payment-popup-input-div {
@@ -396,6 +398,9 @@ input:focus {
     .payment-popup-content,
     .congrats-div {
         width: 90%;
+    }
+    .congrats-div {
+        font-size: 32px;
     }
 }
 
