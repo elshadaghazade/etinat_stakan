@@ -11,6 +11,10 @@
 
 {% block content %}
 <div id="payment-popup">
+    <div class="congrats-div">
+    <span class="close"><i class="fas fa-times"></i></span>
+    <div class='congrats-text'>{% trans 'Поздравляю! Ваш запрос учтен.' %}</div>
+    </div>
     <form id="checkout-form" onsubmit="return false;">
     <div class="payment-popup-content">
         <span class="close"><i class="fas fa-times"></i></span>

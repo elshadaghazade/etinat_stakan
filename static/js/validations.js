@@ -215,7 +215,8 @@ $('#confirm-button').on('click', function() {
             data: data + '&products=' + items,
             method: 'POST',
         }).done(result => {
-            $('#payment-popup').css('display', 'none');
+            $('.payment-popup-content').css('display', 'none');
+            $('.congrats-div').css('display', 'block');
         });
     }
 });

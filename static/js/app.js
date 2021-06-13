@@ -68,8 +68,8 @@ $('#cart-button').mouseover(function() {
     $('.minicart').css('display', "block")
 })
 $('.cart-items').mouseleave(function() {
-        $('.minicart').css('display', "none")
-    })
+    $('.minicart').css('display', "none")
+})
 
 // Etinat Filtered
 
@@ -92,12 +92,13 @@ $('.fourth-circle-icon').hover(function() {
 
 // Confirm PopUp un görünməsi
 
-$('.btn-payment').on('click',function(){
-    $('#payment-popup').css('display','block');
+$('.btn-payment').on('click', function() {
+    $('#payment-popup').css('display', 'block');
+    $('.congrats-div').css('display', 'none');
 })
 
-$('.close').on('click',function(){
-    $('#payment-popup').css('display','none');
+$('.close').on('click', function() {
+    $('#payment-popup').css('display', 'none');
 })
 
 $(window).on('click', function(event) {
