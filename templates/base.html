@@ -112,10 +112,10 @@
         <!-- <section class="container-fluid "> -->
         <div class="col-md-3 ">
             <img src="{% static 'images/logo.png' %}" style="width: 100% " alt=" " />
-            <form action="{% url 'set_language' %}" method="post">
+            <form class="languages-form mt-4 mb-5" action="{% url 'set_language' %}" method="post">
                 {% csrf_token %}
                 <input name="next" type="hidden" value="{{ redirect_to }}">
-                <select name="language">
+                <select class="languages-select" name="language">
                     {% get_current_language as LANGUAGE_CODE %}
                     {% get_available_languages as LANGUAGES %}
                     {% get_language_info_list for LANGUAGES as languages %}
@@ -125,7 +125,7 @@
                         </option>
                     {% endfor %}
                 </select>
-                <input type="submit" value="Go">
+                <input class="languages-btn" type="submit" value="Go">
             </form>
             {% comment %} <h3>{% trans  'Подпишитесь на нашу рассылку и получите скидка 30%' %}</h3>
             <i class="fab fa-instagram "></i>
