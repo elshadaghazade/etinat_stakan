@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from django.http import JsonResponse
 from django.views.decorators.http import require_http_methods
+from django.core.mail import EmailMessage
 import json
 from .models import *
 
@@ -36,13 +37,32 @@ def checkout_complete_view(request):
         products = None
 
     bulk_create = []
+    ordersTxt = ""
     if products:
         order = Order.objects.create(name=name, email=email, phone=phone, delivery_method=delivery_method, address=address, comment=comment)
         for product in products.values():
             qty = product.get('count')
             product = Product(pk=product.get('id'))
             bulk_create.append(OrderedProducts(product=product, qty=qty, order=order))
+            ordersTxt += "<div>" + str(product) + " - " + str(qty) + " штук."
         OrderedProducts.objects.bulk_create(bulk_create)
+
+    email = EmailMessage(
+        'Etinat.org - Новый заказ',
+        f"""<h3>Имя: {name}</h3>
+            <h3>Телефон: {phone}</h3>
+            <h3>Email: {email}</h3>
+            <h3>Метод доставки: {Order.DELIVERY_CHOICES[int(delivery_method)]}</h3>
+            <h3>Adres: {address}</h3>
+            <p>{comment}</p>
+            {ordersTxt}""",
+        'info@elshadaghazade.com',
+        ['info@etinat.org'],
+        reply_to=[email],
+    )
+    
+    email.content_subtype = 'html'
+    email.send()
             
 
 
