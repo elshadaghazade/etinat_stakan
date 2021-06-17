@@ -176,7 +176,12 @@ body {
     color: #444 !important;
 }
 
-.call-back-link {
+.callback-user-symbol,
+.callback-phone-symbol {
+    color: #207a0d;
+}
+
+call-back-link {
     border-radius: 12px;
     font-size: 1.25rem;
     text-decoration: none;
