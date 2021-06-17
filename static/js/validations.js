@@ -71,7 +71,7 @@ function check(input, form) {
         $(`${form}`).css('border', '2px solid #f00')
         $(`${form} i`).css('color', '#f00')
     } else {
-        $(`${form}`).css('border', '1px solid #c7a17a')
+        $(`${form}`).css('border', '1px solid rgb(115, 171, 132)')
         $(`${form} i`).css('color', '#000')
     }
 }
