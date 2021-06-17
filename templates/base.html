@@ -88,12 +88,16 @@
             </div>
         </div>
         <div id="callback-popup" class="popup">
+            <div class="callback-congrats-div">
+                <span class="close"><i class="fas fa-times"></i></span>
+                <div class='callback-congrats-text'>{% trans 'Спасибо! Вам перезвонят.' %}</div>
+            </div>
             <form id="callback_form" onsubmit="return false;">
                 <div class="callback-popup-content">
                     <span class="close"><i class="fas fa-times"></i></span>
-                    <label for="callback-name-input"><img src="{% static 'images/svg/user.svg' %}" alt="" style="height: 25px;width: 35px;">{% trans "Имя"%}</label>
+                    <label for="callback-name-input"><i class="fas fa-user callback-user-symbol"></i>{% trans "Имя"%}</label>
                     <input id="callback-name-input" class="callback-input" name="name" type="text" />
-                    <label for="callback-number-input"><img src="{% static 'images/svg/phone-call.svg' %}" alt="" style="height: 25px;width: 40px;">{% trans " Телефонный номер"%}</label>
+                    <label for="callback-number-input"><i class="fas fa-phone callback-phone-symbol"></i>{% trans " Телефонный номер"%}</label>
                     <input id="callback-number-input" name="phone" class="callback-input" type="number" />
                     <button id="callback-send-button">{% trans "Отправить"%}</button>
                 </div>
