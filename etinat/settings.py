@@ -25,7 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '^i0@6a8gfyku&n(5&8%+bd7chmf$2+qokgb1a@$z-r+j@0js(m'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     '*'
@@ -35,7 +35,7 @@ if not DEBUG:
     SECURE_HSTS_SECONDS=True
     SECURE_CONTENT_TYPE_NOSNIFF=True
     SECURE_BROWSER_XSS_FILTER=True
-    SECURE_SSL_REDIRECT=True
+    # SECURE_SSL_REDIRECT=True
     SESSION_COOKIE_SECURE=True
     CSRF_COOKIE_SECURE=True
     SECURE_HSTS_INCLUDE_SUBDOMAINS=True
@@ -124,11 +124,16 @@ if not DEBUG:
     }
 else:
     DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': 'db.sqlite3',
+        'default': {
+            'ENGINE': 'django.db.backends.postgresql',
+            'NAME': DATABASE_URL.path[1:],
+            'USER': DATABASE_URL.username,
+            'PASSWORD': DATABASE_URL.password,
+            'HOST': DATABASE_URL.hostname,
+            'PORT': DATABASE_URL.port,
+            'CONN_MAX_AGE': 600,
+        }
     }
-}
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref//#auth-password-validators
