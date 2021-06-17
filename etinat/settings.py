@@ -25,7 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '^i0@6a8gfyku&n(5&8%+bd7chmf$2+qokgb1a@$z-r+j@0js(m'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     '*'
@@ -185,3 +185,11 @@ LANGUAGES = [
     ('en', _('English')),
     ('az', _('Azərbaycan dili')),
 ]
+
+EMAIL_HOST = 'smtppro.zoho.com'
+EMAIL_PORT = 465
+EMAIL_HOST_USER = 'info@elshadaghazade.com'
+EMAIL_HOST_PASSWORD = 'x23EPYSg2UdU'
+EMAIL_USE_SSL = True
+# 
+# smtppro.zoho.com 465
