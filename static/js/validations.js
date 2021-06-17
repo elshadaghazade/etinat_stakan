@@ -89,6 +89,11 @@ $('#send-button-hm').on('click', function() {
         )
     } else {
         correctCase_hm();
+        $('#name-input-hm').val('');
+        $('#email-input-hm').val('');
+        $('#phone-input-hm').val('');
+        $('#message-textarea-hm').val('');
+
         $.ajax({
             url: _APP_SETTINGS.paths.sendMessage,
             method: 'POST',
@@ -157,7 +162,8 @@ $('#callback-send-button').on('click', function() {
             data: $('#callback_form').serialize(),
             method: 'post'
         }).done(result => {
-            $('#callback-popup').css('display', 'none');
+            $('#callback-popup-content').css('display', 'none');
+            $('.callback-congrats-div').css('display', 'block')
             $('#callback-name-input').val('')
             $('#callback-number-input').val('');
         });
