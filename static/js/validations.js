@@ -1,9 +1,17 @@
+$('.contact-popup').css('display', 'none');
+
+$('.contact-close').on('click', function() {
+    $('.contact-popup').css('display', 'none');
+});
+
+
 // Kontakt səhifəsindəki validation
+
 $('#send-button').on('click', function() {
-    var name = $('#name-input').val()
-    var number = $('#number-input').val()
-    var email = $('#email-input').val()
-    var message = $('#message-textarea').val()
+    var name = $('#name-input').val();
+    var number = $('#number-input').val();
+    var email = $('#email-input').val();
+    var message = $('#message-textarea').val();
     if (
         name.trim() == '' ||
         number.trim() == '' ||
@@ -21,6 +29,11 @@ $('#send-button').on('click', function() {
         )
     } else {
         correctCase();
+        $('#name-input').val('');
+        $('#number-input').val('');
+        $('#email-input').val('');
+        $('#message-textarea').val('');
+        $('.contact-popup').css('display', 'block');
 
         $.ajax({
             url: _APP_SETTINGS.paths.sendMessage,
@@ -75,14 +88,12 @@ $('#send-button-hm').on('click', function() {
 
     var name = $('#name-input-hm').val()
     var email = $('#email-input-hm').val()
-    var phone = $('#phone-input-hm').val()
     var message = $('#message-textarea-hm').val()
 
-    if (name.trim() == '' || email.trim() == '' || message.trim() == '' || phone.trim() == '') {
+    if (name.trim() == '' || email.trim() == '' || message.trim() == '') {
         correctCase_hm();
         check_hm('#name-input-hm');
         check_hm('#email-input-hm');
-        check_hm('#phone-input-hm');
         check_hm('#message-textarea-hm');
         $('<div class="warning-div"></div>').insertBefore('#send-button-hm')
         $('.warning-div').append(
@@ -92,7 +103,6 @@ $('#send-button-hm').on('click', function() {
         correctCase_hm();
         $('#name-input-hm').val('');
         $('#email-input-hm').val('');
-        $('#phone-input-hm').val('');
         $('#message-textarea-hm').val('');
         $('.home-contact-popup').css('display', 'block');
 
@@ -103,7 +113,6 @@ $('#send-button-hm').on('click', function() {
         }).done(result => {
             $('#name-input-hm').val('')
             $('#email-input-hm').val('')
-            $('#phone-input-hm').val('')
             $('#message-textarea-hm').val('')
         }).catch(error => {})
     }
@@ -159,19 +168,26 @@ $('#callback-send-button').on('click', function() {
     if ($('#callback-name-input').val().trim() != '' && $('#callback-number-input').val().trim() != '') {
         var name = $('#callback-name-input').val();
         var number = $('#callback-number-input').val();
+
         $.ajax({
             url: _APP_SETTINGS.paths.callbackUri,
             data: $('#callback_form').serialize(),
             method: 'post'
         }).done(result => {
-            $('#callback-popup-content').css('display', 'none');
-            $('.callback-congrats-div').css('display', 'block')
-            $('#callback-name-input').val('')
-            $('#callback-number-input').val('');
+
         });
+        $('.callback-popup-content').css('display', 'none');
+        $('.callback-congrats-div').css('display', 'block');
+        $('#callback-name-input').val('')
+        $('#callback-number-input').val('');
     }
 
 });
+
+$('.call-back-link').on('click', function() {
+    $('.callback-popup-content').css('display', 'block');
+    $('.callback-congrats-div').css('display', 'none');
+})
 
 $('.callback-input').keyup(function(e) {
     if ($(this).val().trim() == '') {

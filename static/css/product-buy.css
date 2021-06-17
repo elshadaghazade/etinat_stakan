@@ -289,8 +289,7 @@ input:focus {
 }
 
 .payment-popup-content,
-.congrats-div,
-.callback-congrats-div {
+.congrats-div {
     position: relative;
     background-color: #fefefe;
     margin: auto;
@@ -301,8 +300,7 @@ input:focus {
     width: 50%;
 }
 
-.congrats-div,
-.callback-congrats-div {
+.congrats-div {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -398,12 +396,10 @@ input:focus {
 
 @media (max-width: 1000px) {
     .payment-popup-content,
-    .congrats-div,
-    .callback-congrats-div {
+    .congrats-div {
         width: 90%;
     }
-    .congrats-div,
-    .callback-congrats-div {
+    .congrats-div {
         font-size: 28px;
     }
 }
