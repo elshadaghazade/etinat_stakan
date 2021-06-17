@@ -72,6 +72,7 @@ function correctCase() {
 
 // Ana səhifədəki validation
 $('#send-button-hm').on('click', function() {
+
     var name = $('#name-input-hm').val()
     var email = $('#email-input-hm').val()
     var phone = $('#phone-input-hm').val()
@@ -93,6 +94,7 @@ $('#send-button-hm').on('click', function() {
         $('#email-input-hm').val('');
         $('#phone-input-hm').val('');
         $('#message-textarea-hm').val('');
+        $('.home-contact-popup').css('display', 'block');
 
         $.ajax({
             url: _APP_SETTINGS.paths.sendMessage,

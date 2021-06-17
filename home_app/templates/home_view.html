@@ -365,9 +365,7 @@
         <div class="row d-flex align-items-center home-form-row mx-auto">
             <div class="col-lg-6 ">
                 <div class="card card-body card-design">
-                    <p class="text-center my-3 mx-auto">
-                        {% trans "Мы с удовольствием на них ответим.Заполните форму ниже и наш менеджер перезвонит Вам в течении 10 минут!" %}
-                    </p>
+                    <p class="text-center my-3 mx-auto">{% trans "Мы с удовольствием на них ответим.Заполните форму ниже и наш менеджер перезвонит Вам в течении 10 минут!" %}</p>
                     <form class="home-form mx-auto my-3">
                         <img src="{% static 'images/svg/user.svg' %}" alt=" " />
                         <input id="name-input-hm" class="common-input-hm form-control text-center my-2 " type="text " placeholder="{% trans 'Ваше имя'%}" />
@@ -386,5 +384,8 @@
             </div>
         </div>
     </div>
+</div>
+<div class="home-contact-popup">
+    <div class="home-contact-content"><span class="home-contact-close"><i class="fas fa-times"></i></span>{% trans "Спасибо за заявку. Мы свяжемся с вами." %}</div>
 </div>
 {% endblock content %}

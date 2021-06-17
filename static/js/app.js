@@ -98,7 +98,11 @@ $('.btn-payment').on('click', function() {
 })
 
 $('.close').on('click', function() {
-    $('#payment-popup').css('display', 'none');
+    $(this).parent().css('display', 'none');
+})
+
+$('.home-contact-close').on('click', function() {
+    $('.home-contact-popup').css('display', 'none')
 })
 
 $(window).on('click', function(event) {
