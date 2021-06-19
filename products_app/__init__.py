@@ -1,0 +1,1 @@
+default_app_config = 'prpducts_app.apps.ProductsAppConfig'
