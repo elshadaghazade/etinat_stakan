@@ -29,17 +29,24 @@ $('#send-button').on('click', function() {
         )
     } else {
         correctCase();
-        $('#name-input').val('');
-        $('#number-input').val('');
-        $('#email-input').val('');
-        $('#message-textarea').val('');
-        $('.contact-popup').css('display', 'block');
 
         $.ajax({
             url: _APP_SETTINGS.paths.sendMessage,
             method: 'POST',
             data: $('#contact-form').serialize()
-        }).done(result => {}).catch(error => {})
+        }).done(result => {
+            $('#name-input').val('');
+            $('#number-input').val('');
+            $('#email-input').val('');
+            $('#message-textarea').val('');
+            $('.contact-popup').css('display', 'block');
+        }).catch(error => {
+            $('#name-input').val('');
+            $('#number-input').val('');
+            $('#email-input').val('');
+            $('#message-textarea').val('');
+            $('.contact-popup').css('display', 'block');
+        })
     }
 })
 
@@ -101,10 +108,6 @@ $('#send-button-hm').on('click', function() {
         )
     } else {
         correctCase_hm();
-        $('#name-input-hm').val('');
-        $('#email-input-hm').val('');
-        $('#message-textarea-hm').val('');
-        $('.home-contact-popup').css('display', 'block');
 
         $.ajax({
             url: _APP_SETTINGS.paths.sendMessage,
@@ -113,8 +116,14 @@ $('#send-button-hm').on('click', function() {
         }).done(result => {
             $('#name-input-hm').val('')
             $('#email-input-hm').val('')
-            $('#message-textarea-hm').val('')
-        }).catch(error => {})
+            $('#message-textarea-hm').val('');
+            $('.home-contact-popup').css('display', 'block');
+        }).catch(error => {
+            $('#name-input-hm').val('')
+            $('#email-input-hm').val('')
+            $('#message-textarea-hm').val('');
+            $('.home-contact-popup').css('display', 'block');
+        })
     }
 });
 
@@ -174,12 +183,11 @@ $('#callback-send-button').on('click', function() {
             data: $('#callback_form').serialize(),
             method: 'post'
         }).done(result => {
-
+            $('.callback-popup-content').css('display', 'none');
+            $('.callback-congrats-div').css('display', 'block');
+            $('#callback-name-input').val('')
+            $('#callback-number-input').val('');
         });
-        $('.callback-popup-content').css('display', 'none');
-        $('.callback-congrats-div').css('display', 'block');
-        $('#callback-name-input').val('')
-        $('#callback-number-input').val('');
     }
 
 });
