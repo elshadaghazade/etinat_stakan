@@ -1,1 +1,1 @@
-default_app_config = 'prpducts_app.apps.ProductsAppConfig'
+default_app_config = 'products_app.apps.ProductsAppConfig'
