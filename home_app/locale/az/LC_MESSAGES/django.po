@@ -384,7 +384,7 @@ msgid "РОССИЙСКОЕ"
 msgstr ""
 
 #: home_app/templates/home_view.html:150
-msgid "ОЛНОСТЬЮ РОССИЙСКОЕ ИЗОБРЕТЕНИЕ"
+msgid "ПОЛНОСТЬЮ РОССИЙСКОЕ ИЗОБРЕТЕНИЕ"
 msgstr "TAMAMİLƏ RUS İXTİRASI"
 
 #: home_app/templates/home_view.html:158

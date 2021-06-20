@@ -384,7 +384,7 @@ msgid "РОССИЙСКОЕ"
 msgstr "RUSSIAN"
 
 #: home_app/templates/home_view.html:150
-msgid "ОЛНОСТЬЮ РОССИЙСКОЕ ИЗОБРЕТЕНИЕ"
+msgid "ПОЛНОСТЬЮ РОССИЙСКОЕ ИЗОБРЕТЕНИЕ"
 msgstr "ALL RUSSIAN INVENTION"
 
 #: home_app/templates/home_view.html:158
@@ -805,7 +805,7 @@ msgid ""
 "В отличии от кофе-машин — не ломается, не обязывает Вас к постоянному "
 "техническому обслуживанию и покупке ингредиентов в одном месте."
 msgstr ""
-"ВUnlike coffee-machines — it does not break down, does not oblige you to "
+"Unlike coffee-machines — it does not break down, does not oblige you to "
 "permanent maintenance and purchase of ingredients in one place."
 
 #: wholesaler_app/templates/wholesaler_view.html:25
