@@ -596,7 +596,7 @@ footer ul {
 
 .products-bg {
     border-radius: 30px;
-    height: 60vh;
+    height: 80vh;
     background: linear-gradient( rgba(243, 244, 241, 0.6), rgba(247, 248, 246, 0.6));
 }
 
@@ -2351,6 +2351,9 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 @media screen and (max-width: 507px) {
+    .products-bg {
+        height: 60vh;
+    }
     .business-carousel-home .carousel-item {
         height: 320px;
     }
