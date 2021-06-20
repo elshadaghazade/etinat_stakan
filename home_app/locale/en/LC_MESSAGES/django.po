@@ -22,6 +22,7 @@ msgstr ""
 #, fuzzy
 #| msgid "Запрос на обратный звонок"
 msgid "Раздел: Обратный звонок"
+#| msgstr "Callback request"
 msgstr "Callback request"
 
 #: callback_app/models.py:5 contacts_app/models.py:5 products_app/models.py:45
@@ -50,7 +51,7 @@ msgstr "Callback requests"
 
 #: company_app/apps.py:7
 msgid "Раздел: Фирма"
-msgstr ""
+msgstr "Section: Firm"
 
 #: company_app/templates/about_view.html:4
 #: company_app/templates/about_view.html:11
@@ -159,6 +160,7 @@ msgstr "Next"
 #, fuzzy
 #| msgid "Контакты"
 msgid "Раздел: Конакты"
+#| msgstr "Contacts"
 msgstr "Contacts"
 
 #: contacts_app/models.py:7
@@ -218,7 +220,7 @@ msgstr "Contacts"
 
 #: contacts_app/templates/contacts_view.html:27
 msgid "Мы свяжемся с вами в ближайшее время"
-msgstr ""
+msgstr "We will contact you shortly"
 
 #: contacts_app/templates/contacts_view.html:35
 msgid ""
@@ -310,7 +312,8 @@ msgstr "Information for entrepreneurs"
 #, fuzzy
 #| msgid "-стакан"
 msgid "-стакан это"
-msgstr "-cup"
+#| msgstr "-cup is"
+msgstr "-cup is"
 
 #: home_app/templates/home_view.html:102 home_app/templates/home_view.html:143
 msgid "ПОЛНОСТЬЮ РОССИЙСКОЕ ИЗОБРЕТЕНИЕ"
@@ -345,8 +348,7 @@ msgstr ""
 
 #: home_app/templates/home_view.html:111
 msgid "При нагревании не выделяет вредных веществ,отсутствует неприятный запах"
-msgstr ""
-"When heated, it does not emit harmful substances, there is no unpleasant odor"
+msgstr "When heated, it does not emit harmful substances, there is no unpleasant odor"
 
 #: home_app/templates/home_view.html:112
 msgid "Минимальный шанс обжечься"
@@ -425,7 +427,7 @@ msgstr "PRODUCTION"
 
 #: home_app/templates/home_view.html:161
 msgid "СОБСТВЕННОЕ ПРОИЗВОДСТВО В Г.ГРОЗНЫЙ"
-msgstr "OWN PRODUCTION IN GROZNY"
+msgstr "OWN PRODUCTION IN PODOLSK"
 
 #: home_app/templates/home_view.html:179
 msgid "ПРОСТОТА"
@@ -449,7 +451,7 @@ msgstr "EASILY RECYCLING WORKING SINCE 2010"
 
 #: home_app/templates/home_view.html:206
 msgid "Везде будет к месту"
-msgstr "Everywhere will be in place"
+msgstr "it will be in Everywhere"
 
 #: home_app/templates/home_view.html:243
 msgid "давайте сравним"
@@ -549,7 +551,7 @@ msgstr ""
 
 #: home_app/templates/home_view.html:308
 msgid "фото с презентации"
-msgstr ""
+msgstr "Photo from presentation"
 
 #: home_app/templates/home_view.html:341
 msgid "Остались вопросы?"
@@ -567,12 +569,14 @@ msgstr ""
 #, fuzzy
 #| msgid "оставляйте нам свой номер, мы свяжемся с вами."
 msgid "Спасибо за заявку. Мы свяжемся с вами."
+#| msgstr "leave us your number, we will contact you."
 msgstr "leave us your number, we will contact you."
 
 #: products_app/apps.py:7
 #, fuzzy
 #| msgid "Показать Продукты"
 msgid "Раздел: Продукты"
+#| msgstr "Show Products"
 msgstr "Show Products"
 
 #: products_app/models.py:5
@@ -661,7 +665,7 @@ msgstr "Registration"
 
 #: products_app/templates/checkout_view.html:16
 msgid "Поздравляю! Ваш запрос учтен."
-msgstr ""
+msgstr "Congratulations! Your request has been accepted."
 
 #: products_app/templates/checkout_view.html:21
 msgid "Оформление"
@@ -733,15 +737,16 @@ msgstr " items in the cart"
 #, fuzzy
 #| msgid "Добавлен в корзину"
 msgid "Просмотр сведений о корзине"
+#| msgstr "Added to cart"
 msgstr "Added to cart"
 
 #: templates/base.html:96
 msgid "Спасибо! Вам перезвонят."
-msgstr ""
+msgstr "Thank you! You will be called back."
 
 #: templates/base.html:101
 msgid " Имя"
-msgstr ""
+msgstr " Name"
 
 #: templates/base.html:103
 msgid " Телефонный номер"

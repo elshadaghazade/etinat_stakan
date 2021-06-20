@@ -22,6 +22,7 @@ msgstr ""
 #, fuzzy
 #| msgid "Запрос на обратный звонок"
 msgid "Раздел: Обратный звонок"
+#| msgstr "Geri zəng üçün sorğu"
 msgstr "Geri zəng üçün sorğu"
 
 #: callback_app/models.py:5 contacts_app/models.py:5 products_app/models.py:45
@@ -50,7 +51,7 @@ msgstr "Geri zəng üçün sorğular"
 
 #: company_app/apps.py:7
 msgid "Раздел: Фирма"
-msgstr ""
+msgstr "Bölmə: Firma"
 
 #: company_app/templates/about_view.html:4
 #: company_app/templates/about_view.html:11
@@ -159,6 +160,7 @@ msgstr "Növbəti"
 #, fuzzy
 #| msgid "Контакты"
 msgid "Раздел: Конакты"
+#| msgstr "Əlaqə"
 msgstr "Əlaqə"
 
 #: contacts_app/models.py:7
@@ -208,7 +210,7 @@ msgstr "Bank Məlumatları"
 #: contacts_app/models.py:81 contacts_app/models.py:87
 #: contacts_app/models.py:88 contacts_app/templates/contacts_view.html:160
 msgid "ИНН / КПП"
-msgstr ""
+msgstr "INN / KPP"
 
 #: contacts_app/templates/contacts_view.html:4
 #: contacts_app/templates/contacts_view.html:11
@@ -218,7 +220,7 @@ msgstr "Əlaqə"
 
 #: contacts_app/templates/contacts_view.html:27
 msgid "Мы свяжемся с вами в ближайшее время"
-msgstr ""
+msgstr "Tezliklə sizinlə əlaqə quracağıq"
 
 #: contacts_app/templates/contacts_view.html:35
 msgid ""
@@ -300,7 +302,7 @@ msgstr ""
 
 #: home_app/templates/home_view.html:6
 msgid "Просто добавь кипяток!"
-msgstr "Yalnız qaynar su əlavə edin!"
+msgstr "Yalnız isti su əlavə edin!"
 
 #: home_app/templates/home_view.html:8
 msgid "Информация для предпринимателей"
@@ -310,7 +312,8 @@ msgstr "Sahibkarlar üçün məlumat"
 #, fuzzy
 #| msgid "-стакан"
 msgid "-стакан это"
-msgstr "-стакан"
+#| msgstr "-stəkan budur"
+msgstr "-stəkan budur"
 
 #: home_app/templates/home_view.html:102 home_app/templates/home_view.html:143
 msgid "ПОЛНОСТЬЮ РОССИЙСКОЕ ИЗОБРЕТЕНИЕ"
@@ -322,7 +325,7 @@ msgstr "BÜTÜN RUSİYA VƏ 16 AB ÖLKƏSİ ÜÇÜN PATENT"
 
 #: home_app/templates/home_view.html:104 home_app/templates/home_view.html:152
 msgid "СТАКАН ВЫПОЛНЕН ИЗ ЦЕЛЛЮЛОЗНОГО КАРТОНА"
-msgstr ""
+msgstr "Selüloz kartondan hazırlanmış stəkan"
 
 #: home_app/templates/home_view.html:105
 msgid "УНИКАЛЬНАЯ РЕЦЕПТУРА ИНГРЕДИЕНТОВ"
@@ -330,7 +333,7 @@ msgstr "BƏNZƏRSİZ INQREDENT RESEPTİ"
 
 #: home_app/templates/home_view.html:106
 msgid "СОБСТВЕННОЕ ПРОИЗВОДСТВО В Г.ПОДОЛЬСК М.О."
-msgstr ""
+msgstr "PODOLSK ŞƏHƏRİNDƏ İSTEHSALAT"
 
 #: home_app/templates/home_view.html:107 home_app/templates/home_view.html:189
 msgid "ВСЯ ПРОДУКЦИЯ СЕРТИФИЦИРОВАНА"
@@ -358,6 +361,7 @@ msgstr "Xoş dizayn"
 #, fuzzy
 #| msgid "Возможность нанести собственный принт"
 msgid "Возможность нанести собственный прин"
+#| msgstr "Öz çapınızı tətbiq etmək imkanı"
 msgstr "Öz çapınızı tətbiq etmək imkanı"
 
 #: home_app/templates/home_view.html:117
@@ -399,7 +403,7 @@ msgstr "Təsdiqlənmiş resept"
 
 #: home_app/templates/home_view.html:130
 msgid "Строгая порционность"
-msgstr ""
+msgstr "Sərt təbəqə"
 
 #: home_app/templates/home_view.html:131
 msgid "Разнообразие ингредиентов"
@@ -407,11 +411,11 @@ msgstr "Tərkibi müxtəlifdir"
 
 #: home_app/templates/home_view.html:138
 msgid "Почему нас выбирают"
-msgstr "Niyə bizi seçməli"
+msgstr "Bizi niyə seçməli"
 
 #: home_app/templates/home_view.html:142
 msgid "РОССИЙСКОЕ"
-msgstr ""
+msgstr "RUSİYA"
 
 # msgid "ПОЛНОСТЬЮ РОССИЙСКОЕ ИЗОБРЕТЕНИЕ"
 # msgstr "TAMAMİLƏ RUS İXTİRASI"
@@ -425,7 +429,7 @@ msgstr "İSTEHSAL"
 
 #: home_app/templates/home_view.html:161
 msgid "СОБСТВЕННОЕ ПРОИЗВОДСТВО В Г.ГРОЗНЫЙ"
-msgstr ""
+msgstr "PODOLSK ŞƏHƏRİNDƏ İSTEHSALAT"
 
 #: home_app/templates/home_view.html:179
 msgid "ПРОСТОТА"
@@ -449,7 +453,7 @@ msgstr "2010-CU İLDƏN BƏRİ ASANLIQLA İŞLƏYİRİK"
 
 #: home_app/templates/home_view.html:206
 msgid "Везде будет к месту"
-msgstr ""
+msgstr "Hər yerdə olacaq"
 
 #: home_app/templates/home_view.html:243
 msgid "давайте сравним"
@@ -545,7 +549,7 @@ msgstr ""
 
 #: home_app/templates/home_view.html:308
 msgid "фото с презентации"
-msgstr ""
+msgstr "Təqdimatdan görüntülər"
 
 #: home_app/templates/home_view.html:341
 msgid "Остались вопросы?"
@@ -563,12 +567,14 @@ msgstr ""
 #, fuzzy
 #| msgid "оставляйте нам свой номер, мы свяжемся с вами."
 msgid "Спасибо за заявку. Мы свяжемся с вами."
+#| msgstr "nömrənizi bizə təqdim edin, biz sizinlə əlaqə quracağıq."
 msgstr "nömrənizi bizə təqdim edin, biz sizinlə əlaqə quracağıq."
 
 #: products_app/apps.py:7
 #, fuzzy
 #| msgid "Показать Продукты"
 msgid "Раздел: Продукты"
+#| msgstr "Məhsulları Göstər"
 msgstr "Məhsulları Göstər"
 
 #: products_app/models.py:5
@@ -657,7 +663,7 @@ msgstr "Sifarişi Rəsmiləşdir"
 
 #: products_app/templates/checkout_view.html:16
 msgid "Поздравляю! Ваш запрос учтен."
-msgstr ""
+msgstr "Təşəkkürlər! Sorğunuz qəbul edildi."
 
 #: products_app/templates/checkout_view.html:21
 msgid "Оформление"
@@ -665,15 +671,15 @@ msgstr "Sifarişi Rəsmiləşdir"
 
 #: products_app/templates/checkout_view.html:39
 msgid "Самовывоз"
-msgstr ""
+msgstr "Almaq"
 
 #: products_app/templates/checkout_view.html:40
 msgid "Доставка по Москве - 300 руб."
-msgstr "Moskvaya Çatdırılma - 300 rubl."
+msgstr "Moskvaya Çatdırılma - 300 rubl"
 
 #: products_app/templates/checkout_view.html:41
 msgid "Доставка за МКАД - 300 руб. + 40 руб/км."
-msgstr ""
+msgstr "Moskva Dairəvi yolu çatdırılma - 300 rubl + 40 rubl/km"
 
 #: products_app/templates/checkout_view.html:53
 #: products_app/templates/checkout_view.html:94
@@ -729,15 +735,16 @@ msgstr " malınız var"
 #, fuzzy
 #| msgid "Добавлен в корзину"
 msgid "Просмотр сведений о корзине"
+#| msgstr "Səbətə əlavə olundu"
 msgstr "Səbətə əlavə olundu"
 
 #: templates/base.html:96
 msgid "Спасибо! Вам перезвонят."
-msgstr ""
+msgstr "Təşəkkürlər! Sizə geri zəng olunacaq."
 
 #: templates/base.html:101
 msgid " Имя"
-msgstr ""
+msgstr " Ad"
 
 #: templates/base.html:103
 msgid " Телефонный номер"
@@ -863,14 +870,14 @@ msgstr ""
 
 #: wholesaler_app/templates/wholesaler_view.html:25
 msgid "Сфера применения настолько обширна, что не уместится в этом блоке."
-msgstr ""
+msgstr "Tətbiqimizin əhatə dairəsi bir bloka sığmayacaq qədər genişdir."
 
 #: wholesaler_app/templates/wholesaler_view.html:29
 msgid ""
 "Наполнитель (напиток), сахар, ложка - все в одном стаканчике! Нет нужды "
 "покупать что-либо отдельно!"
 msgstr ""
-"İçki, şəkər, qaşıq - hamısı bir fincanda! Ayrı bir şey almağa ehtiyac yoxdur!"
+"İçki, şəkər, qaşıq - hamısı bir fincanda! Başqa bir şey almağa ehtiyac yoxdur!"
 
 #: wholesaler_app/templates/wholesaler_view.html:33
 msgid ""
@@ -892,6 +899,8 @@ msgid ""
 "По Москве и М.О доставка на следующий день! В некоторых случаях возможна "
 "доставка в день заказа!"
 msgstr ""
+"Moskva və Moskva bölgələrində ertəsi gün çatdırılma! Bəzi hallarda sifarişi "
+"elə həmin gün çatdırmaq mümkündür!"
 
 #: wholesaler_app/templates/wholesaler_view.html:48
 msgid "Заказать"
@@ -922,7 +931,7 @@ msgstr " və ya elektron poçtumuza göndərin - "
 
 #: wholesaler_app/templates/wholesaler_view.html:52
 msgid "info@etinat.org"
-msgstr ""
+msgstr "info@etinat.org"
 
 #: wholesaler_app/templates/wholesaler_view.html:52
 msgid ". Или же "
