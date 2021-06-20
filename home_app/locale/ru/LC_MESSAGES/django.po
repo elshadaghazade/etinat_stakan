@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2021-06-11 22:31+0000\n"
+"POT-Creation-Date: 2021-06-20 15:43+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,15 +20,19 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
+#: callback_app/apps.py:7
+msgid "Раздел: Обратный звонок"
+msgstr ""
+
 #: callback_app/models.py:5 contacts_app/models.py:5 products_app/models.py:45
-#: products_app/templates/checkout_view.html:20
-#: products_app/templates/products_view.html:104 templates/base.html:97
+#: products_app/templates/checkout_view.html:24
+#: products_app/templates/products_view.html:104
 msgid "Имя"
 msgstr ""
 
 #: callback_app/models.py:6 contacts_app/models.py:6 contacts_app/models.py:21
-#: contacts_app/models.py:27 contacts_app/templates/contacts_view.html:98
-#: products_app/models.py:47 products_app/templates/checkout_view.html:28
+#: contacts_app/models.py:27 contacts_app/templates/contacts_view.html:103
+#: products_app/models.py:47 products_app/templates/checkout_view.html:32
 msgid "Телефон"
 msgstr ""
 
@@ -44,6 +48,10 @@ msgstr ""
 msgid "Запросы на обратные звонки"
 msgstr ""
 
+#: company_app/apps.py:7
+msgid "Раздел: Фирма"
+msgstr ""
+
 #: company_app/templates/about_view.html:4
 #: company_app/templates/about_view.html:11
 #: company_app/templates/about_view.html:13 templates/base.html:53
@@ -52,8 +60,8 @@ msgstr ""
 
 #: company_app/templates/about_view.html:13
 #: contacts_app/templates/contacts_view.html:13
-#: home_app/templates/home_view.html:6
-#: products_app/templates/checkout_view.html:63 templates/base.html:44
+#: home_app/templates/home_view.html:1
+#: products_app/templates/checkout_view.html:67 templates/base.html:44
 msgid "Главная"
 msgstr ""
 
@@ -114,15 +122,19 @@ msgid "Наши Награди"
 msgstr ""
 
 #: company_app/templates/about_view.html:50
-#: home_app/templates/home_view.html:336
+#: home_app/templates/home_view.html:329
 #: wholesaler_app/templates/wholesaler_view.html:78
 msgid "Previous"
 msgstr ""
 
 #: company_app/templates/about_view.html:54
-#: home_app/templates/home_view.html:340
+#: home_app/templates/home_view.html:333
 #: wholesaler_app/templates/wholesaler_view.html:82
 msgid "Next"
+msgstr ""
+
+#: contacts_app/apps.py:7
+msgid "Раздел: Конакты"
 msgstr ""
 
 #: contacts_app/models.py:7
@@ -142,7 +154,7 @@ msgid "Телефоны"
 msgstr ""
 
 #: contacts_app/models.py:33 contacts_app/models.py:39
-#: contacts_app/templates/contacts_view.html:109
+#: contacts_app/templates/contacts_view.html:114
 msgid "Электронная почта"
 msgstr ""
 
@@ -151,7 +163,7 @@ msgid "Электронные почты"
 msgstr ""
 
 #: contacts_app/models.py:45 contacts_app/models.py:51
-#: products_app/models.py:49 products_app/templates/checkout_view.html:41
+#: products_app/models.py:49 products_app/templates/checkout_view.html:45
 msgid "Адрес"
 msgstr ""
 
@@ -160,17 +172,17 @@ msgid "Адреса"
 msgstr ""
 
 #: contacts_app/models.py:57 contacts_app/models.py:63
-#: contacts_app/models.py:64 contacts_app/templates/contacts_view.html:133
+#: contacts_app/models.py:64 contacts_app/templates/contacts_view.html:138
 msgid "Наименование организации"
 msgstr ""
 
 #: contacts_app/models.py:69 contacts_app/models.py:75
-#: contacts_app/models.py:76 contacts_app/templates/contacts_view.html:144
+#: contacts_app/models.py:76 contacts_app/templates/contacts_view.html:149
 msgid "Банковские реквизиты"
 msgstr ""
 
 #: contacts_app/models.py:81 contacts_app/models.py:87
-#: contacts_app/models.py:88 contacts_app/templates/contacts_view.html:155
+#: contacts_app/models.py:88 contacts_app/templates/contacts_view.html:160
 msgid "ИНН / КПП"
 msgstr ""
 
@@ -180,312 +192,326 @@ msgstr ""
 msgid "Контакты"
 msgstr ""
 
-#: contacts_app/templates/contacts_view.html:30
+#: contacts_app/templates/contacts_view.html:27
+msgid "Мы свяжемся с вами в ближайшее время"
+msgstr ""
+
+#: contacts_app/templates/contacts_view.html:35
 msgid ""
 "По интересующим вопросам логистики, участия в выставках, предложениях о "
 "сотрудничестве Вы можете связаться напрямую через форму ниже."
 msgstr ""
 
-#: contacts_app/templates/contacts_view.html:39
+#: contacts_app/templates/contacts_view.html:44
+#: home_app/templates/home_view.html:349
 msgid "Ваше имя"
 msgstr ""
 
-#: contacts_app/templates/contacts_view.html:48
+#: contacts_app/templates/contacts_view.html:53
 msgid "Введите номер телефона"
 msgstr ""
 
-#: contacts_app/templates/contacts_view.html:57
+#: contacts_app/templates/contacts_view.html:62
+#: home_app/templates/home_view.html:351
 msgid "Введите ваш email"
 msgstr ""
 
-#: contacts_app/templates/contacts_view.html:66
+#: contacts_app/templates/contacts_view.html:71
+#: home_app/templates/home_view.html:353
 msgid "Ваш запрос или предложение"
 msgstr ""
 
-#: contacts_app/templates/contacts_view.html:69
-#: home_app/templates/home_view.html:363 templates/base.html:101
+#: contacts_app/templates/contacts_view.html:74
+#: home_app/templates/home_view.html:354 templates/base.html:105
 msgid "Отправить"
 msgstr ""
 
-#: contacts_app/templates/contacts_view.html:78 templates/base.html:171
+#: contacts_app/templates/contacts_view.html:83 templates/base.html:175
 msgid "Схема проезда"
 msgstr ""
 
-#: contacts_app/templates/contacts_view.html:80
+#: contacts_app/templates/contacts_view.html:85
 msgid "Предварительно позвоните по телефону указанному в шапке сайта!"
 msgstr ""
 
-#: contacts_app/templates/contacts_view.html:83
+#: contacts_app/templates/contacts_view.html:88
 msgid "Часы работы:"
 msgstr ""
 
-#: contacts_app/templates/contacts_view.html:83
+#: contacts_app/templates/contacts_view.html:88
 msgid " 09:00 до 18:00. Суб.- Вск. - выходной"
 msgstr ""
 
-#: contacts_app/templates/contacts_view.html:86
+#: contacts_app/templates/contacts_view.html:91
 msgid "Большая Дорогомиловская улица, 1 — Яндекс.Карты"
 msgstr ""
 
-#: contacts_app/templates/contacts_view.html:92
+#: contacts_app/templates/contacts_view.html:97
 msgid "Наши реквизиты"
 msgstr ""
 
-#: contacts_app/templates/contacts_view.html:120
+#: contacts_app/templates/contacts_view.html:125
 msgid "АДРЕС"
 msgstr ""
 
-#: etinat/settings.py:184
+#: etinat/settings.py:189
 msgid "Русский"
 msgstr ""
 
-#: etinat/settings.py:185
+#: etinat/settings.py:190
 msgid "English"
 msgstr ""
 
-#: etinat/settings.py:186
+#: etinat/settings.py:191
 msgid "Azərbaycan dili"
 msgstr ""
 
-#: home_app/templates/home_view.html:12
+#: home_app/templates/home_view.html:5
 msgid ""
 "начни день с<br><span style='color: #306d34;'>ETINAT</span>-стакан</h1> "
 msgstr ""
 
-#: home_app/templates/home_view.html:13
+#: home_app/templates/home_view.html:6
 msgid "Просто добавь кипяток!"
 msgstr ""
 
-#: home_app/templates/home_view.html:15
+#: home_app/templates/home_view.html:8
 msgid "Информация для предпринимателей"
 msgstr ""
 
-#: home_app/templates/home_view.html:109
+#: home_app/templates/home_view.html:82
+msgid "-стакан это"
+msgstr ""
+
+#: home_app/templates/home_view.html:102 home_app/templates/home_view.html:143
 msgid "ПОЛНОСТЬЮ РОССИЙСКОЕ ИЗОБРЕТЕНИЕ"
 msgstr ""
 
-#: home_app/templates/home_view.html:110
+#: home_app/templates/home_view.html:103
 msgid "ПАТЕНТ НА ВСЮ РОССИЮ И 16 СТРАН ЕВРОСОЮЗА"
 msgstr ""
 
-#: home_app/templates/home_view.html:111 home_app/templates/home_view.html:159
+#: home_app/templates/home_view.html:104 home_app/templates/home_view.html:152
 msgid "СТАКАН ВЫПОЛНЕН ИЗ ЦЕЛЛЮЛОЗНОГО КАРТОНА"
 msgstr ""
 
-#: home_app/templates/home_view.html:112
+#: home_app/templates/home_view.html:105
 msgid "УНИКАЛЬНАЯ РЕЦЕПТУРА ИНГРЕДИЕНТОВ"
 msgstr ""
 
-#: home_app/templates/home_view.html:113
+#: home_app/templates/home_view.html:106
 msgid "СОБСТВЕННОЕ ПРОИЗВОДСТВО В Г.ПОДОЛЬСК М.О."
 msgstr ""
 
-#: home_app/templates/home_view.html:114 home_app/templates/home_view.html:196
+#: home_app/templates/home_view.html:107 home_app/templates/home_view.html:189
 msgid "ВСЯ ПРОДУКЦИЯ СЕРТИФИЦИРОВАНА"
 msgstr ""
 
-#: home_app/templates/home_view.html:117
+#: home_app/templates/home_view.html:110
 msgid ""
 "Одноразовый бумажный стакан ёмкостью 250мл. выполненный из целлюлозного "
 "картона!"
 msgstr ""
 
-#: home_app/templates/home_view.html:118
+#: home_app/templates/home_view.html:111
 msgid "При нагревании не выделяет вредных веществ,отсутствует неприятный запах"
 msgstr ""
 
-#: home_app/templates/home_view.html:119
+#: home_app/templates/home_view.html:112
 msgid "Минимальный шанс обжечься"
 msgstr ""
 
-#: home_app/templates/home_view.html:120
+#: home_app/templates/home_view.html:113
 msgid "Крутой дизайн"
 msgstr ""
 
-#: home_app/templates/home_view.html:121
+#: home_app/templates/home_view.html:114
 msgid "Возможность нанести собственный прин"
 msgstr ""
 
-#: home_app/templates/home_view.html:124
+#: home_app/templates/home_view.html:117
 msgid "Одноразовая крышка-ложка выполненная из целлюлозного картона!"
 msgstr ""
 
-#: home_app/templates/home_view.html:125
+#: home_app/templates/home_view.html:118
 msgid ""
 "Верхняя защитная крышка является дополнительно 'КРЫШКОЙ-ЛОЖКОЙ' , которая "
 "после вскрытия складывается по линиям сгиба и используется для размешивания "
 "напитка"
 msgstr ""
 
-#: home_app/templates/home_view.html:126 home_app/templates/home_view.html:131
+#: home_app/templates/home_view.html:119 home_app/templates/home_view.html:124
 msgid "Запрессовывается в стакан без применения клея"
 msgstr ""
 
-#: home_app/templates/home_view.html:129
+#: home_app/templates/home_view.html:122
 msgid "Мембрана выполненная из целлюлозного картона!"
 msgstr ""
 
-#: home_app/templates/home_view.html:130
+#: home_app/templates/home_view.html:123
 msgid "Удерживает основную массу завариваемых ингредиентов"
 msgstr ""
 
-#: home_app/templates/home_view.html:134
+#: home_app/templates/home_view.html:127
 msgid "Вкуснейшие и качественные ингредиенты без глутамата и ГМО!"
 msgstr ""
 
-#: home_app/templates/home_view.html:135
+#: home_app/templates/home_view.html:128
 msgid "Только листовые чаи — чёрный, зелёный"
 msgstr ""
 
-#: home_app/templates/home_view.html:136
+#: home_app/templates/home_view.html:129
 msgid "Проверенная рецептура"
 msgstr ""
 
-#: home_app/templates/home_view.html:137
+#: home_app/templates/home_view.html:130
 msgid "Строгая порционность"
 msgstr ""
 
-#: home_app/templates/home_view.html:138
+#: home_app/templates/home_view.html:131
 msgid "Разнообразие ингредиентов"
 msgstr ""
 
-#: home_app/templates/home_view.html:145
+#: home_app/templates/home_view.html:138
 msgid "Почему нас выбирают"
 msgstr ""
 
-#: home_app/templates/home_view.html:149
+#: home_app/templates/home_view.html:142
 msgid "РОССИЙСКОЕ"
 msgstr ""
 
-#: home_app/templates/home_view.html:150
-msgid "ОЛНОСТЬЮ РОССИЙСКОЕ ИЗОБРЕТЕНИЕ"
-msgstr ""
-
-#: home_app/templates/home_view.html:158
+#: home_app/templates/home_view.html:151
 msgid "ЦЕЛЛЮЛОЗНОГО"
 msgstr ""
 
-#: home_app/templates/home_view.html:167
+#: home_app/templates/home_view.html:160
 msgid "ПРОИЗВОДСТВО"
 msgstr ""
 
-#: home_app/templates/home_view.html:168
+#: home_app/templates/home_view.html:161
 msgid "СОБСТВЕННОЕ ПРОИЗВОДСТВО В Г.ГРОЗНЫЙ"
 msgstr ""
 
-#: home_app/templates/home_view.html:186
+#: home_app/templates/home_view.html:179
 msgid "ПРОСТОТА"
 msgstr ""
 
-#: home_app/templates/home_view.html:187
+#: home_app/templates/home_view.html:180
 msgid "ПРОСТОТА УЧЁТА И ОТЧЁТНОСТИ"
 msgstr ""
 
-#: home_app/templates/home_view.html:195
+#: home_app/templates/home_view.html:188
 msgid "СЕРТИФИЦИРОВАНА"
 msgstr ""
 
-#: home_app/templates/home_view.html:204
+#: home_app/templates/home_view.html:197
 msgid "ЛЕГКО"
 msgstr ""
 
-#: home_app/templates/home_view.html:205
+#: home_app/templates/home_view.html:198
 msgid "ЛЕГКО УТИЛИЗИРУЕТСЯ РАБОТАЕМ С 2010 ГОДА"
 msgstr ""
 
-#: home_app/templates/home_view.html:213
+#: home_app/templates/home_view.html:206
 msgid "Везде будет к месту"
 msgstr ""
 
-#: home_app/templates/home_view.html:250
+#: home_app/templates/home_view.html:243
 msgid "давайте сравним"
 msgstr ""
 
-#: home_app/templates/home_view.html:258
+#: home_app/templates/home_view.html:251
 msgid ""
 "Сохраняет свою изначальную форму, бережёт ваши руки, отсутствует посторонний "
 "запах."
 msgstr ""
 
-#: home_app/templates/home_view.html:261
+#: home_app/templates/home_view.html:254
 msgid ""
 "Если заполнить кипятком - заварится вкусный и ароматный чай, ничего лишнего."
 msgstr ""
 
-#: home_app/templates/home_view.html:264
+#: home_app/templates/home_view.html:257
 msgid ""
 "Мешалка в комплекте, выполненная из того же картона, что и сам ETINAT-стакан."
 msgstr ""
 
-#: home_app/templates/home_view.html:267
+#: home_app/templates/home_view.html:260
 msgid ""
 "Мембрана которая позволяет использовать листовые чаи с фруктами и лепестками "
 "цветов не позволяя чаинкам всплывать."
 msgstr ""
 
-#: home_app/templates/home_view.html:270
+#: home_app/templates/home_view.html:263
 msgid "Вкуснейшие ингредиенты уже внутри, нет нужды покупать их отдельно."
 msgstr ""
 
-#: home_app/templates/home_view.html:273
+#: home_app/templates/home_view.html:266
 msgid ""
 "К донышку прикреплён сошет с сладкой смесью. Удобно держать, удобно взять с "
 "собой. Презентабельный внешний вид."
 msgstr ""
 
-#: home_app/templates/home_view.html:276
+#: home_app/templates/home_view.html:269
 msgid ""
 "Экологически безопасен, вносит свою лепту в сохранение окружающей среды, "
 "время разложения - до 3х месяцев."
 msgstr ""
 
-#: home_app/templates/home_view.html:288
+#: home_app/templates/home_view.html:281
 msgid "Деформируется, обжигает руки, посторонний запах в 8 стаканчиках из 10."
 msgstr ""
 
-#: home_app/templates/home_view.html:291
+#: home_app/templates/home_view.html:284
 msgid ""
 "Если заполнить кипятком - заварится чай, а так же канцерогены и токсины."
 msgstr ""
 
-#: home_app/templates/home_view.html:294
+#: home_app/templates/home_view.html:287
 msgid "Мешалку надо покупать отдельно, при чём тоже пластиковую."
 msgstr ""
 
-#: home_app/templates/home_view.html:297
+#: home_app/templates/home_view.html:290
 msgid ""
 "Отсутствует мембрана, что обрекает пользоваться пакетированным чаем. Не все "
 "пакетированные чаи хорошего качества."
 msgstr ""
 
-#: home_app/templates/home_view.html:300
+#: home_app/templates/home_view.html:293
 msgid "Отдельно надо покупать ингредиенты."
 msgstr ""
 
-#: home_app/templates/home_view.html:303
+#: home_app/templates/home_view.html:296
 msgid ""
 "Сахар надо покупать отдельно. Неудобно держать, неудобно взять с собой. "
 "Выглядит уныло."
 msgstr ""
 
-#: home_app/templates/home_view.html:306
+#: home_app/templates/home_view.html:299
 msgid ""
 "Экологически опасен, т.к среднее время разложения - 600 месяцев или 50 лет."
 msgstr ""
 
-#: home_app/templates/home_view.html:315
-#: wholesaler_app/templates/wholesaler_view.html:87
-msgid "Наше производство"
+#: home_app/templates/home_view.html:308
+msgid "фото с презентации"
 msgstr ""
 
-#: home_app/templates/home_view.html:348
+#: home_app/templates/home_view.html:341
 msgid "Остались вопросы?"
 msgstr ""
 
-#: home_app/templates/home_view.html:354
+#: home_app/templates/home_view.html:346
 msgid ""
 "Мы с удовольствием на них ответим.Заполните форму ниже и наш менеджер "
 "перезвонит Вам в течении 10 минут!"
+msgstr ""
+
+#: home_app/templates/home_view.html:367
+msgid "Спасибо за заявку. Мы свяжемся с вами."
+msgstr ""
+
+#: products_app/apps.py:7
+msgid "Раздел: Продукты"
 msgstr ""
 
 #: products_app/models.py:5
@@ -532,18 +558,18 @@ msgstr ""
 msgid "Заказанные товары"
 msgstr ""
 
-#: products_app/models.py:46 products_app/templates/checkout_view.html:24
+#: products_app/models.py:46 products_app/templates/checkout_view.html:28
 msgid "Эл. почта"
 msgstr ""
 
 #: products_app/models.py:48 products_app/models.py:73
 #: products_app/models.py:79 products_app/models.py:80
-#: products_app/templates/checkout_view.html:32
+#: products_app/templates/checkout_view.html:36
 #: products_app/templates/products_view.html:37
 msgid "Доставка"
 msgstr ""
 
-#: products_app/models.py:50 products_app/templates/checkout_view.html:45
+#: products_app/models.py:50 products_app/templates/checkout_view.html:49
 msgid "Коментарий"
 msgstr ""
 
@@ -562,42 +588,46 @@ msgstr ""
 
 #: products_app/models.py:84 products_app/models.py:90
 #: products_app/models.py:91 products_app/templates/products_view.html:38
-#: templates/base.html:157
+#: templates/base.html:161
 msgid "Оплата"
 msgstr ""
 
 #: products_app/templates/checkout_view.html:6
-#: products_app/templates/checkout_view.html:61
-#: products_app/templates/checkout_view.html:63
+#: products_app/templates/checkout_view.html:65
+#: products_app/templates/checkout_view.html:67
 msgid "Оформления"
 msgstr ""
 
-#: products_app/templates/checkout_view.html:17
+#: products_app/templates/checkout_view.html:16
+msgid "Поздравляю! Ваш запрос учтен."
+msgstr ""
+
+#: products_app/templates/checkout_view.html:21
 msgid "Оформление"
 msgstr ""
 
-#: products_app/templates/checkout_view.html:35
+#: products_app/templates/checkout_view.html:39
 msgid "Самовывоз"
 msgstr ""
 
-#: products_app/templates/checkout_view.html:36
+#: products_app/templates/checkout_view.html:40
 msgid "Доставка по Москве - 300 руб."
 msgstr ""
 
-#: products_app/templates/checkout_view.html:37
+#: products_app/templates/checkout_view.html:41
 msgid "Доставка за МКАД - 300 руб. + 40 руб/км."
 msgstr ""
 
-#: products_app/templates/checkout_view.html:49
-#: products_app/templates/checkout_view.html:90
+#: products_app/templates/checkout_view.html:53
+#: products_app/templates/checkout_view.html:94
 msgid "Оформить"
 msgstr ""
 
-#: products_app/templates/checkout_view.html:80
+#: products_app/templates/checkout_view.html:84
 msgid "Корзина"
 msgstr ""
 
-#: products_app/templates/checkout_view.html:89
+#: products_app/templates/checkout_view.html:93
 msgid "Назад"
 msgstr ""
 
@@ -638,83 +668,95 @@ msgstr ""
 msgid " товара в корзине"
 msgstr ""
 
-#: templates/base.html:99
+#: templates/base.html:83
+msgid "Просмотр сведений о корзине"
+msgstr ""
+
+#: templates/base.html:96
+msgid "Спасибо! Вам перезвонят."
+msgstr ""
+
+#: templates/base.html:101
+msgid " Имя"
+msgstr ""
+
+#: templates/base.html:103
 msgid " Телефонный номер"
 msgstr ""
 
-#: templates/base.html:142
+#: templates/base.html:146
 msgid "ПРОДУКЦИЯ"
 msgstr ""
 
-#: templates/base.html:145
+#: templates/base.html:149
 msgid "Каталог номер Один"
 msgstr ""
 
-#: templates/base.html:146
+#: templates/base.html:150
 msgid "Каталог номер Два"
 msgstr ""
 
-#: templates/base.html:147
+#: templates/base.html:151
 msgid "Каталог номер Три"
 msgstr ""
 
-#: templates/base.html:148
+#: templates/base.html:152
 msgid "Каталог номер Четыре"
 msgstr ""
 
-#: templates/base.html:152
+#: templates/base.html:156
 msgid "ИНФОРМАЦИЯ"
 msgstr ""
 
-#: templates/base.html:155
+#: templates/base.html:159
 msgid "Помощь в выборе продукции "
 msgstr ""
 
-#: templates/base.html:156
+#: templates/base.html:160
 msgid "Доставка "
 msgstr ""
 
-#: templates/base.html:158 templates/base.html:172
+#: templates/base.html:162 templates/base.html:176
 msgid "Задать вопрос"
 msgstr ""
 
-#: templates/base.html:159
+#: templates/base.html:163
 msgid "Предложение оптовикам"
 msgstr ""
 
-#: templates/base.html:160
+#: templates/base.html:164
 msgid "Получить оптовый прайс"
 msgstr ""
 
-#: templates/base.html:161
+#: templates/base.html:165
 msgid "О компании "
 msgstr ""
 
-#: templates/base.html:165
+#: templates/base.html:169
 msgid "КОНТАКТЫ"
 msgstr ""
 
-#: templates/base.html:169
+#: templates/base.html:173
 msgid "Наш адрес г.Москва ул.Большая Дорогомиловская, дом 1"
 msgstr ""
 
-#: templates/base.html:173
+#: templates/base.html:177
 msgid "Сотрудничество"
 msgstr ""
 
-#: templates/base.html:174
+#: templates/base.html:178
 msgid "Реквизиты "
 msgstr ""
 
-#: templates/base.html:175
+#: templates/base.html:179
 msgid "Часы работы "
 msgstr ""
 
-#: templates/base.html:176
+#: templates/base.html:180
 msgid "Торговая марка"
 msgstr ""
 
-#: templates/base.html:181
+#: templates/base.html:185
 msgid "© ETINAT-стакан Россия, 2021"
 msgstr ""
 
@@ -834,6 +876,10 @@ msgstr ""
 
 #: wholesaler_app/templates/wholesaler_view.html:62
 msgid "Награды"
+msgstr ""
+
+#: wholesaler_app/templates/wholesaler_view.html:87
+msgid "Наше производство"
 msgstr ""
 
 #: wholesaler_app/templates/wholesaler_view.html:116
