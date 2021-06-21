@@ -23,7 +23,7 @@ class RequisitesPhone(models.Model):
     title_az = models.CharField(max_length=255, verbose_name=_('Телефон (az)'), null=True, blank=True)
 
     def __str__(self):
-        return self.title
+        return self.title_ru
 
     class Meta:
         verbose_name = _('Телефон')
@@ -37,7 +37,7 @@ class RequisitesEmail(models.Model):
     title_az = models.CharField(max_length=255, verbose_name=_('Электронная почта (az)'), null=True, blank=True)
 
     def __str__(self):
-        return self.title
+        return self.title_ru
 
     class Meta:
         verbose_name = _('Электронная почта')
@@ -51,7 +51,7 @@ class RequisitesAddress(models.Model):
     title_az = models.CharField(max_length=255, verbose_name=_('Адрес (az)'), null=True, blank=True)
 
     def __str__(self):
-        return self.title
+        return self.title_ru
 
     class Meta:
         verbose_name = _('Адрес')
@@ -65,7 +65,7 @@ class RequisitesCompanyName(models.Model):
     title_az = models.CharField(max_length=255, verbose_name=_('Наименование организации (az)'), null=True, blank=True)
 
     def __str__(self):
-        return self.title
+        return self.title_ru
 
     class Meta:
         verbose_name = _('Наименование организации')
@@ -79,7 +79,7 @@ class RequisitesBank(models.Model):
     title_az = models.CharField(max_length=255, verbose_name=_('Банковские реквизиты (az)'), null=True, blank=True)
 
     def __str__(self):
-        return self.title
+        return self.title_ru
 
     class Meta:
         verbose_name = _('Банковские реквизиты')
@@ -93,7 +93,7 @@ class RequisitesINN_KPP(models.Model):
     title_az = models.CharField(max_length=255, verbose_name=_('ИНН / КПП (az)'), null=True, blank=True)
 
     def __str__(self):
-        return self.title
+        return self.title_ru
 
     class Meta:
         verbose_name = _('ИНН / КПП')
