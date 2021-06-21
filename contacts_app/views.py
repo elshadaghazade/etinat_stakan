@@ -3,6 +3,8 @@ from django.http import JsonResponse
 from django.views.decorators.http import require_http_methods
 from django.core.mail import send_mail
 from django.core.mail import EmailMessage
+from django.utils.translation import get_language
+from django.db.models import F
 from .models import *
 
 @require_http_methods('POST')
@@ -34,12 +36,14 @@ def send_message_view(request):
     })
 
 def contacts_view(request):
-    addresses = RequisitesAddress.objects.all()
-    phones = RequisitesPhone.objects.all()
-    emails = RequisitesEmail.objects.all()
-    banks = RequisitesBank.objects.all()
-    company_names = RequisitesCompanyName.objects.all()
-    iins = RequisitesINN_KPP.objects.all()
+    lang = get_language()
+
+    addresses = RequisitesAddress.objects.all().extra(select={'title': 'title_' + lang})
+    phones = RequisitesPhone.objects.all().extra(select={'title': 'title_' + lang})
+    emails = RequisitesEmail.objects.all().extra(select={'title': 'title_' + lang})
+    banks = RequisitesBank.objects.all().extra(select={'title': 'title_' + lang})
+    company_names = RequisitesCompanyName.objects.all().extra(select={'title': 'title_' + lang})
+    iins = RequisitesINN_KPP.objects.all().extra(select={'title': 'title_' + lang})
 
 
     return render(request, 'contacts_view.html', context={

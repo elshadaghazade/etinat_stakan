@@ -125,7 +125,7 @@
             <h4>{% trans "АДРЕС" %}</h4>
             <p>
                 {% for address in addresses %}
-                    {{address|safe}}<br>
+                    {{address.title|safe}}<br>
                 {% endfor %}
             </p>
         </div>
@@ -138,7 +138,7 @@
             <h4>{% trans "Наименование организации" %}</h4>
             <p>
                 {% for company_name in company_names %}
-                    {{company_name|safe}}
+                    {{company_name.title|safe}}
                 {% endfor %}
             </p>
         </div>
@@ -149,7 +149,7 @@
             <h4>{% trans "Банковские реквизиты" %}</h4>
             <p>
                 {% for bank in banks %}
-                    {{bank|safe}}
+                    {{bank.title|safe}}
                 {% endfor %}
             </p>
     </div>
@@ -160,7 +160,7 @@
         <h4>{% trans "ИНН / КПП" %}</h4>
         <p>
             {% for iin in iins %}
-                {{iin|safe}}
+                {{iin.title|safe}}
             {% endfor %}
         </p>
     </div>

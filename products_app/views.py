@@ -1,12 +1,15 @@
 from django.shortcuts import render
 from django.http import JsonResponse
 from django.views.decorators.http import require_http_methods
+from django.utils.translation import get_language
 from django.core.mail import EmailMessage
 import json
 from .models import *
 
 def products_view(request):
-    products = Product.objects.all()
+    lang = get_language()
+
+    products = Product.objects.all().extra(select={'name': 'name_' + lang, 'description': 'description_' + lang})
     minimalOrderTexts = MinimalOrderText.objects.all().order_by('pk')
     deliveryTexts = DeliveryText.objects.all().order_by('pk')
     paymentTexts = PaymentText.objects.all().order_by('pk')
