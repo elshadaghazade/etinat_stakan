@@ -10,9 +10,9 @@ def products_view(request):
     lang = get_language()
 
     products = Product.objects.all().extra(select={'name': 'name_' + lang, 'description': 'description_' + lang})
-    minimalOrderTexts = MinimalOrderText.objects.all().order_by('pk')
-    deliveryTexts = DeliveryText.objects.all().order_by('pk')
-    paymentTexts = PaymentText.objects.all().order_by('pk')
+    minimalOrderTexts = MinimalOrderText.objects.all().extra(select={'text': 'text_' + lang}).order_by('pk')
+    deliveryTexts = DeliveryText.objects.all().extra(select={'text': 'text_' + lang}).order_by('pk')
+    paymentTexts = PaymentText.objects.all().extra(select={'text': 'text_' + lang}).order_by('pk')
 
     return render(request, 'products_view.html', context={
         'products': products,
