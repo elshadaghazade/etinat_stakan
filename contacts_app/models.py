@@ -18,7 +18,9 @@ class SentMessage(models.Model):
 
 
 class RequisitesPhone(models.Model):
-    title = models.CharField(max_length=255, verbose_name=_('Телефон'))
+    title_ru = models.CharField(max_length=255, verbose_name=_('Телефон'))
+    title_en = models.CharField(max_length=255, verbose_name=_('Телефон (en)'), null=True, blank=True)
+    title_az = models.CharField(max_length=255, verbose_name=_('Телефон (az)'), null=True, blank=True)
 
     def __str__(self):
         return self.title
@@ -30,7 +32,9 @@ class RequisitesPhone(models.Model):
 
 
 class RequisitesEmail(models.Model):
-    title = models.CharField(max_length=255, verbose_name=_('Электронная почта'))
+    title_ru = models.CharField(max_length=255, verbose_name=_('Электронная почта'))
+    title_en = models.CharField(max_length=255, verbose_name=_('Электронная почта (en)'), null=True, blank=True)
+    title_az = models.CharField(max_length=255, verbose_name=_('Электронная почта (az)'), null=True, blank=True)
 
     def __str__(self):
         return self.title
@@ -42,7 +46,9 @@ class RequisitesEmail(models.Model):
 
 
 class RequisitesAddress(models.Model):
-    title = models.CharField(max_length=255, verbose_name=_('Адрес'))
+    title_ru = models.CharField(max_length=255, verbose_name=_('Адрес'))
+    title_en = models.CharField(max_length=255, verbose_name=_('Адрес (en)'), null=True, blank=True)
+    title_az = models.CharField(max_length=255, verbose_name=_('Адрес (az)'), null=True, blank=True)
 
     def __str__(self):
         return self.title
@@ -54,7 +60,9 @@ class RequisitesAddress(models.Model):
 
 
 class RequisitesCompanyName(models.Model):
-    title = models.CharField(max_length=255, verbose_name=_('Наименование организации'))
+    title_ru = models.CharField(max_length=255, verbose_name=_('Наименование организации'))
+    title_en = models.CharField(max_length=255, verbose_name=_('Наименование организации (en)'), null=True, blank=True)
+    title_az = models.CharField(max_length=255, verbose_name=_('Наименование организации (az)'), null=True, blank=True)
 
     def __str__(self):
         return self.title
@@ -66,7 +74,9 @@ class RequisitesCompanyName(models.Model):
 
 
 class RequisitesBank(models.Model):
-    title = models.CharField(max_length=255, verbose_name=_('Банковские реквизиты'))
+    title_ru = models.CharField(max_length=255, verbose_name=_('Банковские реквизиты'))
+    title_en = models.CharField(max_length=255, verbose_name=_('Банковские реквизиты (en)'), null=True, blank=True)
+    title_az = models.CharField(max_length=255, verbose_name=_('Банковские реквизиты (az)'), null=True, blank=True)
 
     def __str__(self):
         return self.title
@@ -78,7 +88,9 @@ class RequisitesBank(models.Model):
 
 
 class RequisitesINN_KPP(models.Model):
-    title = models.CharField(max_length=255, verbose_name=_('ИНН / КПП'))
+    title_ru = models.CharField(max_length=255, verbose_name=_('ИНН / КПП'))
+    title_en = models.CharField(max_length=255, verbose_name=_('ИНН / КПП (en)'), null=True, blank=True)
+    title_az = models.CharField(max_length=255, verbose_name=_('ИНН / КПП (az)'), null=True, blank=True)
 
     def __str__(self):
         return self.title

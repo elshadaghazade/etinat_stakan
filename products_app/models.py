@@ -3,8 +3,15 @@ from django.utils.translation import gettext_lazy as _
 
 class Product(models.Model):
     name_ru = models.CharField(verbose_name=_('Имя продукта'), max_length=255)
+    name_en = models.CharField(verbose_name=_('Имя продукта (en)'), max_length=255, null=True, blank=True)
+    name_az = models.CharField(verbose_name=_('Имя продукта (az)'), max_length=255, null=True, blank=True)
+
     slug = models.SlugField(unique=True)
+
     description_ru = models.TextField(verbose_name=_('Описания продукта'))
+    description_en = models.TextField(verbose_name=_('Описания продукта (en)'), null=True, blank=True)
+    description_az = models.TextField(verbose_name=_('Описания продукта (az)'), null=True, blank=True)
+
     price_rub = models.DecimalField(verbose_name=_('Цена'), decimal_places=2, max_digits=7)
     product_image = models.ImageField(verbose_name=_('Фото'), upload_to='product_images')
     created_at = models.DateTimeField(auto_now_add=True)
@@ -37,9 +44,9 @@ class Order(models.Model):
     CHOICE_DOSTAVKA_PO_MKAD = 3
 
     DELIVERY_CHOICES = {
-        CHOICE_SAMOVIVOZ: 'Самовывоз',
-        CHOICE_DOSTAVKA_PO_MOSKVE: 'Доставка по Москве - 300 руб.',
-        CHOICE_DOSTAVKA_PO_MKAD: 'Доставка за МКАД - 300 руб. + 40 руб/км.'
+        CHOICE_SAMOVIVOZ: _('Самовывоз'),
+        CHOICE_DOSTAVKA_PO_MOSKVE: _('Доставка по Москве - 300 руб.'),
+        CHOICE_DOSTAVKA_PO_MKAD: _('Доставка за МКАД - 300 руб. + 40 руб/км.')
     }
 
     name = models.CharField(max_length=1000, verbose_name=_('Имя'))
@@ -60,6 +67,8 @@ class Order(models.Model):
 
 class MinimalOrderText(models.Model):
     text_ru = models.TextField(verbose_name=_('Минимальный заказ'))
+    text_en = models.TextField(verbose_name=_('Минимальный заказ (en)'), null=True, blank=True)
+    text_az = models.TextField(verbose_name=_('Минимальный заказ (ru)'), null=True, blank=True)
 
     def __str__(self):
         return self.text_ru
@@ -71,6 +80,8 @@ class MinimalOrderText(models.Model):
 
 class DeliveryText(models.Model):
     text_ru = models.TextField(verbose_name=_('Доставка'))
+    text_en = models.TextField(verbose_name=_('Доставка (en)'), null=True, blank=True)
+    text_az = models.TextField(verbose_name=_('Доставка (az)'), null=True, blank=True)
 
     def __str__(self):
         return self.text_ru
@@ -82,6 +93,8 @@ class DeliveryText(models.Model):
 
 class PaymentText(models.Model):
     text_ru = models.TextField(verbose_name=_('Оплата'))
+    text_en = models.TextField(verbose_name=_('Оплата (en)'), null=True, blank=True)
+    text_az = models.TextField(verbose_name=_('Оплата (az)'), null=True, blank=True)
 
     def __str__(self):
         return self.text_ru
