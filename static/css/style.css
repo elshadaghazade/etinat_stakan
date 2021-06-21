@@ -1642,6 +1642,7 @@ input[type="search"]::-webkit-search-cancel-button {
 }
 
 .close,
+.payment-close,
 .home-contact-close,
 .contact-close {
     color: #aaaaaa;
@@ -1652,6 +1653,8 @@ input[type="search"]::-webkit-search-cancel-button {
 
 .close:hover,
 .close:focus,
+.payment-close:hover,
+.payment-close:focus,
 .home-contact-close:hover,
 .home-contact-close:focus,
 .contact-close:hover,
