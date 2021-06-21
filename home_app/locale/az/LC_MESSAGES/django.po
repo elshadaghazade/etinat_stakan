@@ -391,7 +391,7 @@ msgstr "BÜTÜN RUSİYA VƏ 16 AB ÖLKƏSİ ÜÇÜN PATENT"
 
 #: home_app/templates/home_view.html:104 home_app/templates/home_view.html:152
 msgid "СТАКАН ВЫПОЛНЕН ИЗ ЦЕЛЛЮЛОЗНОГО КАРТОНА"
-msgstr "Selüloz kartondan hazırlanmış stəkan"
+msgstr "SELÜLOZ KARTONDAN HAZIRLANMIŞ STƏKAN"
 
 #: home_app/templates/home_view.html:105
 msgid "УНИКАЛЬНАЯ РЕЦЕПТУРА ИНГРЕДИЕНТОВ"
