@@ -93,10 +93,10 @@ $('.fourth-circle-icon').hover(function() {
 // Confirm PopUp un görünməsi
 
 $('.btn-payment').on('click', function() {
-    $('.payment-popup').css('display', 'block');
+    $('#payment-popup').css('display', 'block');
     $('.payment-popup-content').css('display', 'block');
     $('.congrats-div').css('display', 'none');
-})
+});
 
 $('.close').on('click', function() {
     $(this).parent().css('display', 'none');
