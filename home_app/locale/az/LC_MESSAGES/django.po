@@ -379,7 +379,7 @@ msgstr "Sahibkarlar üçün məlumat"
 #: home_app/templates/home_view.html:82
 #, fuzzy
 msgid "-стакан это"
-msgstr "-stəkan budur"
+msgstr "-stəkan nədir"
 
 #: home_app/templates/home_view.html:102 home_app/templates/home_view.html:143
 msgid "ПОЛНОСТЬЮ РОССИЙСКОЕ ИЗОБРЕТЕНИЕ"
