@@ -377,7 +377,6 @@ msgid "Информация для предпринимателей"
 msgstr "Sahibkarlar üçün məlumat"
 
 #: home_app/templates/home_view.html:82
-#, fuzzy
 msgid "-стакан это"
 msgstr "-stəkan nədir"
 
