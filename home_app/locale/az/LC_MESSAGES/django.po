@@ -366,7 +366,7 @@ msgstr "Azərbaycan dili"
 msgid ""
 "начни день с<br><span style='color: #306d34;'>ETINAT</span>-стакан</h1> "
 msgstr ""
-"Yeni günə<br><span style='color: #306d34;'>ETINAT</span> ilə başlayın</h1>"
+"Yeni günə<br><span style='color: #306d34;'>ETINAT</span> İlə başlayın</h1>"
 
 #: home_app/templates/home_view.html:6
 msgid "Просто добавь кипяток!"
