@@ -106,7 +106,6 @@ $('.payment-close').on('click', function() {
     $('#payment-popup ').parent().css('display', 'none');
 })
 
-
 $('.home-contact-close').on('click', function() {
     $('.home-contact-popup').css('display', 'none')
 })
