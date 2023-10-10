@@ -2,6 +2,21 @@ version: '3.1'
 
 services:
 
+  web:
+    image: etinat
+    build:
+      dockerfile: ./Dockerfile
+    ports:
+      - 8000:8000
+      - 8001:8001
+    volumes:
+      - .:/apps
+    environment:
+      - db=db
+    links:
+      - db
+    
+
   db:
     image: postgres
     restart: always
@@ -18,8 +33,8 @@ services:
     #   - /app/db_trx_log_dir/:/var/lib/postgresql/data/trx_log_dir
       
 
-  adminer:
-    image: adminer
-    restart: always
-    ports:
-      - 8080:8080
+  # adminer:
+  #   image: adminer
+  #   restart: always
+  #   ports:
+  #     - 8080:8080

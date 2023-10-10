@@ -25,7 +25,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '^i0@6a8gfyku&n(5&8%+bd7chmf$2+qokgb1a@$z-r+j@0js(m'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = [
     '*'
@@ -105,7 +105,7 @@ WSGI_APPLICATION = 'etinat.wsgi.application'
 if not DEBUG:
     DATABASE_URL = os.getenv('DATABASE_URL', 'postgres://gphvmvpulvbaoc:2b2c25c205ddcca9d961f926080def97b332975c23c3c7c979fdffb0debbd66b@localhost:5432/d1tprufjurqgu8')
 else:
-    DATABASE_URL = os.getenv('DATABASE_URL', 'postgres://gphvmvpulvbaoc:2b2c25c205ddcca9d961f926080def97b332975c23c3c7c979fdffb0debbd66b@localhost:5432/d1tprufjurqgu8')
+    DATABASE_URL = os.getenv('DATABASE_URL', 'postgres://gphvmvpulvbaoc:2b2c25c205ddcca9d961f926080def97b332975c23c3c7c979fdffb0debbd66b@db:5432/d1tprufjurqgu8')
 
 DATABASE_URL = urlparse(DATABASE_URL)
 
